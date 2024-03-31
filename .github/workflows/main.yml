@@ -1,0 +1,40 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: A job to deploy blog.
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        submodules: true # Checkout private submodules(themes or something else).
+    
+    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
+    - name: Cache node modules
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: npm ci
+    
+    # Deploy hexo blog website.
+    - name: Deploy
+      id: deploy
+      uses: sma11black/hexo-action@v1.0.4
+      with:
+        deploy_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC46k5VnYP0EVEJvP/NMTnHYPOmjV0Y+hTt5HGC3M1mDmb7cxj2U4iG8OFvZ8AaHTLrzx3+e5UlQhW8oTw3d4i0nwZKn3e9atXp27SDX8eCsxdtNcU2DvlhbEahIDcOi/fjNVeb7GkYr0QGCU9yN9tlMNCZi7JUhkvbpFK8m3AzyIhHSFDs4f+bIznXGxVUYo+SEXnDROjFeW9srfBR8G6uhIF2E1PDddOD5pEnz4QfuyUQrdrO9qBr2/73K1X8fTgUGYUbop9X5ayeVc4SZiRD1W957hDlpSfbkadv86LyJTmor0/JtcNbbbnUzZXxVQR1z/ITBlb53UOywivWSDmwHLSVNODSPn3uQXHB1BN1kmDUV43zQdQKFLaTDy2Cgib5BgUsOKTnaqzKuZx4mUJN7bOJPFrqau+IdGlDon39ql7ItGOyRj+nynAAsoeV1GH6kuLMvZ2LLJu+H//beAmcWaioY5ak9xoftg37OzcG34KA7PTX9Ybd6RNDnQg+5eM= ying.zf@foxmail.com
+        user_name: pluto0x0  # (or delete this input setting to use bot account)
+        user_email: ying.zf@foxmail.com  # (or delete this input setting to use bot account)
+        commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
+    # Use the output from the `deploy` step(use for test action)
+    - name: Get the output
+      run: |
+        echo "${{ steps.deploy.outputs.notify }}"
