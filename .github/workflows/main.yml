@@ -30,7 +30,7 @@ jobs:
       id: deploy
       uses: sma11black/hexo-action@v1.0.4
       with:
-        deploy_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDLxxR67rJR1eOzYzoQy1h1c231S8nB3jJYnAb2nLiZbY58yZUgwN6+adDb0EkQL+FY635F878FvvSnjQNawd1eVNjAf3DUGra8hNkE2pw1sKUFh6otpJCuQIw8ScGf/LzQGCH72HDNnUw1Jbs3mPUb3giQ6MdbMW8KTgdcr8TrYAV+sVedOpST1vkVrXBlDUkerffS9rBqJDFaXNa/MeSMGsRWvICFpmq7vk2e7T2aWgjWSZdoiNqoBbAXQ3bmAE+ZPLhsodYqXC8J9gog0UQ0v+UEOuTmRavhOtQ0PZZPQVTQIsCDnt+pxb4wI+lnG76LkQHAVBt5A7FT7oczuZEgKTbRL5Px5iP6/kddWLpREI+43AKREsGLjlzQJRUOXBHuDLiGOBTNFA2PTHW1wnUg4ax5iY1VUIz6+eOf4xBR3bvh+zy7woclz6V3/2TW64jp1A/ZocSjsgUv+ZoBZ5o0+1KQfHZLdVBVeOMSOQJn8ToxJAD3u7lnghDLPEd9KAc= ying.zf@foxmail.com
+        deploy_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCthBtJ75oZBL1XXg1xTZ9FMcoK1t61bKsP+yFSLRayN3PzwXqdVXCZotjQqVCF5pVftzV3IhZPfXBERwZK/8j+RT8DL7jY1KxRygpb9qvWY0ps2M8DP8UFzlT+5HJT/541VOs6hjhNa1wXHLo3sQwOzp2vObB8ahKXeZ8S8lc08eP4dy32lT1WBfvYLrkhOfaBM2iIIQFqetOs+ssGPMKYDybbwkRbndcsfWeKQPmf6Wuo7O4OxSH89mIMX+d3928deMPuspqknOzSWO3KeHF86yj77FRt5HT+ejhwxiapw2mEgABah2T8QSGJECDjZUFhjRkFIiZarYkNqKZ1jY6SVCVoc0SMWmZwFAIVSVxjGyTW/OX7WKFqZMRhRs9sNk0DtvAoKoYfbJdqReM7fYG8X8EP+KITj35owBX+1q8J2b+Bg9kjuZdObhGduxPpWShRoXWj0uqQYsz786kwaOWX4qDWBK6kmCoEhmFRND+/vdV+SiyLswe1Gn7mnV2rk4s= ying.zf@foxmail.com
         user_name: pluto0x0  # (or delete this input setting to use bot account)
         user_email: ying.zf@foxmail.com  # (or delete this input setting to use bot account)
         commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
