@@ -19,7 +19,7 @@ jobs:
      - run: node -v
      - name: Setup hexo
        env:
-         ACTION_DEPLOY_KEY: ${{ secrets.hexo_action }}
+         ACTION_DEPLOY_KEY: ${{ secrets.private_key }}
        run: |
          mkdir -p ~/.ssh/
          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
