@@ -27,6 +27,7 @@ jobs:
          git config --global user.email "ying.zf@foxmail.com"
          git config --global user.name "pluto0x0"
          npm install hexo-cli -g
+         npm install hexo-deployer-git --save
          npm install
      - name: Hexo deploy
        run: |
