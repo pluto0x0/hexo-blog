@@ -1,46 +1,35 @@
-name: Deploy
-
-on: [push]
-
+name: HEXO_DEPLOY
+on:
+  push:
+   branches:
+     - master
 jobs:
   build:
-    runs-on: ubuntu-latest
-    name: A job to deploy blog.
-    steps:
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v3
-      with:
-        node-version: '14.x'
-    - run: node -v
-    
-    - name: Checkout
-      uses: actions/checkout@v1
-      with:
-        submodules: true # Checkout private submodules(themes or something else).
-    
-    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
-    - name: Cache node modules
-      uses: actions/cache@v1
-      id: cache
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Install Dependencies
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm install
-    
-    # Deploy hexo blog website.
-    - name: Deploy
-      id: deploy
-      uses: sma11black/hexo-action@v1.0.4
-      with:
-        deploy_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCthBtJ75oZBL1XXg1xTZ9FMcoK1t61bKsP+yFSLRayN3PzwXqdVXCZotjQqVCF5pVftzV3IhZPfXBERwZK/8j+RT8DL7jY1KxRygpb9qvWY0ps2M8DP8UFzlT+5HJT/541VOs6hjhNa1wXHLo3sQwOzp2vObB8ahKXeZ8S8lc08eP4dy32lT1WBfvYLrkhOfaBM2iIIQFqetOs+ssGPMKYDybbwkRbndcsfWeKQPmf6Wuo7O4OxSH89mIMX+d3928deMPuspqknOzSWO3KeHF86yj77FRt5HT+ejhwxiapw2mEgABah2T8QSGJECDjZUFhjRkFIiZarYkNqKZ1jY6SVCVoc0SMWmZwFAIVSVxjGyTW/OX7WKFqZMRhRs9sNk0DtvAoKoYfbJdqReM7fYG8X8EP+KITj35owBX+1q8J2b+Bg9kjuZdObhGduxPpWShRoXWj0uqQYsz786kwaOWX4qDWBK6kmCoEhmFRND+/vdV+SiyLswe1Gn7mnV2rk4s= ying.zf@foxmail.com
-        user_name: pluto0x0  # (or delete this input setting to use bot account)
-        user_email: ying.zf@foxmail.com  # (or delete this input setting to use bot account)
-        commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
-    # Use the output from the `deploy` step(use for test action)
-    - name: Get the output
-      run: |
-        echo "${{ steps.deploy.outputs.notify }}"
+   runs-on: ubuntu-latest
+  
+   steps:
+     - name: Checkout source
+       uses: actions/checkout@v1
+       with:
+         ref: master
+     - name: Use Node.js ${{ matrix.node_version }}
+       uses: actions/setup-node@v1
+       with:
+         version: ${{ matrix.node_version }}
+     - run: node -v
+     - name: Setup hexo
+       env:
+         ACTION_DEPLOY_KEY: ${{ secrets.hexo_action }}
+       run: |
+         mkdir -p ~/.ssh/
+         echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+         chmod 600 ~/.ssh/id_rsa
+         ssh-keyscan github.com >> ~/.ssh/known_hosts
+         git config --global user.email "ying.zf@foxmail.com"
+         git config --global user.name "pluto0x0"
+         npm install hexo-cli -g
+         npm install
+     - name: Hexo deploy
+       run: |
+         hexo clean
+         hexo d
