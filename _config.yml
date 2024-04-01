@@ -81,7 +81,7 @@ pagination_dir: page
 include:
   - convexhull.md
 exclude:
-  - *.md
+  - "*.md"
 ignore:
 
 # Extensions
