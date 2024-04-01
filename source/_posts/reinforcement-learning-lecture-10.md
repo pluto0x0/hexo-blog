@@ -24,7 +24,7 @@ Learning:
 - Data is limited. e.g., adaptive medical treatment, dialog systems
 - Go, chess, ...
 - Learning can be useful **even if the final goal is planning**
-  - especially when $\vert S \vert$ is large and/or only blackbox simulator
+  - especially when $| S |$ is large and/or only blackbox simulator
   - e.g., AlphaGo, video game playing, simulated robotics
 
 ## Monte-Carlo policy evaluation
@@ -32,7 +32,7 @@ Learning:
 Given $\pi$, estimate $J(\pi):=\mathbb{E}_{s \sim d_0}\left[V^\pi(s)\right]$ ( $d_0$ is initial state distribution)
 is the *actual* expectation of reward.
 
-Monte-Carlo outputs some scalar $v$; accuracy measured by $\vert v-J(\pi)\vert$.
+Monte-Carlo outputs some scalar $v$; accuracy measured by $| v-J(\pi)|$.
 (by sampling different trajectories):
 
 Data: trajectories starting from $s_1 \sim d_0$ using $\pi$ (i.e., $a_t=\pi\left(s_t\right)$ ).
@@ -52,7 +52,7 @@ $$
 \frac{1}{n} \sum_{i=1}^n \sum_{t=1}^H \gamma^{t-1} r_t^{(i)}
 $$
 
-> Guarantee: w.p. at least $1-\delta,\vert v-J(\pi)\vert  \leq \frac{R_{\max }}{1-\gamma} \sqrt{\frac{1}{2 n} \ln \frac{2}{\delta}}$ (larger n, higher accuracy)
+> Guarantee: w.p. at least $1-\delta,| v-J(\pi)|  \leq \frac{R_{\max }}{1-\gamma} \sqrt{\frac{1}{2 n} \ln \frac{2}{\delta}}$ (larger n, higher accuracy)
 >
 > It is **independent** to the size of state space
 {: .prompt-tip }
@@ -71,7 +71,7 @@ Monte-Carlo is a Zeroth-order (ZO) optimization method, which is not efficient.
 
 Assume we can sample $r \sim R(s, a)$ and $s^{\prime} \sim P(s, a)$ for any $(s, a)$
 
-Collect $n$ samples per $(s, a):\\{\left(r_i, s_i^{\prime}\right)\\}_{i=1}^n$. Total sample size $n\vert S \times A\vert$
+Collect $n$ samples per $(s, a):\\{\left(r_i, s_i^{\prime}\right)\\}_{i=1}^n$. Total sample size $n| S \times A|$
 
 Estimate an empirical MDP $\hat{M}$ from data
 
@@ -94,5 +94,5 @@ extract transition tuples from trajectories.
 
 performance measurement:
 
-- in the **true** environment, use $\Vert V^\star - V^{\pi_f} \Vert$ where $f \approx Q^\star$
-- in **estimated** environment, use $\Vert V_M^\star - V_M^{\pi_{\hat{M}}^\star} \Vert$, i.e. measure the optimal policy of estimated environment in the real environment.
+- in the **true** environment, use $\| V^\star - V^{\pi_f} \|$ where $f \approx Q^\star$
+- in **estimated** environment, use $\| V_M^\star - V_M^{\pi_{\hat{M}}^\star} \|$, i.e. measure the optimal policy of estimated environment in the real environment.

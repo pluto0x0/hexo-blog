@@ -14,7 +14,7 @@ img_path: /upload/
 
 $x^\top y=0$
 
-$\Vert x\Vert ^2+\Vert y\Vert ^2=\Vert x+y\Vert ^2$
+$\| x\| ^2+\| y\| ^2=\| x+y\| ^2$
 
 ## Subspace
 

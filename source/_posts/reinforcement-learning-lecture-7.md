@@ -28,7 +28,7 @@ $$
 Claim:
 
 $$
-\Vert V^\star  -V^{\pi_f} \Vert \le \frac{2 \Vert f - Q^\star  ||_\infty}{1-\gamma}
+\| V^\star  -V^{\pi_f} \| \le \frac{2 \| f - Q^\star  ||_\infty}{1-\gamma}
 $$
 
 define operator $\mathcal{T}$:
@@ -62,7 +62,7 @@ $$
 Claim:
 
 $$
-\Vert f_k  -V^\star  \Vert \lesssim \gamma^k
+\| f_k  -V^\star  \| \lesssim \gamma^k
 $$
 
 step 1: $f_k \le V^\star $

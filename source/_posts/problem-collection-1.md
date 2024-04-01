@@ -45,7 +45,7 @@ int main()
     }
     
     // find who win
-    cout << ((p1 % 2 \Vert  p2 % 2)  ? "Alice" : "Bob");
+    cout << ((p1 % 2 ||  p2 % 2)  ? "Alice" : "Bob");
     // print result
  
 }
@@ -75,7 +75,7 @@ $$ \texttt{a[] = +1, -2, +3, -4, +5, -6, +7, -8}$$
 
 显然
 
- $$\vert a_1+a_2\cdots +a_n \vert < \vert a_{n+1} \vert$$ 
+ $$| a_1+a_2\cdots +a_n | < | a_{n+1} |$$ 
 
 因此，再原序列的一个子串的基础上：
 

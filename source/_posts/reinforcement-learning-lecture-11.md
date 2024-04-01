@@ -47,7 +47,7 @@ $$
 |S|\times |A| \times |S|
 $$
 
-$\vert S\vert \times \vert A\vert$ for each $f(s,a)$ and $\vert S \vert$ for expectation.
+$| S| \times | A|$ for each $f(s,a)$ and $| S |$ for expectation.
 
 #### Empirical Bellman Update
 

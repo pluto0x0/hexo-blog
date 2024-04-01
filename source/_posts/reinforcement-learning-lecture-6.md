@@ -59,27 +59,27 @@ $$
 
 ## Convergence of VI
 
-lemma: $\mathcal{T}$ is a $\gamma$**-contraction** under $\Vert \cdot\Vert _{\infty}$ where $\Vert \cdot\Vert _{\infty} := \max_{x\in (\cdot)}x$.
+lemma: $\mathcal{T}$ is a $\gamma$**-contraction** under $\| \cdot\| _{\infty}$ where $\| \cdot\| _{\infty} := \max_{x\in (\cdot)}x$.
 
 which means 
 
 $$
-\Vert \mathcal{T}f-\mathcal{T}f'\Vert _{\infty}\leq\gamma\Vert f-f'\Vert _{\infty}
+\| \mathcal{T}f-\mathcal{T}f'\| _{\infty}\leq\gamma\| f-f'\| _{\infty}
 $$
 
 Proof.
 
 $$
 \begin{aligned}
-&\Vert f_k - Q^\star  \Vert_\infty  \\
-=& \Vert \mathcal{T}f_{k-1} - Q^\star \Vert_\infty \\
-=& \Vert \mathcal{T}f_{k-1} - \mathcal{T}Q^\star \Vert_\infty \\
-\overset{\text{lemma}}{\le}& \gamma \Vert f_{k-1} - Q^\star \Vert_\infty \\
+&\| f_k - Q^\star  \|_\infty  \\
+=& \| \mathcal{T}f_{k-1} - Q^\star \|_\infty \\
+=& \| \mathcal{T}f_{k-1} - \mathcal{T}Q^\star \|_\infty \\
+\overset{\text{lemma}}{\le}& \gamma \| f_{k-1} - Q^\star \|_\infty \\
 \end{aligned}
 $$
 
 $$
-\Rightarrow \Vert f_k-Q^\star \Vert_\infty \le \gamma^k \Vert f_{k-1} -Q^\star \Vert_\infty \; \text{where}\; \gamma \in (0,1) \blacksquare
+\Rightarrow \| f_k-Q^\star \|_\infty \le \gamma^k \| f_{k-1} -Q^\star \|_\infty \; \text{where}\; \gamma \in (0,1) \blacksquare
 $$
 
 Proof of lemma:
@@ -103,6 +103,6 @@ $$
 =& \gamma\left|\mathbb{E}_{s'\sim P(\cdot|s,a)}[f(s', a^\star ) - \max_{a'} f'(s', a')]\right| \\
 \le& \gamma\left|\mathbb{E}_{s'\sim P(\cdot|s,a)}[f(s', a^\star ) - f'(s', a^\star )]\right| \\
 \le& \gamma\left|f(s', a^\star ) - f'(s', a^\star )\right| \\
-\le& \gamma \Vert f-f'\Vert_\infty
+\le& \gamma \| f-f'\|_\infty
 \end{aligned}
 $$

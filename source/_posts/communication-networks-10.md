@@ -94,7 +94,7 @@ Timeout Interval
 Deviation in RTT:
 
 $$
-\text { DevRTT }=(1-\beta) \times \text { DevRTT }+\beta \times \vert \text { SampleRTT }=\text { EstimatedRTT } \vert
+\text { DevRTT }=(1-\beta) \times \text { DevRTT }+\beta \times | \text { SampleRTT }=\text { EstimatedRTT } |
 $$
 
 Typeical $\beta = 0.25$

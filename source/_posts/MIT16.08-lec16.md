@@ -27,7 +27,7 @@ $$
 Minimize : 
 
 $$
-\Vert Ax-b\Vert ^2=\Vert e\Vert ^2
+\| Ax-b\| ^2=\| e\| ^2
 $$
 
 that is, finding $P$ (**projection** vector)

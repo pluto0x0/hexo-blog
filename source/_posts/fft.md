@@ -40,13 +40,13 @@ $$
 
 几何意义： $$z=a+bi$$ 对应复平面内的点 $$(a,b)$$ 
 
-模长： $$\vert z\vert = \sqrt{a^2+b^2}$$ 
+模长： $$| z| = \sqrt{a^2+b^2}$$ 
 
 幅角： $$\theta=\arctan\frac{y}{x}$$ 
 
 欧拉公式： $$e^{i\theta} = \cos \theta + i \sin \theta$$ ，这对应着复平面上的一个单位向量。
 
-那么 $$z = \vert z \vert e^{i\theta} = r(\cos \theta + i \sin \theta)$$ ，其中 $$\theta$$ 为 $$z$$ 的幅角。
+那么 $$z = | z | e^{i\theta} = r(\cos \theta + i \sin \theta)$$ ，其中 $$\theta$$ 为 $$z$$ 的幅角。
 
 进而得到，复数相乘就是**模长相乘，幅角相加**。
 

@@ -31,7 +31,7 @@ void dfs1(int u) {
         dep[v] = dep[u] + 1, fa[v] = u;
         dfs1(v);
         siz[u] += siz[v];
-        if (hson[u] == -1 \Vert  siz[v] > siz[hson[u]]) hson[u] = v;
+        if (hson[u] == -1 ||  siz[v] > siz[hson[u]]) hson[u] = v;
     }
 }
 
@@ -186,7 +186,7 @@ void dfs1(int u) {
         dep[v] = dep[u] + 1, fa[v] = u;
         dfs1(v);
         siz[u] += siz[v];
-        if (hson[u] == -1 \Vert  siz[v] > siz[hson[u]]) hson[u] = v;
+        if (hson[u] == -1 ||  siz[v] > siz[hson[u]]) hson[u] = v;
     }
 }
 

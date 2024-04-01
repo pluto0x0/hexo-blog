@@ -51,7 +51,7 @@ $$
 \end{aligned}
 $$
 
-Because $n / \vert A\vert$ is the **expectaton** of # of sampling $a^{(i)}$ matches $\pi$ but not the true # of matched samples, which causes variance.
+Because $n / | A|$ is the **expectaton** of # of sampling $a^{(i)}$ matches $\pi$ but not the true # of matched samples, which causes variance.
 
 Solution: use true # of matched samples as denometer,
 
@@ -83,7 +83,7 @@ How to compute $p(\tau)/q(\tau)$?
 - $p(\tau)=d_0\left(s_1\right) \cdot \pi\left(a_1 \mid s_1\right) \cdot P\left(s_2 \mid s_1, a_1\right) \cdot \pi\left(a_2 \mid s_2\right) \cdots P\left(s_H \mid s_{H-1}, a_{H-1}\right) \cdot \pi\left(a_H \mid s_H\right)$
 - $q(\tau)=d_0\left(s_1\right) \cdot \pi_b\left(a_1 \mid s_1\right) \cdot P\left(s_2 \mid s_1, a_1\right) \cdot \pi_b\left(a_2 \mid s_2\right) \cdots P\left(s_H \mid s_{H-1}, a_{H-1}\right) \cdot \pi_b\left(a_H \mid s_H\right)$
 
-Here all $P(\cdot\vert\cdot)$ terms are cancelled out.
+Here all $P(\cdot|\cdot)$ terms are cancelled out.
 
 Let $\rho_t=\frac{\pi\left(d_t \mid s_t\right)}{\pi_b\left(a_t \mid s_t\right)}$, then $\frac{p(\tau)}{q(\tau)}=\prod_{t=1}^H \rho_t=: \rho_{1: H}$
 
@@ -93,4 +93,4 @@ Let $\rho_t=\frac{\pi\left(d_t \mid s_t\right)}{\pi_b\left(a_t \mid s_t\right)}$
 - $\rho_t=\frac{\mathbb{I}\left[a_t=\pi\left(s_t\right)\right]}{1 /|A|}$
 - only look at trajectories where all actions happen to match what $\pi$ wants to take
   - Only if match, $\rho=|A|^H$; mismatch: $\rho=0$
-- On average: only $1 /\vert A\vert^H$ portion of the data is useful
+- On average: only $1 /| A|^H$ portion of the data is useful

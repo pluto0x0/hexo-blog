@@ -15,7 +15,7 @@ An MDP $M = (S, A, P, R, \gamma)$ consists of:
 
 - **State space** $S$.
 - **Action space** $A$.
-- **Transition function** $P$: $S \times A \rightarrow \Delta(S)$. $\Delta(S)$ is the **probability** simplex over $S$, i.e., all non-negative vectors of length $\vert S\vert$ that sums up to $1$.
+- **Transition function** $P$: $S \times A \rightarrow \Delta(S)$. $\Delta(S)$ is the **probability** simplex over $S$, i.e., all non-negative vectors of length $| S|$ that sums up to $1$.
 - **Reward function** $R$: $S \times A \rightarrow \mathbb{R}$. (deterministic reward function)
 - **Discount factor** $\gamma \in [0,1]$
 
@@ -117,9 +117,9 @@ where $\langle\cdot, \cdot\rangle$ is Dot Product.
 
 ### Matrix form
 
-- $V^\pi$ as the $\vert S\vert  \times 1$ vector $[V^\pi(s)]_{s \in S}$
+- $V^\pi$ as the $| S|  \times 1$ vector $[V^\pi(s)]_{s \in S}$
 - $R^\pi$ as the vector $[R(s, \pi(s))]_{s \in S}$
-- $P^\pi$ as the matrix $[P(s' \vert  s, \pi(s))]_{s \in S, s' \in S}$
+- $P^\pi$ as the matrix $[P(s' |  s, \pi(s))]_{s \in S, s' \in S}$
 
 $$
 \begin{gathered}
@@ -141,12 +141,12 @@ then
 
 $$
 \begin{aligned}
-&\Vert (I - \gamma P^\pi) x \Vert _{\infty} \\
-=&\Vert x - \gamma P^\pi  x \Vert _{\infty} \\
-\ge&\Vert x\Vert _{\infty} - \gamma\Vert P^\pi  x \Vert _{\infty} \\
-\ge&\Vert x\Vert _{\infty} - \gamma\Vert x\Vert _{\infty} \\
-=&(1 - \gamma)\Vert x\Vert _{\infty} \\
-\ge&\Vert x\Vert _{\infty} \\
+&\| (I - \gamma P^\pi) x \| _{\infty} \\
+=&\| x - \gamma P^\pi  x \| _{\infty} \\
+\ge&\| x\| _{\infty} - \gamma\| P^\pi  x \| _{\infty} \\
+\ge&\| x\| _{\infty} - \gamma\| x\| _{\infty} \\
+=&(1 - \gamma)\| x\| _{\infty} \\
+\ge&\| x\| _{\infty} \\
 >& 0 \blacksquare
 \end{aligned}
 $$

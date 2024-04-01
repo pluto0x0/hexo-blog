@@ -72,7 +72,7 @@ $$
 ## Schmidt
 
 $$
-q_1 := \frac{A}{\Vert A\Vert }\\ q_2 := \frac{B}{\Vert B\Vert }\\ q_3 := \frac{C}{\Vert C\Vert }\\
+q_1 := \frac{A}{\| A\| }\\ q_2 := \frac{B}{\| B\| }\\ q_3 := \frac{C}{\| C\| }\\
 $$
 
 ## $A=QR$
