@@ -13,21 +13,21 @@ image:
 
 ### B-multicast
 
-![alt text](/img/post/distributed-system-8.png){: w="500" }
+![](/img/post/distributed-system-8.png){: w="500" }
 
 in physical network view: Redundant packets
 
-![alt text](/img/post/distributed-system-8-1.png){: w="500" }
+![](/img/post/distributed-system-8-1.png){: w="500" }
 
 ### Tree-based multicast
 
 construct a minimum spanning tree and unicast along that.
 
-![alt text](/img/post/distributed-system-8-2.png){: w="500" }
+![](/img/post/distributed-system-8-2.png){: w="500" }
 
 then,
 
-![alt text](/img/post/distributed-system-8-3.png){: w="500" }
+![](/img/post/distributed-system-8-3.png){: w="500" }
 
 construct a tree that includes network routers.
 
@@ -45,7 +45,7 @@ Properties
 - More efficient than unicasting to all receivers
 - no hard guarantees.
 
-![alt text](/img/post/distributed-system-8-5.png){: w="500" }
+![](/img/post/distributed-system-8-5.png){: w="500" }
 
 
 ## Mutual Exclusion
@@ -96,7 +96,7 @@ Leader:
 
 the token travel around the ring.
 
-![alt text](/img/post/distributed-system-8-6.png){: w="500" }
+![](/img/post/distributed-system-8-6.png){: w="500" }
 
 - enter()
   - Wait until you get token

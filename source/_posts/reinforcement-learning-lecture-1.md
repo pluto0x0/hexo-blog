@@ -11,7 +11,7 @@ categories:
 
 ## example: Shortest Path
 
-![alt text](/img/post/reinforcement-learning-lecture-1.png){: w="500"}
+![](/img/post/reinforcement-learning-lecture-1.png){: w="500"}
 _Shortest Path_
 
 - nodes: stats
@@ -29,7 +29,7 @@ $$
 
 Markov Decision Process (MDP)
 
-![alt text](/img/post/reinforcement-learning-lecture-1-1.png){: w="500" }
+![](/img/post/reinforcement-learning-lecture-1-1.png){: w="500" }
 _Stochastic Shortest Path_
 
 **Bellman Equation**
@@ -45,7 +45,7 @@ optimal policy : $\pi^\star $
 The states are unknown.
 Learn by **trial-and-error**
 
-![alt text](/img/post/reinforcement-learning-lecture-1-2.png){: w="500" }
+![](/img/post/reinforcement-learning-lecture-1-2.png){: w="500" }
 _a trajectory: s0>c>e>F>G_
 
 Need to recover the graph by collecting multiple **trajectories**.
@@ -58,7 +58,7 @@ Assume states & actions are visited uniformly.
 
 Random exploration can be inefficient:
 
-![alt text](/img/post/reinforcement-learning-lecture-1-5.png){: w="200" }
+![](/img/post/reinforcement-learning-lecture-1-5.png){: w="200" }
 _example: video game_
 
 ## example: video game
@@ -72,7 +72,7 @@ $$
 
 Problem: the graph is too large
 
-![alt text](/img/post/reinforcement-learning-lecture-1-4.png){: w="300" }
+![](/img/post/reinforcement-learning-lecture-1-4.png){: w="300" }
 
 There are states that the RL model have never seen, therefore need **generalization**
 

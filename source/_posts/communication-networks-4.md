@@ -9,7 +9,7 @@ categories:
 - Communication Networks
 ---
 
-![Alt text](/img/post/communication-networks-4-3.png){: w="8"}
+![](/img/post/communication-networks-4-3.png){: w="8"}
 
 ## Application architectures
 
@@ -21,7 +21,7 @@ Possible structure of applications:
 
 ### Client-server architecture
 
-![Alt text](/img/post/communication-networks-4-1.png)
+![](/img/post/communication-networks-4-1.png)
 
 server
 
@@ -54,7 +54,7 @@ client
 - process sends/receives messages to/from its socket
 - socket analogous to **mailbox**
 
-![Alt text](/img/post/communication-networks-4-5.png)
+![](/img/post/communication-networks-4-5.png)
 
 ## Transport service requirements
 

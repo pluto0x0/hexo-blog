@@ -35,7 +35,7 @@ $$
 maximize the distance between the hyperplane
 and the closest training example, where the distance is given by $\frac{\left|w^T x_0\right|}{\|w\|}$.
 
-![alt text](/img/post/deep-learning-for-CV-3-2.png){: w="400" }
+![](/img/post/deep-learning-for-CV-3-2.png){: w="400" }
 
 ### finding hyperplane
 
@@ -49,9 +49,9 @@ $$
 
 ### Soft margin
 
-![alt text](/img/post/deep-learning-for-CV-3-4.png){: w="300" }
+![](/img/post/deep-learning-for-CV-3-4.png){: w="300" }
 
-![alt text](/img/post/deep-learning-for-CV-3-5.png){: w="300" }
+![](/img/post/deep-learning-for-CV-3-5.png){: w="300" }
 
 For non-separable and some separable data, we may prefer a **larger margin** with a few constraints violated.
 
@@ -105,7 +105,7 @@ and $\hat{y}=\operatorname{argmax}_c f_c(x)$
 
 Multi-class perceptrons:
 
-![alt text](/img/post/deep-learning-for-CV-3-7.png){: w="300" }
+![](/img/post/deep-learning-for-CV-3-7.png){: w="300" }
 
 $$
 f_c(x) = w_c^T x

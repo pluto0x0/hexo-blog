@@ -69,10 +69,10 @@ server TCP creates new socket
 
 - for server process to communicate with that particular client
 
-![alt text](/img/post/communication-networks-5-2.png){: w="700" }
+![](/img/post/communication-networks-5-2.png){: w="700" }
 _UDP_
 
-![alt text](/img/post/communication-networks-5-1.png){: w="700" }
+![](/img/post/communication-networks-5-1.png){: w="700" }
 _TCP_
 
 ---
@@ -81,7 +81,7 @@ _TCP_
 
 - each object is addressable by a URL:
 
-![alt text](/img/post/communication-networks-5-3.png){: w="500" }
+![](/img/post/communication-networks-5-3.png){: w="500" }
 
 - use TCP on port 80
 - HTTP is stateless: server maintains no information about past client requests
@@ -90,14 +90,14 @@ _TCP_
 
 RTT (Round Trip Time): time for a small packet to travel from client to server and back
 
-![alt text](/img/post/communication-networks-5-4.png){: w="300" }
+![](/img/post/communication-networks-5-4.png){: w="300" }
 _non-persistent HTTP response time = 2RTT+ file transmission time_
 
 ### Persistent HTTP
 
 server leaves connection open after sending response
 
-![alt text](/img/post/communication-networks-5-5.png){: h="700" }
+![](/img/post/communication-networks-5-5.png){: h="700" }
 
 <details markdown="1">
 <summary>Other Optimizations</summary>
@@ -106,19 +106,19 @@ server leaves connection open after sending response
 
 Send several requests at once
 
-![alt text](/img/post/communication-networks-5-6.png){: w="700" }
+![](/img/post/communication-networks-5-6.png){: w="700" }
 
 ### HTTP/2
 
 Push resources (send file ahead that clients may request)
 
-![alt text](/img/post/communication-networks-5-7.png){: w="700" }
+![](/img/post/communication-networks-5-7.png){: w="700" }
 
 ### QUIC
 
 Eliminate first RTT
 
-![alt text](/img/post/communication-networks-5-8.png){: w="700" }
+![](/img/post/communication-networks-5-8.png){: w="700" }
 
 </details>
 
@@ -128,9 +128,9 @@ two types of HTTP messages: **request**, **response**.
 
 HTTP request message:
 
-![alt text](/img/post/communication-networks-5-9.png){: w="600" }
+![](/img/post/communication-networks-5-9.png){: w="600" }
 
-![alt text](/img/post/communication-networks-5-10.png){: w="600" }
+![](/img/post/communication-networks-5-10.png){: w="600" }
 
 - `GET` method: input is in `URL` field.
 - `POST` method: inpit is in entity body.
@@ -140,7 +140,7 @@ HTTP request message:
 
 ### HTTP response message
 
-![alt text](/img/post/communication-networks-5-11.png){: w="700" }
+![](/img/post/communication-networks-5-11.png){: w="700" }
 
 code | message | meaning
 ---|---|---

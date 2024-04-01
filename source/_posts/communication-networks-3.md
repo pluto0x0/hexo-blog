@@ -15,18 +15,18 @@ categories:
 
 - **routing**: **determine** source-destination **paths** taken by packets
 - **forwarding** (**switching**): move arriving packets from router’s input link to appropriate router output link
-![Alt text](/img/post/communication-networks-3.png)
+![](/img/post/communication-networks-3.png)
 
 ### Packet-switching: Store-and-Forward
 
-![Alt text](/img/post/communication-networks-3-1.png)
+![](/img/post/communication-networks-3-1.png)
 
 - **entire** packet must arrive at router before it can be transmitted on next link
 - end-end delay = $2L/R$ (assuming zero propagation delay)
 
 ### Packet Switching: Queueing Delay, Loss
 
-![Alt text](/img/post/communication-networks-3-2.png)
+![](/img/post/communication-networks-3-2.png)
 
 - if arrival rate > transmission rate,
   - packets will queue
@@ -34,16 +34,16 @@ categories:
 
 ### Alternative core: Circuit Switching
 
-![Alt text](/img/post/communication-networks-3-3.png)
+![](/img/post/communication-networks-3-3.png)
 
 - FDM: Frequency Division Multiplexing
-  - ![Alt text](/img/post/communication-networks-3-4.png){: w="30"}
+  - ![](/img/post/communication-networks-3-4.png){: w="30"}
 - TDM: Time Division Multiplexing
-  - ![Alt text](/img/post/communication-networks-3-5.png){: w="30"}
+  - ![](/img/post/communication-networks-3-5.png){: w="30"}
 
 ### Internet Structure: Network of Networks
 
-![Alt text](/img/post/communication-networks-3-6.png)
+![](/img/post/communication-networks-3-6.png)
 
 - IXP: Internet exchange point
 
@@ -58,7 +58,7 @@ categories:
 
 ### Delay
 
-![Alt text](/img/post/communication-networks-3-8.png)
+![](/img/post/communication-networks-3-8.png)
 
 - $d_{\text{proc}}$ nodal processing delay < msec
   - check bit errors
@@ -84,7 +84,7 @@ categories:
 
 ### Loss
 
-![Alt text](/img/post/communication-networks-3-9.png)
+![](/img/post/communication-networks-3-9.png)
 
 ### Throughput
 
@@ -103,7 +103,7 @@ categories:
 |link|data transfer between neighboring network elements (Ethernet, 802.11 (WiFi), PPP)
 |physical|bits on the wire|
 
-![Alt text](/img/post/communication-networks-3-10.png)
+![](/img/post/communication-networks-3-10.png)
 
 - Switch
   - level 2 device

@@ -8,13 +8,13 @@ categories:
 
 ## Web caches (proxy server)
 
-![alt text](/img/post/communication-networks-6.png){: w="500" }
+![](/img/post/communication-networks-6.png){: w="500" }
 
 1) browser sends all HTTP requests to cache
 2) object in cache: cache returns object
 3) else cache requests object from origin server, then returns object to client
 
-![alt text](/img/post/communication-networks-6-1.png){: w="400" }
+![](/img/post/communication-networks-6-1.png){: w="400" }
 
 ### Conditional GET
 
@@ -86,7 +86,7 @@ Subject:
 
 ### Mail access protocols
 
-![alt text](/img/post/communication-networks-6-3.png){: w="700" }
+![](/img/post/communication-networks-6-3.png){: w="700" }
 
 **mail access protocol: retrieval from server**
 
@@ -129,10 +129,10 @@ Local DNS name server (cached)
 
 ### DNS name resolution example
 
-![alt text](/img/post/communication-networks-6-4.png){: w="500" }
+![](/img/post/communication-networks-6-4.png){: w="500" }
 _Diterated query_
 
-![alt text](/img/post/communication-networks-6-5.png)
+![](/img/post/communication-networks-6-5.png)
 _recursive query_
 
 Name server caches mappings untiel expired (time of **TTL**)
@@ -152,4 +152,4 @@ MX|hostname|mail server
 
 ### DNS protocol
 
-![alt text](/img/post/communication-networks-6-6.png){: w="700" }
+![](/img/post/communication-networks-6-6.png){: w="700" }

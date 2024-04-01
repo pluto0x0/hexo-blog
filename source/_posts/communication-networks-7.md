@@ -16,7 +16,7 @@ image:
 
 ### File distribution: client-server vs P2P
 
-![alt text](/img/post/communication-networks-7.png){: w="600" }
+![](/img/post/communication-networks-7.png){: w="600" }
 _client-server model_
 
 Time to distribute $F$ to $N$ clients using client-server approach
@@ -36,7 +36,7 @@ $$
 - File divided into 256Kb chunks
 - Peers in torrent send/receive file chunks
 
-![alt text](/img/post/communication-networks-7-1.png){: w="600" }
+![](/img/post/communication-networks-7-1.png){: w="600" }
 
 peer joining torrent:
 
@@ -88,14 +88,14 @@ rule: assign key-value pair to the peer that has the closest ID (**the immediate
 
 each peer only aware of immediate successor and predecessor.
 
-![alt text](/img/post/communication-networks-7-2.png){: w="400" }
+![](/img/post/communication-networks-7-2.png){: w="400" }
 
-![alt text](/img/post/communication-networks-7-3.png){: w="500" }
+![](/img/post/communication-networks-7-3.png){: w="500" }
 _$O(N)$_
 
 ### Circular DHT with shortcuts (Chord)
 
-![alt text](/img/post/communication-networks-7-5.png){: w="500" }
+![](/img/post/communication-networks-7-5.png){: w="500" }
 _$O(\log N)$_
 
 ### Peer churn
@@ -129,4 +129,4 @@ DASH: Dynamic, Adaptive Streaming over HTTP
 - To stream content to hundreds of thousands of simultaneous users.
 - Store/serve multiple copies of videos at multiple geographically distributed sites (CDN)
 
-![alt text](/img/post/communication-networks-7-6.png){: w="600" }
+![](/img/post/communication-networks-7-6.png){: w="600" }
