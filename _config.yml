@@ -8,7 +8,9 @@ subtitle: ""
 description: ""
 keywords:
 author: Zifan Ying
-language: zh
+language:
+  - zh-cn
+  - en
 timezone: America/Chicago
 
 # URL
