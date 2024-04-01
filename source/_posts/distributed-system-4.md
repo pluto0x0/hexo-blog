@@ -1,14 +1,12 @@
 ---
 title: Distributed System (4)
 date: 2024-02-20 22:50:28
-img_path: /_posts/
-math: true
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
 image:
-  path: ../upload/img/2024-02-20-distributed-system-4-image-2.png
+  path: /img/post/distributed-system-4-2.png
 ---
 
 ## Event Ordering
@@ -37,7 +35,7 @@ if $a \nrightarrow e$ and $e \nrightarrow a$ then $a \| e$, i.e. **a and e are c
 
 ### Lamport’s Logical Clock
 
-![alt text](../upload/img/2024-02-20-distributed-system-4-image.png){: w="400" }
+![alt text](/img/post/distributed-system-4.png){: w="400" }
 
 Algorithm: for each process $P_i$:
 
@@ -52,7 +50,7 @@ if events $e \to e'$, then $L(e) < L(e’)$
 
 ### Vector Clocks
 
-![alt text](../upload/img/2024-02-20-distributed-system-4-image-1.png){: w="400" }
+![alt text](/img/post/distributed-system-4-1.png){: w="400" }
 
 $V_i[j]$ is the clock for process $P_j$ as maintained by $P_i$
 
@@ -101,4 +99,4 @@ A cut C is consistent iff
 
 $$\forall e \in  C,  \text{if } f\to e \text{ then } f \in C$$
 
-![alt text](../upload/img/2024-02-20-distributed-system-4-image-2.png){: w="600" }
+![alt text](/img/post/distributed-system-4-2.png){: w="600" }

@@ -1,6 +1,5 @@
 ---
 title: 树链剖分
-math: true
 toc: true
 category: 图论
 tag:

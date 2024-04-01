@@ -1,8 +1,6 @@
 ---
 title: Communication Networks (8)
 date: 2024-02-18 22:53:26
-img_path: /_posts/
-math: true
 categories:
 - Course Notes
 - Communication Networks
@@ -34,7 +32,7 @@ TCP and UDP:
 
 host uses **IP addresses & port** numbers to direct segment to appropriate socket
 
-![alt text](../upload/img/2024-02-18-communication-networks-7-image-7.png){: w="400" }
+![alt text](/img/post/communication-networks-7-7.png){: w="400" }
 _TCP/UDP segment format_
 
 ### In Connectionless Demultiplexing (UDP)
@@ -66,7 +64,7 @@ demux: receiver uses **all four values** to direct segment to appropriate socket
   - DNS
   - SNMP
   
-![alt text](../upload/img/2024-02-18-communication-networks-7-image-8.png){: w="400" }
+![alt text](/img/post/communication-networks-7-8.png){: w="400" }
 _UDP segment format_
 
 checksum is used to detect errors.

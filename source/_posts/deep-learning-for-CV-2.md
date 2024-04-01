@@ -1,12 +1,10 @@
 ---
 title: Deep Learning for Computer Vision (2)
 date: 2024-02-01 01:25:06
-img_path: /_posts/
-math: true
 mermaid: true
 tags: CS444
 image:
-  path: ../upload/img/2024-02-01-deep-learning-for-CV-2-image-4.png
+  path: /img/post/deep-learning-for-CV-2-4.png
 categories:
 - Course Notes
 - Deep Learning for CV
@@ -34,15 +32,15 @@ $f(x)$ = label of the training example nearest to $x$
 
 K-nearest neighbor classifier:
 
-![Alt text](../upload/img/2024-02-01-deep-learning-for-CV-2-image-1.png){: w="300"}
+![Alt text](/img/post/deep-learning-for-CV-2-1.png){: w="300"}
 
-![Alt text](../upload/img/2024-02-01-deep-learning-for-CV-2-image-2.png){: h="200"}
+![Alt text](/img/post/deep-learning-for-CV-2-2.png){: h="200"}
 
 ## Linear classifier
 
-![Alt text](../upload/img/2024-02-01-deep-learning-for-CV-2-image-3.png){: w="300"}
+![Alt text](/img/post/deep-learning-for-CV-2-3.png){: w="300"}
 
-![Alt text](../upload/img/2024-02-01-deep-learning-for-CV-2-image-4.png){: w="300"}
+![Alt text](/img/post/deep-learning-for-CV-2-4.png){: w="300"}
 
 $$
 f(x) = \operatorname{sgn} (w\cdot x + b)
@@ -118,7 +116,7 @@ $$
 
 ### Problem of linear regression
 
-![alt text](../upload/img/2024-02-01-deep-learning-for-CV-2-image-5.png){: w="500"}
+![alt text](/img/post/deep-learning-for-CV-2-5.png){: w="500"}
 _Linear regression is very sensitive to outliers_
 
 ## Logistic regression
@@ -135,7 +133,7 @@ flowchart LR
     linear_output-->|logistic function|Probability
 ```
 
-![alt text](../upload/img/2024-02-01-deep-learning-for-CV-2-image-6.png){: w="300"}
+![alt text](/img/post/deep-learning-for-CV-2-6.png){: w="300"}
 _sigmoid function_
 
 $$
@@ -152,7 +150,7 @@ $$
 
 ### Logistic loss
 
-![alt text](../upload/img/2024-02-01-deep-learning-for-CV-2-image-9.png){: w="400" }
+![alt text](/img/post/deep-learning-for-CV-2-9.png){: w="400" }
 
 
 Maximum likelihood estimate:
@@ -207,5 +205,5 @@ $$
 
 Logistic regression does not converge for linearly separable data:
 
-![alt text](../upload/img/2024-02-01-deep-learning-for-CV-2-image-8.png)
+![alt text](/img/post/deep-learning-for-CV-2-8.png)
 _Scaling $w$ by ever larger constants makes the classifier more confident and keeps increasing the likelihood of the data_

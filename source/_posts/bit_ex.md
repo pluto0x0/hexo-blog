@@ -3,7 +3,6 @@ title: 树状数组进阶应用
 tags: [树状数组]
 categories: 数据结构
 toc:  true
-math: true
 ---
 
 ## 单点修改，区间查询

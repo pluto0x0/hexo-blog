@@ -3,7 +3,6 @@ title: 博弈论和SG函数基础
 tags: [博弈论]
 categories: 数学
 toc:  true
-math: true
 ---
 
 ## 公平组合游戏 

@@ -1,6 +1,5 @@
 ---
 title: 后缀数组简述
-math: true
 tag: SA
 ---
 [模板题](https://www.luogu.com.cn/problem/P3809)

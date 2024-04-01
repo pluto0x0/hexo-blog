@@ -3,7 +3,6 @@ title: 快速傅里叶变换（FFT）简介
 tags: [FFT, 多项式]
 categories: 数学
 toc:  true
-math: true
 ---
 
 ## 问题引入

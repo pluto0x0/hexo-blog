@@ -1,14 +1,12 @@
 ---
 title: Distributed System (9)
 date: 2024-02-23 04:37:16
-img_path: /_posts/
-math: true
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
 image:
-  path: ../upload/img/2024-02-23-distributed-system-9-image.png
+  path: /img/post/distributed-system-9.png
 ---
 
 ## Mutual Exclusion
@@ -32,7 +30,7 @@ image:
 
 put $N$ processes in a $\sqrt{N}$ by $\sqrt{N}$ matrix and for each $P_i$, its voting set $V_i =$ row containing $P_i$ + column containing $P_i$ (each set size = $2\sqrt{N}-1$)
 
-![alt text](../upload/img/2024-02-23-distributed-system-9-image.png){: w="300" }
+![alt text](/img/post/distributed-system-9.png){: w="300" }
 _voting set_
 
 - state = *Released*, voted = *false*

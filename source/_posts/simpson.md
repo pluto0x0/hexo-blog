@@ -1,5 +1,4 @@
 ---
-math: true
 title: 自适应辛普森法
 tags: 自适应辛普森法
 categories: 计算几何

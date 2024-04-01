@@ -3,7 +3,6 @@ title: 博弈例题练习
 tags: [博弈论]
 categories: 数学
 toc:  true
-math: true
 ---
 
 ## luogu P5765

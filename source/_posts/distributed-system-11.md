@@ -1,8 +1,6 @@
 ---
 title: Distributed System (11)
 date: 2024-02-23 21:32:31
-img_path: /_posts/
-math: true
 mermaid: true
 categories:
 - Course Notes

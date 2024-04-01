@@ -1,5 +1,4 @@
 ---
-math: true
 title: 莫比乌斯反演例题
 ---
 

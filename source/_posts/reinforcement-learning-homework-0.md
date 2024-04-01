@@ -1,8 +1,6 @@
 ---
 title: Reinforcement Learning Homework (0)
 date: 2024-02-03 00:41:03
-img_path: /_posts/
-math: true
 categories:
 - Course Notes
 - Reinforcement Learning

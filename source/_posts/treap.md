@@ -1,6 +1,5 @@
 ---
 title: 非旋转式Treap
-math: true
 tags:
 - treap
 - 数据结构

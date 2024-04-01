@@ -6,7 +6,6 @@ categories:
 tags: Linear Algebra
 date: 2022-9-13
 img_path: /upload/
-math: true
 ---
 
 # 矩阵乘法的性质

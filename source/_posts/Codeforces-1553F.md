@@ -1,6 +1,5 @@
 ---
 title: "Codeforces 1553F: Pairwise Modulo"
-math: true
 categories: Codeforces
 ---
 

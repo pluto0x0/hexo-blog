@@ -1,8 +1,6 @@
 ---
 title: Reinforcement Learning (2-4)
 date: 2024-02-07 22:00:44
-img_path: /_posts/
-math: true
 categories:
 - Course Notes
 - Reinforcement Learning
@@ -39,7 +37,7 @@ Objective: (discounted) expected total reward
 
 ## Example: Gridworld
 
-![alt text](../upload/img/2024-02-07-reinforcement-learning-lecture-2-image.png){: w="300" }
+![alt text](/img/post/reinforcement-learning-lecture-2.png){: w="300" }
 
 - State: grid x, y
 - Action: N, S, E, W

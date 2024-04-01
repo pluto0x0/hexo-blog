@@ -1,11 +1,9 @@
 ---
 title: Communication Networks (3)
 date: 2024-01-29 11:42
-img_path: /_posts/
-math: true
 mermaid: true
 image:
-    path: ../upload/img/2024-01-29-communication-networks-3-image-6.png
+    path: /img/post/communication-networks-3-6.png
 categories:
 - Course Notes
 - Communication Networks
@@ -17,18 +15,18 @@ categories:
 
 - **routing**: **determine** source-destination **paths** taken by packets
 - **forwarding** (**switching**): move arriving packets from router’s input link to appropriate router output link
-![Alt text](../upload/img/2024-01-29-communication-networks-3-image.png)
+![Alt text](/img/post/communication-networks-3.png)
 
 ### Packet-switching: Store-and-Forward
 
-![Alt text](../upload/img/2024-01-29-communication-networks-3-image-1.png)
+![Alt text](/img/post/communication-networks-3-1.png)
 
 - **entire** packet must arrive at router before it can be transmitted on next link
 - end-end delay = $2L/R$ (assuming zero propagation delay)
 
 ### Packet Switching: Queueing Delay, Loss
 
-![Alt text](../upload/img/2024-01-29-communication-networks-3-image-2.png)
+![Alt text](/img/post/communication-networks-3-2.png)
 
 - if arrival rate > transmission rate,
   - packets will queue
@@ -36,16 +34,16 @@ categories:
 
 ### Alternative core: Circuit Switching
 
-![Alt text](../upload/img/2024-01-29-communication-networks-3-image-3.png)
+![Alt text](/img/post/communication-networks-3-3.png)
 
 - FDM: Frequency Division Multiplexing
-  - ![Alt text](../upload/img/2024-01-29-communication-networks-3-image-4.png){: w="30"}
+  - ![Alt text](/img/post/communication-networks-3-4.png){: w="30"}
 - TDM: Time Division Multiplexing
-  - ![Alt text](../upload/img/2024-01-29-communication-networks-3-image-5.png){: w="30"}
+  - ![Alt text](/img/post/communication-networks-3-5.png){: w="30"}
 
 ### Internet Structure: Network of Networks
 
-![Alt text](../upload/img/2024-01-29-communication-networks-3-image-6.png)
+![Alt text](/img/post/communication-networks-3-6.png)
 
 - IXP: Internet exchange point
 
@@ -60,7 +58,7 @@ categories:
 
 ### Delay
 
-![Alt text](../upload/img/2024-01-29-communication-networks-3-image-8.png)
+![Alt text](/img/post/communication-networks-3-8.png)
 
 - $d_{\text{proc}}$ nodal processing delay < msec
   - check bit errors
@@ -86,7 +84,7 @@ categories:
 
 ### Loss
 
-![Alt text](../upload/img/2024-01-29-communication-networks-3-image-9.png)
+![Alt text](/img/post/communication-networks-3-9.png)
 
 ### Throughput
 
@@ -105,7 +103,7 @@ categories:
 |link|data transfer between neighboring network elements (Ethernet, 802.11 (WiFi), PPP)
 |physical|bits on the wire|
 
-![Alt text](../upload/img/2024-01-29-communication-networks-3-image-10.png)
+![Alt text](/img/post/communication-networks-3-10.png)
 
 - Switch
   - level 2 device

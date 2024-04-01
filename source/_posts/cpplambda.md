@@ -1,5 +1,4 @@
 ---
-math: true
 title: C++lambda表达式的简单应用
 
 ---

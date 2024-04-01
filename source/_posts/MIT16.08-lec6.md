@@ -6,7 +6,6 @@ categories:
 tags: Linear Algebra
 date: 2023-2-16
 img_path: /upload/
-math: true
 ---
 
 # lec6

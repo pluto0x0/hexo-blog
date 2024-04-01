@@ -1,39 +1,37 @@
 ---
 title: Distributed System (8)
 date: 2024-02-22 19:10:55
-img_path: /_posts/
-math: true
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
 image:
-  path: ../upload/img/2024-02-22-distributed-system-8-image-6.png
+  path: /img/post/distributed-system-8-6.png
 ---
 
 ## More efficient B-multicasts
 
 ### B-multicast
 
-![alt text](../upload/img/2024-02-22-distributed-system-8-image.png){: w="500" }
+![alt text](/img/post/distributed-system-8.png){: w="500" }
 
 in physical network view: Redundant packets
 
-![alt text](../upload/img/2024-02-22-distributed-system-8-image-1.png){: w="500" }
+![alt text](/img/post/distributed-system-8-1.png){: w="500" }
 
 ### Tree-based multicast
 
 construct a minimum spanning tree and unicast along that.
 
-![alt text](../upload/img/2024-02-22-distributed-system-8-image-2.png){: w="500" }
+![alt text](/img/post/distributed-system-8-2.png){: w="500" }
 
 then,
 
-![alt text](../upload/img/2024-02-22-distributed-system-8-image-3.png){: w="500" }
+![alt text](/img/post/distributed-system-8-3.png){: w="500" }
 
 construct a tree that includes network routers.
 
-![IP multicast](../upload/img/2024-02-22-distributed-system-8-image-4.png){: w="500" }
+![IP multicast](/img/post/distributed-system-8-4.png){: w="500" }
 _IP multicast_
 
 ### Third approach: Gossip
@@ -47,7 +45,7 @@ Properties
 - More efficient than unicasting to all receivers
 - no hard guarantees.
 
-![alt text](../upload/img/2024-02-22-distributed-system-8-image-5.png){: w="500" }
+![alt text](/img/post/distributed-system-8-5.png){: w="500" }
 
 
 ## Mutual Exclusion
@@ -98,7 +96,7 @@ Leader:
 
 the token travel around the ring.
 
-![alt text](../upload/img/2024-02-22-distributed-system-8-image-6.png){: w="500" }
+![alt text](/img/post/distributed-system-8-6.png){: w="500" }
 
 - enter()
   - Wait until you get token

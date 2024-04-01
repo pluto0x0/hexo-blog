@@ -1,13 +1,11 @@
 ---
 title: Communication Networks (7)
 date: 2024-02-18 08:20:19
-img_path: /_posts/
-math: true
 categories:
 - Course Notes
 - Communication Networks
 image:
-  path: ../upload/img/2024-02-18-communication-networks-7-image-1.png
+  path: /img/post/communication-networks-7-1.png
 ---
 
 ## Pure P2P architecture
@@ -18,7 +16,7 @@ image:
 
 ### File distribution: client-server vs P2P
 
-![alt text](../upload/img/2024-02-18-communication-networks-7-image.png){: w="600" }
+![alt text](/img/post/communication-networks-7.png){: w="600" }
 _client-server model_
 
 Time to distribute $F$ to $N$ clients using client-server approach
@@ -38,7 +36,7 @@ $$
 - File divided into 256Kb chunks
 - Peers in torrent send/receive file chunks
 
-![alt text](../upload/img/2024-02-18-communication-networks-7-image-1.png){: w="600" }
+![alt text](/img/post/communication-networks-7-1.png){: w="600" }
 
 peer joining torrent:
 
@@ -90,14 +88,14 @@ rule: assign key-value pair to the peer that has the closest ID (**the immediate
 
 each peer only aware of immediate successor and predecessor.
 
-![alt text](../upload/img/2024-02-18-communication-networks-7-image-2.png){: w="400" }
+![alt text](/img/post/communication-networks-7-2.png){: w="400" }
 
-![alt text](../upload/img/2024-02-18-communication-networks-7-image-3.png){: w="500" }
+![alt text](/img/post/communication-networks-7-3.png){: w="500" }
 _$O(N)$_
 
 ### Circular DHT with shortcuts (Chord)
 
-![alt text](../upload/img/2024-02-18-communication-networks-7-image-5.png){: w="500" }
+![alt text](/img/post/communication-networks-7-5.png){: w="500" }
 _$O(\log N)$_
 
 ### Peer churn
@@ -131,4 +129,4 @@ DASH: Dynamic, Adaptive Streaming over HTTP
 - To stream content to hundreds of thousands of simultaneous users.
 - Store/serve multiple copies of videos at multiple geographically distributed sites (CDN)
 
-![alt text](../upload/img/2024-02-18-communication-networks-7-image-6.png){: w="600" }
+![alt text](/img/post/communication-networks-7-6.png){: w="600" }

@@ -1,14 +1,12 @@
 ---
 title: Distributed System (10)
 date: 2024-02-23 07:02:03
-img_path: /_posts/
-math: true
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
 image:
-  path: ../upload/img/2024-02-23-distributed-system-10-image-1.png
+  path: /img/post/distributed-system-10-1.png
 ---
 
 ## Leader Election
@@ -42,7 +40,7 @@ best (highest) election attribute value is elected.
 - N processes are organized in a logical ring
 - All messages are sent clockwise around the ring.
 
-![alt text](../upload/img/2024-02-23-distributed-system-10-image.png){: w="400" }
+![alt text](/img/post/distributed-system-10.png){: w="400" }
 _Ring Election Protocol_
 
 - When $P_i$ start election
@@ -83,7 +81,7 @@ _Ring Election Protocol_
   - Incomplete FD: violation of liveness
   - Inaccurate FD: violation of safety.
 
-![alt text](../upload/img/2024-02-23-distributed-system-10-image-1.png){: w="500" }
+![alt text](/img/post/distributed-system-10-1.png){: w="500" }
 
 ### Bully algorithm
 
@@ -103,7 +101,7 @@ When a process wants to initiate an election:
 A process that receives an _Election_ message replies with _disagree_ message,
 and starts its own leader election protocol (unless it has already done so).
 
-![alt text](../upload/img/2024-02-23-distributed-system-10-image-2.png){: w="600" }
+![alt text](/img/post/distributed-system-10-2.png){: w="600" }
 
 #### Timeout values
 

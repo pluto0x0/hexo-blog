@@ -1,6 +1,5 @@
 ---
 title: BSGS以及例题
-math: true
 ---
 
 求解 

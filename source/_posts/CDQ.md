@@ -1,5 +1,4 @@
 ---
-math: true
 title: 简述CDQ分治
 ---
 

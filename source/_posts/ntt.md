@@ -3,7 +3,6 @@ title: 快速数论变换（NTT）
 tags: [多项式, NTT]
 categories: 数学
 toc:  true
-math: true
 ---
 
 ## 前置知识

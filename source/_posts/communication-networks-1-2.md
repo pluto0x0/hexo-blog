@@ -1,11 +1,9 @@
 ---
 title: Communication Networks (1-2)
 date: 2024-01-28 19:02:40
-img_path: /_posts/
-math: true
 mermaid: true
 image:
-    path: ../upload/img/2024-01-28-communication-networks-1-image.png
+    path: /img/post/communication-networks-1.png
 categories:
 - Course Notes
 - Communication Networks
@@ -54,7 +52,7 @@ Connect end systems to edge routers
 
 ### Access Network: Digital Subscriber Line (DSL)
 
-![Alt text](../upload/img/2024-01-28-communication-networks-1-2-image-2.png)=
+![Alt text](/img/post/communication-networks-1-2-2.png)=
 
 - Use existing telephone line to central office DSLAM.
 - dedicated access to central office
@@ -63,7 +61,7 @@ Connect end systems to edge routers
 
 ### Access Network: Cable Network
 
-![Alt text](../upload/img/2024-01-28-communication-networks-1-2-image-1.png)
+![Alt text](/img/post/communication-networks-1-2-1.png)
 
 - Frequency division multiplexing: different channels transmitted in different frequency bands
 - HFC: [hybrid fiber coax](https://en.wikipedia.org/wiki/Hybrid_fiber-coaxial) up to 30Mbps
@@ -72,11 +70,11 @@ Connect end systems to edge routers
 
 ### Access Network: Home Network
 
-![Alt text](../upload/img/2024-01-28-communication-networks-1-2-image-3.png)
+![Alt text](/img/post/communication-networks-1-2-3.png)
 
 ### Enterprise Access Networks (Ethernet)
 
-![Alt text](../upload/img/2024-01-28-communication-networks-1-2-image-4.png)
+![Alt text](/img/post/communication-networks-1-2-4.png)
 
 - 10 Mbps,100Mbps,1Gbps, 10Gbps transmission rates
 - Today, end systems typically connect into Ethernet switch
@@ -87,12 +85,12 @@ Connect end systems to edge routers
 
 Wireless LANs (WiFi):
 
-- ![Alt text](../upload/img/2024-01-28-communication-networks-1-2-image-5.png){: w="40"}
+- ![Alt text](/img/post/communication-networks-1-2-5.png){: w="40"}
 - 11, 54, 450 Mbps rate
 
 Wide-area wireless accesss
 
-- ![Alt text](../upload/img/2024-01-28-communication-networks-1-2-image-6.png){: w="40"}
+- ![Alt text](/img/post/communication-networks-1-2-6.png){: w="40"}
 - cellular operator, 10's km
 - 1 to 10 Mbps
 - 3G, 4G, [LTE](https://en.wikipedia.org/wiki/LTE_(telecommunication))

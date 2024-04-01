@@ -1,5 +1,4 @@
 ---
-math: true
 title: Codeforces 729
 ---
 

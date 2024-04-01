@@ -1,8 +1,6 @@
 ---
 title: Haskell实现表达式求值
 date: 2023-12-18 06:30:07
-img_path: /_posts/
-math: true
 ---
 
 ```haskell

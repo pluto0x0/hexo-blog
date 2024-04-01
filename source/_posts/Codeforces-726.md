@@ -1,7 +1,6 @@
 ---
 title: 结论题：Codeforces 726
 category: solution
-math: true
 ---
 [Codeforces Round #726 (Div. 2)](https://codeforces.com/contest/1537)
 

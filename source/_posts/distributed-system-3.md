@@ -1,14 +1,12 @@
 ---
 title: Distributed System (3)
 date: 2024-02-19 17:13:51
-img_path: /_posts/
-math: true
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
 image:
-  path: ../upload/img/2024-02-19-distributed-system-3-image-2.png
+  path: /img/post/distributed-system-3-2.png
 ---
 
 ## Omission
@@ -97,7 +95,7 @@ where $\min$ is minimum one way network.
 
 ### Berkeley Algorithm
 
-![alt text](../upload/img/2024-02-19-distributed-system-3-image.png){: w="300" }
+![alt text](/img/post/distributed-system-3.png){: w="300" }
 _Berkeley Algorithm for internal synchronization_
 
 1. Server periodically polls clients: “what time do you think it is?”
@@ -108,7 +106,7 @@ _Berkeley Algorithm for internal synchronization_
 
 ### NTP Symmetric Mode
 
-![alt text](../upload/img/2024-02-19-distributed-system-3-image-2.png){: w="700" }
+![alt text](/img/post/distributed-system-3-2.png){: w="700" }
 
 - $T_{B r}$ and $T_{B s}$ are local timestamps at $B$.
 - $T_{A r}$ and $T_{A s}$ are local timestamps at $A$.
@@ -117,7 +115,7 @@ _Berkeley Algorithm for internal synchronization_
 - $o_i$ : **estimate** of actual offset between the two clocks
 - $d_i$ : **estimate** of accuracy of $o_i$ / total transmission times for $m$ and $m’$. $d_i=t+t’$
 
-![alt text](../upload/img/2024-02-19-distributed-system-3-image-1.png){: w="500" }
+![alt text](/img/post/distributed-system-3-1.png){: w="500" }
 
 relations:
 

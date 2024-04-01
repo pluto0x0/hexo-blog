@@ -3,7 +3,6 @@ title: Code::Blocks 快速上手
 tags: ['工具']
 categories: 工具
 toc:  true
-math: true
 ---
 
 ## Overall

@@ -1,8 +1,6 @@
 ---
 title: Reinforcemant Learning (14)
 date: 2024-03-20 18:20:00
-img_path: /_posts/
-math: true
 mermaid: true
 categories:
 - Course Notes
@@ -22,7 +20,7 @@ linear function approximation
 
 ### Example: Tetris Game
 
-![alt text](../upload/img/2024-03-20-reinforcement-learning-lecture-14-image-1.png)
+![alt text](/img/post/reinforcement-learning-lecture-14-1.png)
 _Tetris Game_
 
 The state space is exponentially large: each block be occupied / not occupied.

@@ -1,8 +1,6 @@
 ---
 title: Communication Networks (10)
 date: 2024-03-05 10:56:29
-img_path: /_posts/
-math: true
 categories:
 - Course Notes
 - Communication Networks
@@ -16,15 +14,15 @@ categories:
 - sender only resends pkts for which ACK not received
 - sender window
 
-<!-- ![alt text](../upload/img/2024-03-05-communication-networks-10-image.png){: w="700" } -->
+<!-- ![alt text](/img/post/communication-networks-10.png){: w="700" } -->
 
-![alt text](../upload/img/2024-03-05-communication-networks-10-image-1.png){: w="800" }
+![alt text](/img/post/communication-networks-10-1.png){: w="800" }
 
 ### Selective repeat: dilemma
 
 Receiver can’t see sender side. Assume using Seq. No. 0, 1, 2, 3.
 
-![alt text](../upload/img/2024-03-05-communication-networks-10-image-2.png){: w="400" }
+![alt text](/img/post/communication-networks-10-2.png){: w="400" }
 
 # TCP
 
@@ -47,7 +45,7 @@ connection-oriented
 flow controlled:
 : sender will not overwhelm receiver
 
-![alt text](../upload/img/2024-03-05-communication-networks-10-image-3.png){: w="700" }
+![alt text](/img/post/communication-networks-10-3.png){: w="700" }
 
 ## Sequence number & ACK number
 
@@ -60,9 +58,9 @@ acknowledgements
 
 Sequence numbers acknowledgements are 32-bits unsigned integers.
 
-![alt text](../upload/img/2024-03-05-communication-networks-10-image-4.png){: w="500" }
+![alt text](/img/post/communication-networks-10-4.png){: w="500" }
 
-![alt text](../upload/img/2024-03-05-communication-networks-10-image-5.png)
+![alt text](/img/post/communication-networks-10-5.png)
 
 1. A sends 'C', which is the 42-th byte sent.
 2. A has recieved the 78-th byte from B and expecting the 79-th.
@@ -84,7 +82,7 @@ $$
 
 typical value: $\alpha = 0.125$
 
-![alt text](../upload/img/2024-03-05-communication-networks-10-image-6.png){: w="500" }
+![alt text](/img/post/communication-networks-10-6.png){: w="500" }
 
 ### Timeout
 
