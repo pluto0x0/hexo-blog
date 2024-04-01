@@ -1,10 +1,10 @@
 ---
 title: Deep Learning for Computer Vision (1)
 date: 2024-02-01 01:04:09
+img_path: /_posts/
 mermaid: true
 tags: CS444
-image:
-  path: /img/post/deep-learning-for-CV-1.png
+index_img: /img/post/deep-learning-for-CV-1.png
 categories:
 - Course Notes
 - Deep Learning for CV

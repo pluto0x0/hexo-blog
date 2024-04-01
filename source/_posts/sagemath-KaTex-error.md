@@ -1,6 +1,7 @@
 ---
 title: 解决sagemath Latex输出渲染错误
 date: 2023-11-16 22:12:19
+img_path: /_posts/
 ---
 
 在jupyter notebook中使用sagemath，并且使用`%display latex`输出时，出现

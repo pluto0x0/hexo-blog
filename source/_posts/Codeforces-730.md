@@ -1,5 +1,6 @@
 ---
 title: Codeforces 730
+date: 2021-07-16
 ---
 
 [Codeforces Round #730 (Div. 2)](https://codeforces.com/contest/1543/)

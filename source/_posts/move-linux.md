@@ -2,6 +2,7 @@
 title: 一次Linux迁移的记录
 categories: Linux 
 tags: Linux 
+date: 2023-10-28
 ---
 
 > 笔记本有一个2280和一个2240硬盘位，因此要把原来2280的盘迁移到2240的上。

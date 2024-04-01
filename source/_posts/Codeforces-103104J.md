@@ -1,6 +1,7 @@
 ---
 title: "Codefoeces 103104J: Similar Triangles"
 categories: Codeforces
+date: 2023-10-23
 ---
 https://codeforces.com/gym/103104/problem/J
 

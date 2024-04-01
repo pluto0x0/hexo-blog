@@ -1,12 +1,12 @@
 ---
 title: Distributed System (5)
 date: 2024-02-21 09:22:37
+img_path: /_posts/
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-image:
-  path: /img/post/distributed-system-5.png
+index_img: /img/post/distributed-system-5.png
 ---
 
 ## Chandy-Lamport Algorithm
@@ -33,7 +33,7 @@ For other process $P_i$ receiving a marked message from channel $c_{ki}$,
 - else
   - stop recording $c_{ki}$ (the state of channel contains all messages during recording)
 
-<video controls src="/img/post/distributed-system-5-output.mp4" title="Chandy-Lamport Algorithm" width="60%"></video>
+<video controls src/img/post/distributed-system-5-output.mp4" title="Chandy-Lamport Algorithm" width="60%"></video>
 
 Any run of the Chandy-Lamport Global Snapshot algorithm creates a consistent cut.
 

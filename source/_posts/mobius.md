@@ -1,5 +1,6 @@
 ---
 title: 莫比乌斯反演例题
+date: 2021-07-30
 ---
 
 关于莫比乌斯反演，[这篇](https://oi-wiki.org/math/mobius/)说得非常清楚了。

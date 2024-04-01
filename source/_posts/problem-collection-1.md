@@ -2,6 +2,7 @@
 title: 一些题目
 tags: [构造, 数学]
 categories: solution
+date: 2021-10-15
 ---
 
 记录最近的一些题目

@@ -1,9 +1,9 @@
 ---
 title: Communication Networks (3)
 date: 2024-01-29 11:42
+img_path: /_posts/
 mermaid: true
-image:
-    path: /img/post/communication-networks-3-6.png
+index_img: /img/post/communication-networks-3-6.png
 categories:
 - Course Notes
 - Communication Networks

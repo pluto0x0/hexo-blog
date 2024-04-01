@@ -1,12 +1,12 @@
 ---
 title: Distributed System (10)
 date: 2024-02-23 07:02:03
+img_path: /_posts/
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-image:
-  path: /img/post/distributed-system-10-1.png
+index_img: /img/post/distributed-system-10-1.png
 ---
 
 ## Leader Election

@@ -1,10 +1,10 @@
 ---
 title: 树链剖分
-toc: true
 category: 图论
 tag:
 - 树链剖分
 - 模板
+date: 2021-09-29
 ---
 
 [#10138. 「一本通 4.5 例 1」树的统计](https://loj.ac/p/10138)

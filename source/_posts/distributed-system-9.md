@@ -1,12 +1,12 @@
 ---
 title: Distributed System (9)
 date: 2024-02-23 04:37:16
+img_path: /_posts/
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-image:
-  path: /img/post/distributed-system-9.png
+index_img: /img/post/distributed-system-9.png
 ---
 
 ## Mutual Exclusion

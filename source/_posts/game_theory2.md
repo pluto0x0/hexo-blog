@@ -2,7 +2,7 @@
 title: 博弈例题练习
 tags: [博弈论]
 categories: 数学
-toc:  true
+date: 2021-08-18
 ---
 
 ## luogu P5765

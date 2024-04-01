@@ -1,6 +1,7 @@
 ---
 title: Deep Learning for CV (x)
 date: 2024-02-06 11:07:26
+img_path: /_posts/
 categories:
 - Course Notes
 - Deep Learning for CV

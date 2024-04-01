@@ -3,6 +3,7 @@ title: 自适应辛普森法
 tags: 自适应辛普森法
 categories: 计算几何
 toc: false
+date: 2021-08-16
 ---
 
 一般求解定积分，采用自适应辛普森法。

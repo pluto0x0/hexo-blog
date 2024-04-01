@@ -1,6 +1,7 @@
 ---
 title: Reinforcemant Learning (10)
 date: 2024-02-24 03:06:58
+img_path: /_posts/
 mermaid: true
 categories:
 - Course Notes

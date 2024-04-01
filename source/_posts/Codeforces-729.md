@@ -1,5 +1,6 @@
 ---
 title: Codeforces 729
+date: 2021-07-17
 ---
 
 [Codeforces Round #729 (Div. 2)](https://codeforces.com/contest/1542)

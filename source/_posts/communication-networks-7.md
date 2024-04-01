@@ -1,11 +1,11 @@
 ---
 title: Communication Networks (7)
 date: 2024-02-18 08:20:19
+img_path: /_posts/
 categories:
 - Course Notes
 - Communication Networks
-image:
-  path: /img/post/communication-networks-7-1.png
+index_img: /img/post/communication-networks-7-1.png
 ---
 
 ## Pure P2P architecture

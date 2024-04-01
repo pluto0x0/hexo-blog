@@ -1,6 +1,7 @@
 ---
 title: 后缀数组简述
 tag: SA
+date: 2021-08-09
 ---
 [模板题](https://www.luogu.com.cn/problem/P3809)
 

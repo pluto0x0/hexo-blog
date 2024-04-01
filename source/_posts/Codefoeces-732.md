@@ -1,5 +1,6 @@
 ---
 title: Codeforces 732
+date: 2021-07-13
 ---
 
 [Codeforces Round #732 (Div. 2)](https://codeforces.com/contest/1546)

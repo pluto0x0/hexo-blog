@@ -2,7 +2,7 @@
 title: 博弈论和SG函数基础
 tags: [博弈论]
 categories: 数学
-toc:  true
+date: 2021-08-17
 ---
 
 ## 公平组合游戏 

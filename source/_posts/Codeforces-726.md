@@ -1,6 +1,7 @@
 ---
 title: 结论题：Codeforces 726
 category: solution
+date: 2021-07-12
 ---
 [Codeforces Round #726 (Div. 2)](https://codeforces.com/contest/1537)
 

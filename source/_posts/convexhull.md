@@ -5,6 +5,7 @@ tags:
 - 模板
 - 凸包
 categories: 计算几何
+date: 2021-08-14
 ---
 
 <https://www.luogu.com.cn/record/55936318>

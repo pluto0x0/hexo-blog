@@ -2,7 +2,7 @@
 title: 一些凸包有关的算法
 tags: 凸包
 categories: 计算几何
-toc:  true
+date: 2021-08-24
 ---
 
 ## 判断点在凸包内

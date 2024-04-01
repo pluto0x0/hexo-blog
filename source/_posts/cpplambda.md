@@ -1,6 +1,7 @@
 ---
 title: C++lambda表达式的简单应用
 
+date: 2021-08-16
 ---
 
 <https://www.cnblogs.com/DswCnblog/p/5629165.html>

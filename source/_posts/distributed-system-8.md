@@ -1,12 +1,12 @@
 ---
 title: Distributed System (8)
 date: 2024-02-22 19:10:55
+img_path: /_posts/
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-image:
-  path: /img/post/distributed-system-8-6.png
+index_img: /img/post/distributed-system-8-6.png
 ---
 
 ## More efficient B-multicasts

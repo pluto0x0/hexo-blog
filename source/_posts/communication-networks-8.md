@@ -1,6 +1,7 @@
 ---
 title: Communication Networks (8)
 date: 2024-02-18 22:53:26
+img_path: /_posts/
 categories:
 - Course Notes
 - Communication Networks

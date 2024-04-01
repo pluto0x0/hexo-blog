@@ -1,6 +1,7 @@
 ---
 title: Reinforcement Learning (1)
 date: 2024-02-04 17:42:46
+img_path: /_posts/
 # mermaid: true
 category: Course Notes
 tags: CS443

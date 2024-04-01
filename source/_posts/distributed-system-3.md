@@ -1,12 +1,12 @@
 ---
 title: Distributed System (3)
 date: 2024-02-19 17:13:51
+img_path: /_posts/
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-image:
-  path: /img/post/distributed-system-3-2.png
+index_img: /img/post/distributed-system-3-2.png
 ---
 
 ## Omission

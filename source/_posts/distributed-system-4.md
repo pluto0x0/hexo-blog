@@ -1,12 +1,12 @@
 ---
 title: Distributed System (4)
 date: 2024-02-20 22:50:28
+img_path: /_posts/
 mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-image:
-  path: /img/post/distributed-system-4-2.png
+index_img: /img/post/distributed-system-4-2.png
 ---
 
 ## Event Ordering

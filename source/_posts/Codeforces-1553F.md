@@ -1,6 +1,7 @@
 ---
 title: "Codeforces 1553F: Pairwise Modulo"
 categories: Codeforces
+date: 2023-10-24
 ---
 
 https://codeforces.com/problemset/problem/1553/F
