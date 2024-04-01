@@ -79,7 +79,9 @@ pagination_dir: page
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 include:
+  - convexhull.md
 exclude:
+  - *.md
 ignore:
 
 # Extensions
@@ -93,3 +95,9 @@ deploy:
   type: git
   repo: git@github.com:pluto0x0/pluto0x0.github.io.git
   branch: master
+
+# Markdown engine
+# https://hexo.fluid-dev.com/docs/guide/#latex-数学公式
+markdown:
+  plugins:
+    - "@traptitech/markdown-it-katex"

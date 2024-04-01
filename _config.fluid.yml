@@ -57,7 +57,7 @@ code:
     # 实现高亮的库，对应下面的设置
     # Highlight library
     # Options: highlightjs | prismjs
-    lib: "highlightjs"
+    lib: "prismjs"
 
     highlightjs:
       # 在链接中挑选 style 填入
@@ -75,7 +75,7 @@ code:
 
       # 设为 true 高亮将本地静态生成（但只支持部分 prismjs 插件），设为 false 高亮将在浏览器通过 js 生成
       # If true, it will be generated locally (but some prismjs plugins are not supported). If false, it will be generated via JS in the browser
-      preprocess: true
+      preprocess: false
 
 # 一些好玩的功能
 # Some fun features
@@ -112,7 +112,7 @@ fun_features:
     # Options: hover | always | touch
     visible: hover
     # Options: § | # | ❡
-    icon: ""
+    icon: "#"
 
   # 加载进度条
   # Progress bar when loading
@@ -405,7 +405,7 @@ scroll_top_arrow:
 open_graph:
   enable: true
   twitter_card: summary_large_image
-  twitter_id:
+  twitter_id: flayed__
   twitter_site:
   google_plus:
   fb_admins:
@@ -420,10 +420,10 @@ footer:
   # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
+    Powered by
     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
     <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
-  '
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>'
 
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
@@ -440,13 +440,13 @@ footer:
   beian:
     enable: false
     # ICP证号
-    icp_text: 京ICP证123456号
+    icp_text:
     # 公安备案号，不填则只显示ICP
-    police_text: 京公网安备12345678号
+    police_text:
     # 公安备案的编号，用于URL跳转查询
-    police_code: 12345678
+    police_code:
     # 公安备案的图片. 为空时不显示备案图片
-    police_icon: /img/police_beian.png
+    police_icon:
 
 
 #---------------------------
@@ -645,7 +645,7 @@ post:
 
     # CreativeCommons license
     # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
-    license: 'BY'
+    license: 'BY-SA'
 
     # 显示作者
     author:
@@ -694,7 +694,7 @@ post:
   math:
     # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `math: true`
     # If you want to use math on the custom page, you need to set `math: true` in Front-matter
-    enable: false
+    enable: true
 
     # 开启后，只有在文章 Front-matter 里指定 `math: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     # If true, only set `math: true` in Front-matter will enable math, to load faster when the page does not contain math
@@ -708,23 +708,23 @@ post:
   mermaid:
     # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
     # If you want to use mermaid on the custom page, you need to set `mermaid: true` in Front-matter
-    enable: false
+    enable: true
 
     # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     # If true, only set `mermaid: true` in Front-matter will enable mermaid, to load faster when the page does not contain mermaid
-    specific: false
+    specific: true
 
     # See: http://mermaid-js.github.io/mermaid/
-    options: { theme: 'default' }
+    options: { theme: 'dark' }
 
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: utterances
 
 
 #---------------------------
@@ -741,8 +741,8 @@ post:
 # See: https://utteranc.es
 utterances:
   repo:
-  issue_term: pathname
-  label: utterances
+  issue_term: pluto0x0/pluto0x0.github.io
+  label: comment
   theme: github-light
   theme_dark: github-dark
 
