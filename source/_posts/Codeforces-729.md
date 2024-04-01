@@ -57,7 +57,7 @@ int main() {
     while (T--) {
         scanf("%lld %lld %lld", &n, &a, &b);
         if (a == 1) {
-            printf(n % b == 1 ||  b == 1 ? "Yes\n" : "No\n");
+            printf(n % b == 1 || b == 1 ? "Yes\n" : "No\n");
             continue;
         }
         bool yes = false;
