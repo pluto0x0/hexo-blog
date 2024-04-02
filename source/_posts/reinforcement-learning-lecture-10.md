@@ -69,13 +69,13 @@ Monte-Carlo is a Zeroth-order (ZO) optimization method, which is not efficient.
 > Assuming the reward / probability is determined (constant) via sampling.
 {: .prompt-info }
 
-Assume we can sample $r \sim R(s, a)$ and $s^{\prime} \sim P(s, a)$ for any $(s, a)$ 
+Assume we can sample $r \sim R(s, a)$ and $s^{\prime} \sim P(s, a)$ for any $(s, a)$
 
-Collect $n$ samples per $(s, a):\\{\left(r_i, s_i^{\prime}\right)\\}_{i=1}^n$ . Total sample size $n| S \times A|$ 
+Collect $n$ samples per $(s, a):\\{\left(r_i, s_i^{\prime}\right)\\}_{i=1}^n$ . Total sample size $n| S \times A|$
 
 Estimate an empirical MDP $\hat{M}$ from data
 
-- $\hat{R}(s, a):=\frac{1}{n} \sum_{i=1}^n r_i, \quad \hat{P}\left(s^{\prime} \mid s, a\right):=\frac{1}{n} \sum_{i=1}^n \mathbb{I}\left[s_i^{\prime}=s^{\prime}\right]$ 
+- $\hat{R}(s, a):=\frac{1}{n} \sum_{i=1}^n r_i, \quad \hat{P}\left(s^{\prime} \mid s, a\right):=\frac{1}{n} \sum_{i=1}^n \mathbb{I}\left[s_i^{\prime}=s^{\prime}\right]$
 - i.e., treat the empirical frequencies of states appearing in $\{s_i^{\prime}\}_{i=1}^n$ as the true distribution.
 
 Plan in the estimated model and return the optimal policy
@@ -86,13 +86,13 @@ extract transition tuples from trajectories.
 
 ### finding policy on estimated environment
 
-**true** environment: $M = (S, A, P, R, \gamma)$ 
+**true** environment: $M = (S, A, P, R, \gamma)$
 
-**estimated** environment: $\hat{M} = (S, A, \hat{P}, \hat{R}, \gamma)$ 
+**estimated** environment: $\hat{M} = (S, A, \hat{P}, \hat{R}, \gamma)$
 
-- notation: $\pi_{\hat{M}}, \, V_{\hat{M}}, \, \ldots$ 
+- notation: $\pi_{\hat{M}}, \, V_{\hat{M}}, \, \ldots$
 
 performance measurement:
 
-- in the **true** environment, use $\| V^\star - V^{\pi_f} \|$ where $f \approx Q^\star$ 
+- in the **true** environment, use $\| V^\star - V^{\pi_f} \|$ where $f \approx Q^\star$
 - in **estimated** environment, use $\| V_M^\star - V_M^{\pi_{\hat{M}}^\star} \|$ , i.e. measure the optimal policy of estimated environment in the real environment.
