@@ -15,7 +15,7 @@ date: 2021-11-22
 >
 >故容易得到答案为（c[i] 是价值为 i 的物品个数）
 
-$$ \prod_{i=1}^{n}c_i!\binom{\sum_{j=1}^{i-1}c_j+\lfloor c_i/2\rfloor}{\lfloor c_i/2\rfloor} $$
+$$ \prod_{i=1}^{n}c_i!\binom{\sum_{j=1}^{i-1}c_j+\lfloor c_i/2\rfloor}{\lfloor c_i/2\rfloor}$$
 
 价值最大的物品，一定两个两个地取。现在考虑出现了有一个更大价值的若干物品，那么这些价值更大的物品一定能成对地插入原来取物品产生的序列中的任意位置。
 

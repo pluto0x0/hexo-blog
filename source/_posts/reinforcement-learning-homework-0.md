@@ -70,7 +70,7 @@ Let $f: \mathcal{X} \rightarrow \mathbb{R}$ be a estimator from $X$ to $Y$, this
 
 Let $A \in \mathbb{R}^{n \times n}$ be a positive-definite real symmetric matrix, and $b \in \mathbb{R}^n$ be a vector. $\lambda$ is the largest eigenvalue of $A$, that is,
 
-$$ \lambda = \max_{z:\| z\| _2=1} \| Az\| _2. \quad (1) $$
+$$ \lambda = \max_{z:\| z\| _2=1} \| Az\| _2. \quad (1)$$
 
 Let $x^\star$ be the solution to $x^\star = Ax^\star + b$. Define $x_0 = 0$ and for $t > 0$, $x_t := Ax_{t-1} + b$. Prove that $\| x_t - x^\star\|_2 \leq \lambda^t \| x^\star\|_2$.
 

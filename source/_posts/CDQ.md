@@ -8,13 +8,13 @@ luogu随机到了一道题，看了题解才知道是CDQ。。
 ## 三维偏序
 求满足
 
- $$ i<j,a_{i}<a_{j},b_{i}<b_{j} $$ 
+$$ i<j,a_{i}<a_{j},b_{i}<b_{j}$$ 
 
 的 $ (i,j) $ 对数。
 
 用 $ solve(l,r) $ 表示求解区间 $[l,r]$ 。把区间折半，可以递归求解 $solve(l,mid)$ 和 $ solve(mid+1,r) $ 。现在关心
 
- $$ l\le i \le mid,\;mid+1\le j\le r $$ 
+$$ l\le i \le mid,\;mid+1\le j\le r$$ 
 
 的求解。
 
@@ -25,7 +25,7 @@ luogu随机到了一道题，看了题解才知道是CDQ。。
 ## dp转移
 考虑dp转移
 
- $$ dp_{i}=1+ \max_{j=1}^{i-1}dp_{j}[a_{j}<a_{i}][b_{j}<b_{i}] $$ 
+$$ dp_{i}=1+ \max_{j=1}^{i-1}dp_{j}[a_{j}<a_{i}][b_{j}<b_{i}]$$ 
  
 其实就是二维的最长上升子序列。
 
