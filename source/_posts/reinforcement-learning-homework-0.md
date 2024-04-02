@@ -9,7 +9,7 @@ categories:
 
 ## 1
 
-Among all probability distributions over $[a, b] \in \mathbb{R}$, which distribution has the highest variance? How large is
+Among all probability distributions over $[a, b] \in \mathbb{R}$ , which distribution has the highest variance? How large is
 that variance?
 
 $$
@@ -27,7 +27,7 @@ $$
 
 ## 2
 
-Let $X, Y$ be two random variables that follow some joint distributions over $\mathcal{X} \times \mathbb{R}$. Let $f: \mathcal{X} \rightarrow \mathbb{R}$ be a real-valued function. Prove that
+Let $X, Y$ be two random variables that follow some joint distributions over $\mathcal{X} \times \mathbb{R}$ . Let $f: \mathcal{X} \rightarrow \mathbb{R}$ be a real-valued function. Prove that
 
 $$
 \mathbb{E}\left[(Y-f(X))^2\right]-\mathbb{E}\left[(f(X)-\mathbb{E}[Y \mid X])^2\right]=\mathbb{E}\left[(Y-\mathbb{E}[Y \mid X])^2\right] .
@@ -45,7 +45,7 @@ $$
 \end{gathered}
 $$
 
-Given $E[Y| X]$ is a function of $X$, let $g(X) := E[Y| X] - f(X)$ then it suffies to prove
+Given $E[Y| X]$ is a function of $X$ , let $g(X) := E[Y| X] - f(X)$ then it suffies to prove
 
 $$
 \mathbb{E}[\mathbb{E}[Y|X]g(X)] = \mathbb{E}[Y g(X)] .
@@ -64,15 +64,15 @@ $$
 
 ### Notes
 
-Let $f: \mathcal{X} \rightarrow \mathbb{R}$ be a estimator from $X$ to $Y$, this equation shows that square error ($l_2$ loss) $\mathbb{E}\left[(Y-f(X))^2\right]$ is at least $\mathbb{E}\left[(Y-\mathbb{E}[Y \mid X])^2\right]$ for $\forall f$ and thus cannot be arbitrarily small.
+Let $f: \mathcal{X} \rightarrow \mathbb{R}$ be a estimator from $X$ to $Y$ , this equation shows that square error ( $l_2$ loss) $\mathbb{E}\left[(Y-f(X))^2\right]$ is at least $\mathbb{E}\left[(Y-\mathbb{E}[Y \mid X])^2\right]$ for $\forall f$ and thus cannot be arbitrarily small.
 
 ## 3
 
-Let $A \in \mathbb{R}^{n \times n}$ be a positive-definite real symmetric matrix, and $b \in \mathbb{R}^n$ be a vector. $\lambda$ is the largest eigenvalue of $A$, that is,
+Let $A \in \mathbb{R}^{n \times n}$ be a positive-definite real symmetric matrix, and $b \in \mathbb{R}^n$ be a vector. $\lambda$ is the largest eigenvalue of $A$ , that is,
 
-$$ \lambda = \max_{z:\| z\| _2=1} \| Az\| _2. \quad (1)$$
+$ $\lambda = \max_{z:\| z\| _2=1} \| Az\| _2. \quad (1)$ $
 
-Let $x^\star$ be the solution to $x^\star = Ax^\star + b$. Define $x_0 = 0$ and for $t > 0$, $x_t := Ax_{t-1} + b$. Prove that $\| x_t - x^\star\|_2 \leq \lambda^t \| x^\star\|_2$.
+Let $x^\star$ be the solution to $x^\star = Ax^\star + b$ . Define $x_0 = 0$ and for $t > 0$ , $x_t := Ax_{t-1} + b$ . Prove that $\| x_t - x^\star\|_2 \leq \lambda^t \| x^\star\|_2$ .
 
 (Hint: show that $\| x_t - x^\star\|_2 \leq \lambda \| x_{t-1} - x^\star\|_2$ ). Also, you do not need to know any additional properties about the largest eigenvalue of matrix; the proof is elementary given Eq. (1).)
 
@@ -107,9 +107,9 @@ $$
 
 ## 4
 
-Prove that $\gamma^{\frac{\log(1/\epsilon)}{1-\gamma}} \le \epsilon$ when $\gamma, \epsilon \in (0, 1)$.
+Prove that $\gamma^{\frac{\log(1/\epsilon)}{1-\gamma}} \le \epsilon$ when $\gamma, \epsilon \in (0, 1)$ .
 
-(Hint: use the fact that $(1-1/x)^x< 1/e$ when $x > 1$)
+(Hint: use the fact that $(1-1/x)^x< 1/e$ when $x > 1$ )
 
 ### Proof
 
@@ -125,7 +125,7 @@ $$
 x\log\left(1-\frac{1}{x}\right) < -1.
 $$
 
-Substitude $u := 1-1/x$, then
+Substitude $u := 1-1/x$ , then
 
 $$
 \log(u) < u-1
@@ -133,7 +133,7 @@ $$
 
 holds.
 
-For original proposition, substitude $u := \frac{1}{1-\gamma}$ and therefore $\gamma = 1 - \frac{1}{u}$,
+For original proposition, substitude $u := \frac{1}{1-\gamma}$ and therefore $\gamma = 1 - \frac{1}{u}$ ,
 then It suffies to prove
 
 $$

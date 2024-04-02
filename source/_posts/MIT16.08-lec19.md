@@ -10,13 +10,13 @@ img_path: /upload/
 
 # lec19
 
-# 2x2 $\det$
+# 2x2 $\det$ 
 
 $$
 \left|\begin{array}{ll}a & b \\c & d\end{array}\right|=\left|\begin{array}{ll}a & 0 \\c & d\end{array}\right|+\left|\begin{array}{ll}0 & b \\c & d\end{array}\right|=\left|\begin{array}{ll}a & 0 \\c & 0\end{array}\right|+\left|\begin{array}{ll}a & 0 \\0 & d\end{array}\right|+\left|\begin{array}{cc}0 & b \\c & 0\end{array}\right|+\left|\begin{array}{ll}0 & b \\0 & d\end{array}\right| = ad-bc
 $$
 
-# 3x3 $\det$
+# 3x3 $\det$ 
 
 what the survivors for 
 
@@ -44,7 +44,7 @@ $$
 \operatorname{det} A=\sum_{n! \text { terms}} \pm a_{1\alpha} a_{2 \beta} a_{3\gamma} \cdots a_{n \omega}
 $$
 
-where $(\alpha, \beta, \gamma,\ldots, \omega)=\text { perm. of }(1,2, \ldots, n)$
+where $(\alpha, \beta, \gamma,\ldots, \omega)=\text { perm. of }(1,2, \ldots, n)$ 
 
 # cofactor
 

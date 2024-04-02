@@ -12,7 +12,7 @@ date: 2022-01-04
 ```bash
 for file in ./*.flac
 do
-	ffmpeg -i "$file" -c:v copy -c:a alac "${file%.*}.m4a"
+    ffmpeg -i " $file" -c:v copy -c:a alac "$ {file%.*}.m4a"
 done
 
 ```

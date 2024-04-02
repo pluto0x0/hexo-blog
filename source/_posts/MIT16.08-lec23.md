@@ -10,7 +10,7 @@ img_path: /upload/
 
 # lec23
 
-# differential equation $\frac{\mathrm{d}u}{\mathrm{d}t}=Au$
+# differential equation $\frac{\mathrm{d}u}{\mathrm{d}t}=Au$ 
 
 e.g. Solve
 
@@ -34,7 +34,7 @@ $$
 u(0)=\begin{bmatrix}u_1 \\ u_2\end{bmatrix}=\begin{bmatrix}1\\0\end{bmatrix}
 $$
 
-Find eigenvalues and eigenvectors of $A$:
+Find eigenvalues and eigenvectors of $A$ :
 
 $$
 ⁍
@@ -50,17 +50,17 @@ $$
 u(t)=c_1e^{\lambda_1t}x_1+c_2e^{\lambda_2t}x_2
 $$
 
-=$c_1e^{\lambda_1t}x_1$  and $c_2e^{\lambda_2t}x_2$ are both solutions.
+= $c_1e^{\lambda_1t}x_1$ and $c_2e^{\lambda_2t}x_2$ are both solutions.
 
-e.g. plug $u=e^{\lambda_1t}x_1$ in $\frac{\mathrm{d}u}{\mathrm{d}t}=Au$,
+e.g. plug $u=e^{\lambda_1t}x_1$ in $\frac{\mathrm{d}u}{\mathrm{d}t}=Au$ ,
 
 $$
 \lambda_1e^{\lambda_1t}x_1=Ae^{\lambda_1t}x_1 \\ \Rightarrow \lambda_1x_1=Ax_1
 $$
 
-1. stability ($u(t) \to 0$) : $\mathrm{Re} \lambda < 0$
-2. steady state : $\lambda_1 = 0$ and other $\mathrm{Re} \lambda < 0$
-3. blow up : $\forall \mathrm{Re}\lambda<0$
+1. stability ( $u(t) \to 0$ ) : $\mathrm{Re} \lambda < 0$ 
+2. steady state : $\lambda_1 = 0$ and other $\mathrm{Re} \lambda < 0$ 
+3. blow up : $\forall \mathrm{Re}\lambda<0$ 
 
  for $2\times 2$ matrices, how to get $\mathrm{Re}\lambda_1<0, \mathrm{Re}\lambda_2<0$ ?
 
@@ -68,7 +68,7 @@ $$
 \lambda_1+\lambda_2=\mathrm{tr}(A)<0\\ \lambda_1\lambda_2=\det(A)>0
 $$
 
-# Uncouple $\frac{\mathrm{d}u}{\mathrm{d}t}=Au$
+# Uncouple $\frac{\mathrm{d}u}{\mathrm{d}t}=Au$ 
 
 Set
 
@@ -105,9 +105,9 @@ $$
 > upd: what $e^{\Lambda t}$ means? [e^{\Lambda t}=\begin{bmatrix} e^{\lambda_1 t} & 0 & 0\\ 0 & \ddots  & 0\\ 0 & 0 & e^{\lambda_n t}\end{bmatrix}](lec23%20431e095ef43e40a2a215220f91024327.md)
 > 
 
-# Meaning of exponential of a matrix ($Se^{\Lambda t}S^{-1} = e^{At}$)
+# Meaning of exponential of a matrix ( $Se^{\Lambda t}S^{-1} = e^{At}$ )
 
-Taylor Series $e^{x}=\sum \frac{x^{n}}{n !}$:
+Taylor Series $e^{x}=\sum \frac{x^{n}}{n !}$ :
 
  
 
@@ -115,7 +115,7 @@ $$
 e^{A t}=I+A t+\frac{(A t)^{2}}{2}+\frac{(A t)^{3}}{6}+\cdots+\frac{(A t)^{n}}{n !}+\cdots
 $$
 
-also, $\frac{1}{1-x}=\sum_{0}^{\infty} x^{n}$: (for $|\lambda(At)|<1$)
+also, $\frac{1}{1-x}=\sum_{0}^{\infty} x^{n}$ : (for $|\lambda(At)|<1$ )
 
 $$
 (I-A t)^{-1}=I+A t+(A t)^{2}+(A t)^{3} t+\cdots 
@@ -129,7 +129,7 @@ e^{At} & = I+A t+\frac{(A t)^{2}}{2}+\frac{(A t)^{3}}{6}+\cdots+\frac{(A t)^{n}}
 \end{aligned}
 $$
 
-Because $\Lambda$  is **diagonal**,  (use Taylor series)
+Because $\Lambda$ is **diagonal**,  (use Taylor series)
 
 $$
 e^{\Lambda t}=\begin{bmatrix} e^{\lambda_1 t} & 0 & 0\\ 0 & \ddots  & 0\\ 0 & 0 & e^{\lambda_n t}\end{bmatrix}
@@ -149,4 +149,4 @@ $$
  u= \begin{bmatrix}y' \\ y\end{bmatrix}\\ u'= \begin{bmatrix}y'' \\ y'\end{bmatrix}=\begin{bmatrix}-b & -k \\1 & 0\end{bmatrix}\begin{bmatrix}y' \\ y\end{bmatrix}
 $$
 
-that is in the form of $\frac{\mathrm{d}u}{\mathrm{d}t}=Au$
+that is in the form of $\frac{\mathrm{d}u}{\mathrm{d}t}=Au$ 

@@ -39,7 +39,7 @@ $$
 V^\star (c) = \min\{4 + 0.7 × V^\star (d) + 0.3 × V^\star (e) ,\, 2 + V^\star (e)\}
 $$
 
-optimal policy : $\pi^\star $
+optimal policy : $\pi^\star$ 
 
 ## Model-based RL
 
@@ -89,8 +89,8 @@ There are states that the RL model have never seen, therefore need **generalizat
 For round t = 1, 2, ...,
 
 - For time step h=1, 2, ..., H, the learner
-  - Observes $x_h^{(t)}$
-  - Chooses $a_h^{(t)}$
-  - Receives $r_h^{(t)} \sim R(x_h^{(t)}, a_h^{(t)})$
-  - Next $x_{h+1}^{(t)}$ is generated as a function of $x_h^{(t)}$ and $a_h^{(t)}$
+  - Observes $x_h^{(t)}$ 
+  - Chooses $a_h^{(t)}$ 
+  - Receives $r_h^{(t)} \sim R(x_h^{(t)}, a_h^{(t)})$ 
+  - Next $x_{h+1}^{(t)}$ is generated as a function of $x_h^{(t)}$ and $a_h^{(t)}$ 
     (or sometimes, all previous x's and a's within round t)

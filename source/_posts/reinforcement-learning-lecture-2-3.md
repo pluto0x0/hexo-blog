@@ -13,19 +13,19 @@ categories:
 
 An MDP $M = (S, A, P, R, \gamma)$ consists of:
 
-- **State space** $S$.
-- **Action space** $A$.
-- **Transition function** $P$: $S \times A \rightarrow \Delta(S)$. $\Delta(S)$ is the **probability** simplex over $S$, i.e., all non-negative vectors of length $| S|$ that sums up to $1$.
-- **Reward function** $R$: $S \times A \rightarrow \mathbb{R}$. (deterministic reward function)
-- **Discount factor** $\gamma \in [0,1]$
+- **State space** $S$ .
+- **Action space** $A$ .
+- **Transition function** $P$ : $S \times A \rightarrow \Delta(S)$ . $\Delta(S)$ is the **probability** simplex over $S$ , i.e., all non-negative vectors of length $| S|$ that sums up to $1$ .
+- **Reward function** $R$ : $S \times A \rightarrow \mathbb{R}$ . (deterministic reward function)
+- **Discount factor** $\gamma \in [0,1]$ 
 
 The agent
 
-1. starts in some state $s_1$
-2. takes action $a_1$
-3. receives reward $r_1 = R(s_1, a_1)$
-4. transitions to $s_2 \sim P(s_1, a_1)$
-5. takes action $a_2$
+1. starts in some state $s_1$ 
+2. takes action $a_1$ 
+3. receives reward $r_1 = R(s_1, a_1)$ 
+4. transitions to $s_2 \sim P(s_1, a_1)$ 
+5. takes action $a_2$ 
 6. ... and so on so forth — the process continues forever.
 
 Objective: (discounted) expected total reward
@@ -48,18 +48,18 @@ Objective: (discounted) expected total reward
 - Reward:
   - $0$ in the goal state
   - $-1$ everywhere else
-- Discount factor $\gamma$: 0.99
+- Discount factor $\gamma$ : 0.99
 
 ## discounting
 
-$\gamma = 1$ allows some strategies to obtain $-\infty$ expected return.
+$\gamma = 1 $allows some strategies to obtain$ -\infty$ expected return.
 
-For $\gamma < 1$, the total reward is finite.
+For $\gamma < 1$ , the total reward is finite.
 
 ### finite horizon vs. infinite-horizon discounted MDP
 
-- For finite-horizon (finite acitons), $\gamma$ can be $1$.
-- For infinite-horizon (infinite acitons), $\gamma < 1$.
+- For finite-horizon (finite acitons), $\gamma$ can be $1$ .
+- For infinite-horizon (infinite acitons), $\gamma < 1$ .
 
 ## Value and policy
 
@@ -69,7 +69,7 @@ $$
 \mathbb{E}\left[\sum_{t=1}^{\infty} \gamma^{t-1} r_t\right]
 $$
 
-assume $r_t \in [0, R_{\max}]$,
+assume $r_t \in [0, R_{\max}]$ ,
 
 $$
 \mathbb{E}\left[\sum_{t=1}^{\infty} \gamma^{t-1} r_t\right]
@@ -117,9 +117,9 @@ where $\langle\cdot, \cdot\rangle$ is Dot Product.
 
 ### Matrix form
 
-- $V^\pi$ as the $| S|  \times 1$ vector $[V^\pi(s)]_{s \in S}$
-- $R^\pi$ as the vector $[R(s, \pi(s))]_{s \in S}$
-- $P^\pi$ as the matrix $[P(s' |  s, \pi(s))]_{s \in S, s' \in S}$
+- $V^\pi$ as the $| S|  \times 1$ vector $[V^\pi(s)]_{s \in S}$ 
+- $R^\pi$ as the vector $[R(s, \pi(s))]_{s \in S}$ 
+- $P^\pi$ as the matrix $[P(s' |  s, \pi(s))]_{s \in S, s' \in S}$ 
 
 $$
 \begin{gathered}
@@ -177,7 +177,7 @@ $$
 
 For infinite-horizon discounted MDPs, there always exists a stationary and deterministic policy that is optimal for all starting states simultaneously.
 
-Optimal policy $\pi^\star $ and
+Optimal policy $\pi^\star$ and
 
 $$
 V^\star  := V^{\pi^\star }
@@ -201,7 +201,7 @@ V^{\pi}(s)=Q^{\pi}(s,\pi(s))  \;\; \text{or} \;\; Q^{\pi}(s,\pi)\\
 \end{gathered}
 $$
 
-### Bellman equation for $Q$
+### Bellman equation for $Q$ 
 
 $$
 \begin{gathered}
@@ -213,7 +213,7 @@ Q^\star (s,a)=R(s,a)+\gamma\mathbb{E}_{s^{\prime}\sim P(\cdot|s,a)}\left[\max_{a
 \end{gathered}
 $$
 
-### Define optimal $V$ and $\pi$ by $Q$
+### Define optimal $V$ and $\pi$ by $Q$ 
 
 $$
 V^{*}(s)=\max_{a\in A}Q^{*}(s,a)=Q^{*}(s,\pi^{*}(s))
@@ -225,7 +225,7 @@ $$
 
 ## Fixed-horizon MDPs
 
-Specified by $(S, A, R, P, H)$, All trajectories end in precisely $H$ steps
+Specified by $(S, A, R, P, H)$ , All trajectories end in precisely $H$ steps
 
 $$
 \begin{gathered}

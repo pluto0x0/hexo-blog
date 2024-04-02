@@ -34,13 +34,13 @@ int main() {
 
 问题就是
 
-$$n = a ^ x + y * b$$
+$ $n = a ^ x + y * b$ $
 
 是否有解。
 
 但一开始还以为是
 
-$$a^x \equiv n \mod b$$
+$ $a^x \equiv n \mod b$ $
 
 是否有解。。结果发现 $n > a ^ x$ 。。。
 
@@ -132,7 +132,7 @@ dp题。。看了半天题解。。。
 
 最后答案
 
-$$ans += x \times \sum_{j \ge 0}f(n,j)$$
+$ $ans += x \times \sum_{j \ge 0}f(n,j)$ $
 
 ```cpp
 #include <bits/stdc++.h>

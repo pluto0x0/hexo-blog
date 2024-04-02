@@ -108,12 +108,12 @@ _Berkeley Algorithm for internal synchronization_
 
 ![](/img/post/distributed-system-3-2.png){: w="700" }
 
-- $T_{B r}$ and $T_{B s}$ are local timestamps at $B$.
-- $T_{A r}$ and $T_{A s}$ are local timestamps at $A$.
-- $t$ and $t’$: actual transmission times for $m$ and $m’$(unknown)
-- $o$: **true** offset of clock at B relative to clock at A
+- $T_{B r}$ and $T_{B s}$ are local timestamps at $B$ .
+- $T_{A r}$ and $T_{A s}$ are local timestamps at $A$ .
+- $t$ and $t’$ : actual transmission times for $m$ and $m’$ (unknown)
+- $o$ : **true** offset of clock at B relative to clock at A
 - $o_i$ : **estimate** of actual offset between the two clocks
-- $d_i$ : **estimate** of accuracy of $o_i$ / total transmission times for $m$ and $m’$. $d_i=t+t’$
+- $d_i$ : **estimate** of accuracy of $o_i$ / total transmission times for $m$ and $m’$ . $d_i=t+t’$ 
 
 ![](/img/post/distributed-system-3-1.png){: w="500" }
 

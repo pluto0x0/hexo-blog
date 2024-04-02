@@ -8,15 +8,15 @@ categories:
 - Reinforcement Learning
 ---
 
-## TD($\lambda$): Unifying TD(0) and MC
+## TD( $\lambda$ ): Unifying TD(0) and MC
 
-- 1-step bootstrap (TD(0)): $r_1 + \gamma V(s_{i+1})$
-- 2-step bootstrap: $r_1 + \gamma r_{i+1} + \gamma^2 V(s_{i+2})$
-- 3-step bootstrap: $r_1 + \gamma r_{i+1} + \gamma^2 r_{i+2} + \gamma^3 V(s_{i+3})$
+- 1-step bootstrap (TD(0)): $r_1 + \gamma V(s_{i+1})$ 
+- 2-step bootstrap: $r_1 + \gamma r_{i+1} + \gamma^2 V(s_{i+2})$ 
+- 3-step bootstrap: $r_1 + \gamma r_{i+1} + \gamma^2 r_{i+2} + \gamma^3 V(s_{i+3})$ 
 - ...
-- $\infty$-step bootstrap: $r_1 + \gamma r_{i+1} + \gamma^2 r_{i+2} + \gamma^3 r_{i+3} + \cdots$ is Monte-Carlo.
+- $\infty$ -step bootstrap: $r_1 + \gamma r_{i+1} + \gamma^2 r_{i+2} + \gamma^3 r_{i+3} + \cdots$ is Monte-Carlo.
 
-### Proof of TD($\lambda$)'s correctness
+### Proof of TD( $\lambda$ )'s correctness
 
 E.g. in 2-step bootstrap,
 
@@ -43,12 +43,12 @@ $$
 \end{aligned}
 $$
 
-### TD($\lambda$)
+### TD( $\lambda$ )
 
 For n-step bootstrap, give a $(1-\lambda)\lambda^n$ weight.
 
-- $\lambda = 0$: Only n=1 gives the full weight. TD(0).
-- $\lambda \to 1$: (almost) Monte-Carlo.
+- $\lambda = 0$ : Only n=1 gives the full weight. TD(0).
+- $\lambda \to 1$ : (almost) Monte-Carlo.
 
 #### forward view and backward view
 

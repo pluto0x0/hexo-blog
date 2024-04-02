@@ -148,7 +148,7 @@ Option "TappingDragLock" "true"
 
 `NaturalScrolling` 调整滚动方向。
 
-[设置指针灵敏度$\rightarrow$](#指针灵敏度)
+[设置指针灵敏度 $\rightarrow$ ](#指针灵敏度)
 
 [参考](https://blog.csdn.net/weixin_45104776/article/details/107349627)
 
@@ -263,23 +263,23 @@ $ xinput list
 ```
 
 ```plaintext
-⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
-⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
-⎜   ↳ MOSART Semi. 2.4G RF Keyboard & Mouse Consumer Control	id=10	[slave  pointer  (2)]
-⎜   ↳ MOSART Semi. 2.4G RF Keyboard & Mouse   	id=12	[slave  pointer  (2)]
-⎜   ↳ Synaptics TM3289-021                    	id=14	[slave  pointer  (2)]
-⎜   ↳ TPPS/2 Elan TrackPoint                  	id=15	[slave  pointer  (2)]
-⎣ Virtual core keyboard                   	id=3	[master keyboard (2)]
-    ↳ Virtual core XTEST keyboard             	id=5	[slave  keyboard (3)]
-    ↳ Power Button                            	id=6	[slave  keyboard (3)]
-    ↳ Video Bus                               	id=7	[slave  keyboard (3)]
-    ↳ Sleep Button                            	id=8	[slave  keyboard (3)]
-    ↳ MOSART Semi. 2.4G RF Keyboard & Mouse   	id=9	[slave  keyboard (3)]
-    ↳ MOSART Semi. 2.4G RF Keyboard & Mouse System Control	id=11	[slave  keyboard (3)]
-    ↳ Integrated Camera: Integrated C         	id=13	[slave  keyboard (3)]
-    ↳ AT Translated Set 2 keyboard            	id=16	[slave  keyboard (3)]
-    ↳ ThinkPad Extra Buttons                  	id=17	[slave  keyboard (3)]
-    ↳ MOSART Semi. 2.4G RF Keyboard & Mouse Consumer Control	id=18	[slave  keyboard (3)]
+⎡ Virtual core pointer                        id=2	[master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer                  id=4	[slave  pointer  (2)]
+⎜   ↳ MOSART Semi. 2.4G RF Keyboard & Mouse Consumer Control    id=10	[slave  pointer  (2)]
+⎜   ↳ MOSART Semi. 2.4G RF Keyboard & Mouse       id=12	[slave  pointer  (2)]
+⎜   ↳ Synaptics TM3289-021                        id=14	[slave  pointer  (2)]
+⎜   ↳ TPPS/2 Elan TrackPoint                      id=15	[slave  pointer  (2)]
+⎣ Virtual core keyboard                       id=3	[master keyboard (2)]
+    ↳ Virtual core XTEST keyboard                 id=5	[slave  keyboard (3)]
+    ↳ Power Button                                id=6	[slave  keyboard (3)]
+    ↳ Video Bus                                   id=7	[slave  keyboard (3)]
+    ↳ Sleep Button                                id=8	[slave  keyboard (3)]
+    ↳ MOSART Semi. 2.4G RF Keyboard & Mouse       id=9	[slave  keyboard (3)]
+    ↳ MOSART Semi. 2.4G RF Keyboard & Mouse System Control    id=11	[slave  keyboard (3)]
+    ↳ Integrated Camera: Integrated C             id=13	[slave  keyboard (3)]
+    ↳ AT Translated Set 2 keyboard                id=16	[slave  keyboard (3)]
+    ↳ ThinkPad Extra Buttons                      id=17	[slave  keyboard (3)]
+    ↳ MOSART Semi. 2.4G RF Keyboard & Mouse Consumer Control    id=18	[slave  keyboard (3)]
 ```
 
 找到设备（这里是`id=12`）
@@ -292,36 +292,36 @@ $ xinput list-props 12
 
 ```plaintext
 Device 'MOSART Semi. 2.4G RF Keyboard & Mouse':
-	Device Enabled (189):	1
-	Coordinate Transformation Matrix (191):	1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000
-	libinput Natural Scrolling Enabled (318):	0
-	libinput Natural Scrolling Enabled Default (319):	0
-	libinput Scroll Methods Available (323):	0, 0, 1
-	libinput Scroll Method Enabled (324):	0, 0, 0
-	libinput Scroll Method Enabled Default (325):	0, 0, 0
-	libinput Button Scrolling Button (326):	2
-	libinput Button Scrolling Button Default (327):	2
-	libinput Button Scrolling Button Lock Enabled (328):	0
-	libinput Button Scrolling Button Lock Enabled Default (329):	0
-	libinput Middle Emulation Enabled (330):	0
-	libinput Middle Emulation Enabled Default (331):	0
-	libinput Accel Speed (332):	0.000000
-	libinput Accel Speed Default (333):	0.000000
-	libinput Accel Profiles Available (334):	1, 1
-	libinput Accel Profile Enabled (335):	1, 0
-	libinput Accel Profile Enabled Default (336):	1, 0
-	libinput Left Handed Enabled (337):	0
-	libinput Left Handed Enabled Default (338):	0
-	libinput Send Events Modes Available (303):	1, 0
-	libinput Send Events Mode Enabled (304):	0, 0
-	libinput Send Events Mode Enabled Default (305):	0, 0
-	Device Node (306):	"/dev/input/event7"
-	Device Product ID (307):	14648, 4146
-	libinput Drag Lock Buttons (320):	<no items>
-	libinput Horizontal Scroll Enabled (321):	1
-	libinput Scrolling Pixel Distance (339):	15
-	libinput Scrolling Pixel Distance Default (340):	15
-	libinput High Resolution Wheel Scroll Enabled (322):	1
+    Device Enabled (189):    1
+    Coordinate Transformation Matrix (191):    1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000
+    libinput Natural Scrolling Enabled (318):    0
+    libinput Natural Scrolling Enabled Default (319):    0
+    libinput Scroll Methods Available (323):    0, 0, 1
+    libinput Scroll Method Enabled (324):    0, 0, 0
+    libinput Scroll Method Enabled Default (325):    0, 0, 0
+    libinput Button Scrolling Button (326):    2
+    libinput Button Scrolling Button Default (327):    2
+    libinput Button Scrolling Button Lock Enabled (328):    0
+    libinput Button Scrolling Button Lock Enabled Default (329):    0
+    libinput Middle Emulation Enabled (330):    0
+    libinput Middle Emulation Enabled Default (331):    0
+    libinput Accel Speed (332):    0.000000
+    libinput Accel Speed Default (333):    0.000000
+    libinput Accel Profiles Available (334):    1, 1
+    libinput Accel Profile Enabled (335):    1, 0
+    libinput Accel Profile Enabled Default (336):    1, 0
+    libinput Left Handed Enabled (337):    0
+    libinput Left Handed Enabled Default (338):    0
+    libinput Send Events Modes Available (303):    1, 0
+    libinput Send Events Mode Enabled (304):    0, 0
+    libinput Send Events Mode Enabled Default (305):    0, 0
+    Device Node (306):	"/dev/input/event7"
+    Device Product ID (307):    14648, 4146
+    libinput Drag Lock Buttons (320):	<no items>
+    libinput Horizontal Scroll Enabled (321):    1
+    libinput Scrolling Pixel Distance (339):    15
+    libinput Scrolling Pixel Distance Default (340):    15
+    libinput High Resolution Wheel Scroll Enabled (322):    1
 ```
 
 设置灵敏度（加速度）
@@ -330,7 +330,7 @@ Device 'MOSART Semi. 2.4G RF Keyboard & Mouse':
 $ xinput set-prop 12 "libinput Accel Speed" -0.7 
 ```
 
-这里的加速度值范围在 $[-1,1]$
+这里的加速度值范围在 $[-1,1]$ 
 
 ## 设置默认file manager
 

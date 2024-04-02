@@ -14,8 +14,8 @@ tabular representation vs. function approximation
 : function approximation can handle infinite state space (can't enumerate through all states).
 
 linear function approximation
-: design features $\phi(s) \in \mathbb{R}^d$ ("featurizing states"), and approximate $\mathrm{V}^\pi(\mathrm{s}) \approx \theta^{\top} \phi(\mathrm{s}) + b$, where $\theta$ should be fixed among features (in the following parts, $b$ is **ignored** because it can be reached by appending a $1$ to the feature vector).
-> tabular value function can be interpreted as feature vector $\in \mathbb{R}^S$:
+: design features $\phi(s) \in \mathbb{R}^d$ ("featurizing states"), and approximate $\mathrm{V}^\pi(\mathrm{s}) \approx \theta^{\top} \phi(\mathrm{s}) + b$ , where $\theta$ should be fixed among features (in the following parts, $b$ is **ignored** because it can be reached by appending a $1$ to the feature vector).
+> tabular value function can be interpreted as feature vector $\in \mathbb{R}^S$ :
 > $[0,\cdots, 0, 1, 0, \cdots, 0]$ where the position of the $1$ indicates the state.
 {: .prompt-info }
 
@@ -53,7 +53,7 @@ $$
 
 - typically only a small subset of all possible functions
 - Using "all possible functions" = tabular!
-- Equivalently, tabular MC value prediction can be recovered by choosing $\phi$ as the identity features $\phi(\mathrm{s})=\left\\{\mathbb{I} \left[\mathrm{~s}=\mathrm{s}^{\prime}\right]\right\\}_{\mathrm{s}^{\prime} \in \mathrm{S}}$
+- Equivalently, tabular MC value prediction can be recovered by choosing $\phi$ as the identity features $\phi(\mathrm{s})=\left\\{\mathbb{I} \left[\mathrm{~s}=\mathrm{s}^{\prime}\right]\right\\}_{\mathrm{s}^{\prime} \in \mathrm{S}}$ 
 
 Find the function:
 
@@ -75,7 +75,7 @@ $$
 \theta \leftarrow \theta+\alpha\left(G_t-\phi\left(s_t\right)^{\top} \theta\right) \phi\left(s_t\right) .
 $$
 
-Here $\theta$ is the tabular value function and $\phi$ is $[0,\cdots, 0, 1, 0, \cdots, 0]$, as mentioned [here](#value-prediction-with-function-approximation).
+Here $\theta$ is the tabular value function and $\phi$ is $[0,\cdots, 0, 1, 0, \cdots, 0]$ , as mentioned [here](#value-prediction-with-function-approximation).
 
 ### TD(0) with Linear Approximation
 
@@ -85,7 +85,7 @@ $$
 V\left(s_t\right) \leftarrow V\left(s_t\right)+\alpha\left(r_t+\gamma V\left(s_{t+1}\right)-V\left(s_t\right)\right) ,
 $$
 
-which, with all steps on $t$, gets
+which, with all steps on $t$ , gets
 
 $$
 V_{k+1} \leftarrow \mathcal{T}^\pi V_k .

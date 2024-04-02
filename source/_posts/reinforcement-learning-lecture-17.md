@@ -18,9 +18,9 @@ What if we minimize the square error between $V_\theta(s)$ and its target, i.e. 
 
 No correct. It can be [decomposed](./reinforcement-learning-homework-0/#proof) as the sum of 2 parts:
 
-- $\mathbb{E}_s\left[\left(V_\theta(s)-\left(\mathcal{T}^\pi V_\theta\right)(s)\right)^2\right]$
+- $\mathbb{E}_s\left[\left(V_\theta(s)-\left(\mathcal{T}^\pi V_\theta\right)(s)\right)^2\right]$ 
   - good. It's L-2 norm Bellman Error.
-- $\gamma^2 \mathbb{E}_s\left[\operatorname{Var}_{s^{\prime} \mid s, \pi(s)} \left[ V_\theta\left(s^{\prime}\right)\right]\right]$
+- $\gamma^2 \mathbb{E}_s\left[\operatorname{Var}_{s^{\prime} \mid s, \pi(s)} \left[ V_\theta\left(s^{\prime}\right)\right]\right]$ 
   - Not good. It penalize policy with large variance.
   - OK for deterministic environment because the variance is always $0$ in this case.
 
@@ -34,7 +34,7 @@ $$
 \mathbb{E}\left[\left(V_\theta(s)-r-\gamma V_\theta\left(s_A^{\prime}\right)\right)\left(V_\theta(s)-r-\gamma V_\theta\left(s_B^{\prime}\right)\right]\right.
 $$
 
-<!-- i.e. uses 2 distinct variables $s_B'$, $s_C'$. -->
+<!-- i.e. uses 2 distinct variables $s_B'$ , $s_C'$ . -->
 
 "Double sampling" and Baird's residual algorithm (Bellman residual minimization).
 
@@ -101,7 +101,7 @@ Value deviates from 0.501 as iteration goes.
 
 Say the function space is a **plane**, than the results of each iteration (bellman operator) is not on the plane, instead, their **projections** are picked.
 
-We can only sample $x \sim q$ but want to estimate $\mathbb{E}_{x\sim p} f(x)$
+We can only sample $x \sim q$ but want to estimate $\mathbb{E}_{x\sim p} f(x)$ 
 
 Is (or importance weighted, or inverse propensity yscore Ps
 estimator): 
@@ -118,15 +118,15 @@ $$
 
 <!-- ### Application in contextual bandit (CB)
 
-- CB: episodic MDP with $H=1$. Actions have no long-term effects. Just optimize the immediate reward.
+- CB: episodic MDP with $H=1$ . Actions have no long-term effects. Just optimize the immediate reward.
   - $x \sim d_0$ : context distribution (corresponds to initial state distribution of the MDP)
-  - agent takes an action $a$ based on $x$
-  - agent observes reward $r \sim R(x, a)$
+  - agent takes an action $a$ based on $x$ 
+  - agent observes reward $r \sim R(x, a)$ 
 
-- The data point is a tuple $(x, a, r)$
+- The data point is a tuple $(x, a, r)$ 
 - The function of interest is $(x, a, r) \mapsto r \quad \pi$ : target policy
-- The distribution of interest is $x \sim d_0, a \sim \frac{\pi}{\Delta} r \sim R(x, a)$
-- Let the joint density b $p(x, a, r) \nabla_{\pi_b \text { : behavior/logging policy }}$
-- The data distribution is $x \sim d_0, a \sim \pi_k, r \sim R(x, a)$
+- The distribution of interest is $x \sim d_0, a \sim \frac{\pi}{\Delta} r \sim R(x, a)$ 
+- Let the joint density b $p(x, a, r) \nabla_{\pi_b \text { : behavior/logging policy }}$ 
+- The data distribution is $x \sim d_0, a \sim \pi_k, r \sim R(x, a)$ 
 - Let the joint density be $q(x, a, r)$ f
 - IS estimator: $\frac{p(x, a, r)}{q(x, a, r)} \cdot r$ -->

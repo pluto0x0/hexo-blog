@@ -24,20 +24,20 @@ means: **every vector in S is orthogonal to every vector in T.**
 
 **row space is orthogonal to null space.**
 
-null space and row space are orthogonal **complement** in $\mathbb{R}^n$
+null space and row space are orthogonal **complement** in $\mathbb{R}^n$ 
 
 that means: null space contains **all** vectors $\bot$ row space.
 
  
 
-# solve $A^\top A \hat{x}=A^\top B$
+# solve $A^\top A \hat{x}=A^\top B$ 
 
-from $Ax=B$ to $A^\top A \hat{x} = A^\top B$, to find “best” solution $\hat{x}$.
+from $Ax=B$ to $A^\top A \hat{x} = A^\top B$ , to find “best” solution $\hat{x}$ .
 
-1. $N(A^\top A)=N(A)$
-2. $rank(A^\top A)= rank(A)$
-3. $A^\top A$  is invertible iff A has independent columns. (upd@0429: equivalent to 1. and 2. )
+1. $N(A^\top A)=N(A)$ 
+2. $rank(A^\top A)= rank(A)$ 
+3. $A^\top A$ is invertible iff A has independent columns. (upd@0429: equivalent to 1. and 2. )
 
-## proof of $N(A^\top A)=N(A)$
+## proof of $N(A^\top A)=N(A)$ 
 
-[Prove $\operatorname{rank}A^TA=\operatorname{rank}A$ for any $A\in M_{m \times n}$](https://math.stackexchange.com/questions/349738/prove-operatornamerankata-operatornameranka-for-any-a-in-m-m-times-n)
+[Prove $\operatorname{rank}A^TA=\operatorname{rank}A$ for any $A\in M_{m \times n}$ ](https://math.stackexchange.com/questions/349738/prove-operatornamerankata-operatornameranka-for-any-a-in-m-m-times-n)

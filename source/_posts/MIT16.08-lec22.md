@@ -12,7 +12,7 @@ img_path: /upload/
 
 We have $n$ independent eigenvectors of $A$, and put them in columns of matrix $S$.
 
-# $AS$
+# $AS$ 
 
 $$
 AS=\begin{bmatrix}
@@ -65,11 +65,11 @@ $$
 A^k = S\Lambda^kS^{-1}
 $$
 
-$A$ has **independent eigenvectors** if all $\lambda$s are **different**.
+$A $has **independent eigenvectors** if all$ \lambda$s are **different**.
 
 If have **repeated eigenvalues**, may or may not have n **independent eigenvectors**.
 
-# $u$
+# $u$ 
 
 start with given vector $u_0$
 

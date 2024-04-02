@@ -10,9 +10,9 @@ img_path: /upload/
 
 # lec5
 
-# $A=LU$
+# $A=LU$ 
 
-$\forall$  invertible $A$, $\exists PA=LU$
+$\forall $invertible$ A $,$ \exists PA=LU$
 
 # transpose
 
@@ -28,7 +28,7 @@ $$
 
 $R^{\top}R$ is always symmetric.
 
-proof. $\left(R^{\top} R\right)^{\top}=R^{\top} R$
+proof. $\left(R^{\top} R\right)^{\top}=R^{\top} R$ 
 
 # Vector Space
 
@@ -40,12 +40,12 @@ Vector space is **closed** to **addition** and **multiplication**.
 
 # Subspace
 
-Subspace of $\mathbb{R}^2$:
+Subspace of $\mathbb{R}^2$ :
 
-- $\mathbb{R}^2$
-- any line through $\begin{bmatrix} 0\\0\end{bmatrix}$
+- $\mathbb{R}^2$ 
+- any line through $\begin{bmatrix} 0\\0\end{bmatrix}$ 
 - only $0$ vector
 
 ## Subspace of matrices
 
-All the combinations of the column vectors of $A$ is called column space $C(A)$.
+All the combinations of the column vectors of $A$ is called column space $C(A)$ .

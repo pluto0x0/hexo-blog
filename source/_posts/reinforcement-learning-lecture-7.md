@@ -31,17 +31,17 @@ $$
 \| V^\star  -V^{\pi_f} \| \le \frac{2 \| f - Q^\star  ||_\infty}{1-\gamma}
 $$
 
-define operator $\mathcal{T}$:
+define operator $\mathcal{T}$ :
 
 $$
 (\mathcal{T}f)(s)=\max_{a \in A}\left(R(s, a)+\gamma E_{s^{\prime} \sim P(\cdot \mid s, A)}\left[f\left(s^{\prime}\right)\right]\right)
 $$
 
 > Note:
-> the $\mathcal{T}$ in $\mathcal{T}Q^\star $ and $\mathcal{T}V^\star $ are **not the same**.
+> the $\mathcal{T}$ in $\mathcal{T}Q^\star$ and $\mathcal{T}V^\star$ are **not the same**.
 {: .prompt-tip }
 
-## $V^\star $ Iteration
+## $V^\star$ Iteration
 
 $$
 \begin{gathered}
@@ -56,7 +56,7 @@ $$
 f_k(s)=\max _{\text {all possible } \pi} \mathbb{E}\left[\sum_{t=1}^k \gamma^{t-1} r_t \mid s_1=s, \pi\right]
 $$
 
-> This is derived my the definaion of operator $\mathcal{T}$.
+> This is derived my the definaion of operator $\mathcal{T}$ .
 {: .prompt-tip }
 
 Claim:
@@ -65,7 +65,7 @@ $$
 \| f_k  -V^\star  \| \lesssim \gamma^k
 $$
 
-step 1: $f_k \le V^\star $
+step 1: $f_k \le V^\star$ 
 
 step 2: 
 

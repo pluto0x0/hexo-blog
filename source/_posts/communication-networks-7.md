@@ -76,8 +76,8 @@ Diana Louise Jones|7800356|761-55-3791
 
 rule: assign key-value pair to the peer that has the closest ID (**the immediate successor**).
 
-> e.g., ID space $\{0,1,2,3,…,63\}$
-> suppose 8 peers: $1, 12, 13, 25, 32, 40, 48, 60$
+> e.g., ID space $\{0,1,2,3,…,63\}$ 
+> suppose 8 peers: $1, 12, 13, 25, 32, 40, 48, 60$ 
 >
 > - If key = 51, then assigned to peer 60
 > - If key = 60, then assigned to peer 60
@@ -91,12 +91,12 @@ each peer only aware of immediate successor and predecessor.
 ![](/img/post/communication-networks-7-2.png){: w="400" }
 
 ![](/img/post/communication-networks-7-3.png){: w="500" }
-_$O(N)$_
+_ $O(N)$ _
 
 ### Circular DHT with shortcuts (Chord)
 
 ![](/img/post/communication-networks-7-5.png){: w="500" }
-_$O(\log N)$_
+_ $O(\log N)$ _
 
 ### Peer churn
 

@@ -79,7 +79,7 @@ $$
 
 ## Pipelining
 
-e.g. $3\times U_{\text {sender }}$
+e.g. $3\times U_{\text {sender }}$ 
 
 ![](/img/post/communication-networks-9-6.png){: w="300" }
 

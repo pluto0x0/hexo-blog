@@ -100,7 +100,7 @@ Wide-area wireless accesss
 Host sending function:
 
 - breaks appilication layer messages into smaller chunks (packets), of length $L$ bits
-- transmits packet into access network at transmission rate $R$
+- transmits packet into access network at transmission rate $R$ 
 - **link transmission rate / link capacity / link bandwidth**:
 
 $$

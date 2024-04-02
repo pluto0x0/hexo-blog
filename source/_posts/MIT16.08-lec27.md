@@ -12,6 +12,6 @@ img_path: /upload/
 
 # complex vector
 
-whenever we transpose, we also take conjugates: $\bar{z}^\top z$, because $\bar{z_1}z_1=|z_1|^2$.
+whenever we transpose, we also take conjugates: $\bar{z}^\top z$ , because $\bar{z_1}z_1=|z_1|^2$ .
 
-$\bar{z}^\top z$ denote as $z^Hz$
+$\bar{z}^\top z $denote as$ z^Hz$

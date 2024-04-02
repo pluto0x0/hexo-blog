@@ -16,12 +16,12 @@ $$
 
 # determinate
 
-- $\det I=1$
-- Exchange rows, reverse sign of $\det$ , so $\det P=1$ or $-1$
-- $\begin{vmatrix} ta & tb\\ c & d\end{vmatrix} =t\begin{vmatrix} a & b\\ c & d\end{vmatrix}$
+- $\det I=1$ 
+- Exchange rows, reverse sign of $\det$ , so $\det P=1$ or $-1$ 
+- $\begin{vmatrix} ta & tb\\ c & d\end{vmatrix} =t\begin{vmatrix} a & b\\ c & d\end{vmatrix}$ 
 - $\begin{vmatrix} a+a' & b+b'\\ c & d\end{vmatrix} =\begin{vmatrix} a & b\\ c & d\end{vmatrix} + 
 \begin{vmatrix} a' & b'\\ c & d\end{vmatrix}$
-- If two rows are equal, $\det=0$
+- If two rows are equal, $\det=0$ 
 - substract $l*row$ from rows, $\det$ remain same.
 
 ## triangular
@@ -35,8 +35,8 @@ $$
 d_1d_2d_3
 $$
 
-if the matrix is singular, $\det = 0$.
+if the matrix is singular, $\det = 0$ .
 
-- $\det AB=(\det A)(\det B)$, $\det A^{-1} = \frac{1}{\det A}$ ($A$ is invertible)
-- $\det 2A=2^n\det A$
-- $\det A^\top =\det A$
+- $\det AB=(\det A)(\det B)$ , $\det A^{-1} = \frac{1}{\det A}$ ( $A$ is invertible)
+- $\det 2A=2^n\det A$ 
+- $\det A^\top =\det A$ 

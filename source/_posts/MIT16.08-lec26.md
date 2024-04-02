@@ -31,7 +31,7 @@ v^\top u = 0
 
 $$
 
-We can choose orthonormal eigenvectors. Therefor, for $S=S^\top$:
+We can choose orthonormal eigenvectors. Therefor, for $S=S^\top$ :
 
 $$
 S=Q \Lambda Q^{-1}=Q \Lambda Q^\top
@@ -58,7 +58,7 @@ $$
 
 $\lambda$ is real.
 
-## break down $A=Q\Lambda Q^\top$
+## break down $A=Q\Lambda Q^\top$ 
 
 $$
 A = 
@@ -79,7 +79,7 @@ A =
 \end{bmatrix}=\lambda_{1} q_{1} q_{1}^{\top}+\lambda_{2} q_{2} q_{2}^{\top}+\cdots
 $$
 
-$q$ is a unit vector, so $q^\top q=1, qq^\top=\frac{qq^\top}{q^\top q}$, which is projection matrix.
+$q $is a unit vector, so$ q^\top q=1, qq^\top=\frac{qq^\top}{q^\top q}$, which is projection matrix.
 
 every symmetricmatrix is a combination of mutually perpendicular projedtion matrices. **(spectral theorem)**
 

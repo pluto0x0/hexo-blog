@@ -12,9 +12,9 @@ img_path: /upload/
 
 # Independent
 
-no combination give a zero vector (expect $0$).
+no combination give a zero vector (expect $0$ ).
 
-If columns of $A$ are independent, $N(A) = {0}$.
+If columns of $A$ are independent, $N(A) = {0}$ .
 
 # Span
 

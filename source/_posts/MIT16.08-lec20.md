@@ -22,7 +22,7 @@ $$
 A^{-1}=\frac{1}{\det A} C^{\top}
 $$
 
-for cofactor $C$, see [cofactor](lec19%20505965e578ce42dc84cc6817c92e5549.md) 
+for cofactor $C$ , see [cofactor](lec19%20505965e578ce42dc84cc6817c92e5549.md) 
 
 ## proof
 
@@ -52,7 +52,7 @@ $$
 
 why get 0?
 
-in $A=\left[\begin{array}{ll}a & b \\c & d\end{array}\right]^{-1},C^\top = \left[\begin{array}{cc}d & -b \\-c & a\end{array}\right]$:
+in $A=\left[\begin{array}{ll}a & b \\c & d\end{array}\right]^{-1},C^\top = \left[\begin{array}{cc}d & -b \\-c & a\end{array}\right]$ :
 
 $$
  a(-b)+ba
@@ -66,7 +66,7 @@ $$
 
 # Cramer's rule
 
-Solve $Ax=b$
+Solve $Ax=b$ 
 
 $$
 x=A^{-1}b=\frac{1}{\det A}C^\top b
@@ -105,13 +105,13 @@ $$
 
 # determinate and volume
 
-find area of $\triangle OAB$:
+find area of $\triangle OAB$ :
 
 $$
 \frac{1}{2} \begin{vmatrix} x_A & y_A \\ x_B & y_B\end{vmatrix}
 $$
 
-find area of $\triangle ABC$:
+find area of $\triangle ABC$ :
 
 $$
 \frac{1}{2} \begin{vmatrix} x_A & y_A & 1\\ x_B & y_B & 1\\ x_C & y_C & 1\end{vmatrix}

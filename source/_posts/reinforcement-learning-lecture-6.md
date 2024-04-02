@@ -7,7 +7,7 @@ categories:
 - Reinforcement Learning
 ---
 
-Recall $V^\star , Q^\star , V^\pi, Q^\pi$.
+Recall $V^\star , Q^\star , V^\pi, Q^\pi$ .
 
 $$
 V^\star (s)=\max _{a \in A}(\underbrace{R(s, a)+\gamma \mathbb{E}_{S^{\prime} \sim P(\cdot \mid s, a)}\left[V^\star \left(s^{\prime}\right)\right]}_{Q^\star (s, a)})
@@ -32,7 +32,7 @@ V^\star  = \mathcal{T} V^\star  \\
 \end{gathered}
 $$
 
-i.e. $Q^\star $ and $V^\star $ are fixpoints of $\mathcal{T}$.
+i.e. $Q^\star$ and $V^\star$ are fixpoints of $\mathcal{T}$ .
 
 ## Value Interation Algorithm (VI)
 
@@ -42,7 +42,7 @@ $$
 
 Interation to calculate fix points:
 
-for $k = 1,2,3, \cdots$,
+for $k = 1,2,3, \cdots$ ,
 
 $$
 f_k = \mathcal{T} f_{k-1}
@@ -59,7 +59,7 @@ $$
 
 ## Convergence of VI
 
-lemma: $\mathcal{T}$ is a $\gamma$**-contraction** under $\| \cdot\| _{\infty}$ where $\| \cdot\| _{\infty} := \max_{x\in (\cdot)}x$.
+lemma: $\mathcal{T}$ is a $\gamma$ **-contraction** under $\| \cdot\| _{\infty}$ where $\| \cdot\| _{\infty} := \max_{x\in (\cdot)}x$ .
 
 which means 
 
@@ -95,7 +95,7 @@ $$
 \end{aligned}
 $$
 
-$\text{WLOG}$ assume, $\max_{a'} f(s', a') > \max_{a'} f'(s', a')$ and $\exist a^\star : \max_af(s',a)=f(s',a^\star )$, then
+$\text{WLOG} $assume,$ \max_{a'} f(s', a') > \max_{a'} f'(s', a') $and$ \exist a^\star : \max_af(s',a)=f(s',a^\star )$, then
 
 $$
 \begin{aligned}

@@ -18,7 +18,7 @@ date: 2021-08-25
 还是考虑维护差分数组。
 
 易知：
-$$a_i=\sum\limits_{j=1}^i b_j$$ 
+$ $a_i=\sum\limits_{j=1}^i b_j$ $ 
 
 那么 $a$ 的前缀和：
 
@@ -106,7 +106,7 @@ int main() {
 
 从一维的树状数组类推。
 
-$$s_{a,b} = \sum\limits_{i=a - \operatorname{lowbit}(a)+1}^{a} \; \sum\limits_{j=b-\operatorname{lowbit}(b)+1}^b a_{i,j}$$ 
+$ $s_{a,b} = \sum\limits_{i=a - \operatorname{lowbit}(a)+1}^{a} \; \sum\limits_{j=b-\operatorname{lowbit}(b)+1}^b a_{i,j}$ $ 
 
 [模板](https://loj.ac/p/133)
 
@@ -163,11 +163,11 @@ int main() {
 
 矩阵如何差分？可以将 $a$ 看作差分矩阵 $b$ 的矩阵前缀和，那么反过来用 $a$ 表示 $b$ ：
 
-$$b_{i,j} = a_{i,j} - a_{i-1,j} - a_{i,j - 1} + a_{i-1,j-1}$$ 
+$ $b_{i,j} = a_{i,j} - a_{i-1,j} - a_{i,j - 1} + a_{i-1,j-1}$ $ 
 
 但其实这个式子并不重要，我们只需要知道 $a$ 是 $b$ 的前缀和就行了。即
 
-$$a_{x,y} = \sum\limits_{i=1}^x \sum\limits_{j=1}^y b_{i,j}$$ 
+$ $a_{x,y} = \sum\limits_{i=1}^x \sum\limits_{j=1}^y b_{i,j}$ $ 
 
 同样计算 $b$ 的贡献：
 
@@ -266,4 +266,4 @@ int findkth(int k) {
     return ans + 1;
 }
 ```
-值域 $(0,maxa]$
+值域 $(0,maxa]$ 

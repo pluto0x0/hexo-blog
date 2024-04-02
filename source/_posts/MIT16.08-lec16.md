@@ -12,7 +12,7 @@ img_path: /upload/
 
 # Least square
 
-find a line $y=C+Dx$ through: $(1,1)(2,2)(3,2)$:
+find a line $y=C+Dx$ through: $(1,1)(2,2)(3,2)$ :
 
 $$
 \begin{bmatrix} 1 & 1\\ 1 & 2\\ 1 & 3\end{bmatrix}\begin{bmatrix} C \\ D\end{bmatrix}=\begin{bmatrix}1 \\ 2 \\ 2\end{bmatrix}
@@ -56,11 +56,11 @@ $$
 
 # When $A^\top A$ is invertible
 
-If  $A$ has independent columns, then $A^\top A$ is invertible.
+If $A$ has independent columns, then $A^\top A$ is invertible.
 
-to prove: if $A$ has dependent cols, if $A^\top A x=0$ then $x=0$
+to prove: if $A$ has dependent cols, if $A^\top A x=0$ then $x=0$ 
 
-$N(A^\top A) =N(A)$ see [proof of $N(A^\top A)=N(A)$ ](lec14%20e323f8c6256b4c4f8fd632761950a29f.md) 
+$N(A^\top A) =N(A) $see [proof of$ N(A^\top A)=N(A)$ ](lec14%20e323f8c6256b4c4f8fd632761950a29f.md) 
 
 trick
 
@@ -74,7 +74,7 @@ x & = 0 \text{(A has independent columns)}
 \end{aligned}
 $$
 
-that means  $A$ is invertible.
+that means $A$ is invertible.
 
 # Special case of independent columns
 

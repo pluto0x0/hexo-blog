@@ -20,13 +20,13 @@ $$
 ⁍
 $$
 
-So $Q^\top = Q^{-1}$
+So $Q^\top = Q^{-1}$ 
 
-We call  $Q$ **orthonormal** matrix when it’s **square**.
+We call $Q$ **orthonormal** matrix when it’s **square**.
 
 ## **Hadamard matrix**
 
-Let  $H$ be the n order Hadamard matrix, then 
+Let $H$ be the n order Hadamard matrix, then 
 
 $$
 ⁍
@@ -49,7 +49,7 @@ $\frac{1}{2}H_4$ is an orthonormal matrix.
 
 # Gram-Schmidt
 
-From any two vectors $a ,b$, get two orthogonal vectors $A,B$, and then get two orthonormal vectors $q_1, q_2$.
+From any two vectors $a ,b$ , get two orthogonal vectors $A,B$ , and then get two orthonormal vectors $q_1, q_2$ .
 
 ## Gram
 
@@ -61,7 +61,7 @@ $$
 B=b-\frac{A^\top b}{A^\top A}A
 $$
 
-i.e. $B$ is the error vector $e$ in [lec15](https://www.notion.so/lec15-1cf9bf9e292c4607b7d24e1ebf2cbe9c?pvs=21), which is **perpendicular** to $A$, i.e. $A^\top B=0$
+i.e. $B$ is the error vector $e$ in [lec15](https://www.notion.so/lec15-1cf9bf9e292c4607b7d24e1ebf2cbe9c?pvs=21), which is **perpendicular** to $A$ , i.e. $A^\top B=0$ 
 
 $$
 C = c - \frac{A^\top C}{A^\top A}A - \frac{B^\top C}{B^\top B}B
@@ -75,7 +75,7 @@ $$
 q_1 := \frac{A}{\| A\| }\\ q_2 := \frac{B}{\| B\| }\\ q_3 := \frac{C}{\| C\| }\\
 $$
 
-## $A=QR$
+## $A=QR$ 
 
 $$
 A:=\begin{bmatrix} \vdots & \vdots\\a & b\\ \vdots & \vdots\end{bmatrix}

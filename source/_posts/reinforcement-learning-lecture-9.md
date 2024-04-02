@@ -41,7 +41,7 @@ $$
 \boxed{V^{\pi_k}(s')} = Q^{\pi_k}(s', \pi_k)
 $$
 
-and RHS $\ge 0$  is trivial. QED
+and RHS $\ge 0$ is trivial. QED
 
 ### Proof of lemma
 

@@ -47,13 +47,13 @@ $$
 
 $x_2, x_4$ can be any number (free column)
 
-Let $\left[\begin{array}{l}x_{2} \\x_{4}\end{array}\right]=\left[\begin{array}{l}1 \\0\end{array}\right]$,
+Let $\left[\begin{array}{l}x_{2} \\x_{4}\end{array}\right]=\left[\begin{array}{l}1 \\0\end{array}\right]$ ,
 
 $x=\left[\begin{array}{c}x_{1} \\1 \\x_{3} \\0\end{array}\right] \rightarrow\left[\begin{array}{c}-2 \\1 \\0 \\0\end{array}\right]$
 
 (special solution 1)
 
-Let $\left[\begin{array}{l}x_{2} \\x_{4}\end{array}\right]=\left[\begin{array}{l}1 \\1\end{array}\right]$
+Let $\left[\begin{array}{l}x_{2} \\x_{4}\end{array}\right]=\left[\begin{array}{l}1 \\1\end{array}\right]$ 
 
 $x=\left[\begin{array}{c}x_{1} \\0 \\x_{3} \\1\end{array}\right] \rightarrow\left[\begin{array}{c}2 \\0 \\-2 \\0\end{array}\right]$
 
@@ -92,6 +92,6 @@ $$
 I=\begin{bmatrix} 1 & 0\\ 0 & 1\end{bmatrix},F=\begin{bmatrix}1 \\ 1\end{bmatrix}
 $$
 
-then $x=\begin{bmatrix}-1 \\-1 \\1\end{bmatrix}$is the special solution.
+then $x=\begin{bmatrix}-1 \\-1 \\1\end{bmatrix}$ is the special solution.
 
-null space = $c\begin{bmatrix}-1 \\-1 \\1\end{bmatrix}$($\dim N(A) = \text{\#cols of A} - r=1$ )
+null space = $c\begin{bmatrix}-1 \\-1 \\1\end{bmatrix}$ ( $\dim N(A) = \text{\#cols of A} - r=1$ )

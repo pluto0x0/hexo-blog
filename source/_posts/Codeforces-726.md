@@ -11,21 +11,21 @@ date: 2021-07-12
 #include <cstdio> 
 int T,n;
 int main(){
-	scanf("%d",&T);
-	while(T--){
-		scanf("%d",&n);
-		int tmp, sum = 0;
-		for(int i = 1;i <= n;i++){
-			scanf("%d",&tmp);
-			sum += tmp;
+    scanf("%d",&T);
+    while(T--){
+	    scanf("%d",&n);
+	    int tmp, sum = 0;
+	    for(int i = 1;i <= n;i++){
+		    scanf("%d",&tmp);
+		    sum += tmp;
 		}
-		if(sum == n)
-			printf("0\n");
-		else if(sum <= n + 1)
-			printf("1\n");
-		else printf("%d\n",sum - n);
+	    if(sum == n)
+		    printf("0\n");
+	    else if(sum <= n + 1)
+		    printf("1\n");
+	    else printf("%d\n",sum - n);
 	}
-	return 0;
+    return 0;
 }
 ```
 ## B
@@ -35,12 +35,12 @@ int main(){
 int T,n,m,x,y;
 int main()
 {
-	scanf("%d",&T);
-	while(T--){
-		scanf("%d %d %d %d",&n,&m,&x,&y);
-		printf("1 1 %d %d\n",n,m);
+    scanf("%d",&T);
+    while(T--){
+	    scanf("%d %d %d %d",&n,&m,&x,&y);
+	    printf("1 1 %d %d\n",n,m);
 	}
-	return 0;
+    return 0;
 }
 ```
 ## C
@@ -53,27 +53,27 @@ int T,n;
 int a[N];
 int main()
 {
-	scanf("%d",&T);
-	while(T--){
-		scanf("%d",&n);
-		for(int i = 1;i <= n;i++)
-			scanf("%d",&a[i]);
-		std::sort(a + 1,a + n + 1);
-		int ans = 1;
-		for(int i = 2;i < n;i++)
-			if(a[i + 1] - a[i] < a[ans + 1] - a[ans])
-				ans = i;
-		if(n == 2)
-			printf("%d %d",a[1],a[2]);
-		else{
-			for(int i = ans + 1;i <= n;i++)
-				printf("%d ",a[i]);
-			for(int i = 1;i <= ans;i++)
-				printf("%d ",a[i]);
+    scanf("%d",&T);
+    while(T--){
+	    scanf("%d",&n);
+	    for(int i = 1;i <= n;i++)
+		    scanf("%d",&a[i]);
+	    std::sort(a + 1,a + n + 1);
+	    int ans = 1;
+	    for(int i = 2;i < n;i++)
+		    if(a[i + 1] - a[i] < a[ans + 1] - a[ans])
+			    ans = i;
+	    if(n == 2)
+		    printf("%d %d",a[1],a[2]);
+	    else{
+		    for(int i = ans + 1;i <= n;i++)
+			    printf("%d ",a[i]);
+		    for(int i = 1;i <= ans;i++)
+			    printf("%d ",a[i]);
 		}
-		printf("\n");
+	    printf("\n");
 	}
-	return 0;
+    return 0;
 }
 ```
 ## D

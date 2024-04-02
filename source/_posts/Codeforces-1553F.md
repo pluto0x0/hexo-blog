@@ -15,19 +15,19 @@ p_k = \sum_{1 \le i, j \le k} a_i \bmod a_j,
 $$
 
 其中
-$2 \le n \le 2 \cdot 10^5$， $1 \le a_i \le 3 \cdot 10^5$， $a_i \neq a_j$ if $i \ne j$
+$2 \le n \le 2 \cdot 10^5 $，$ 1 \le a_i \le 3 \cdot 10^5 $，$ a_i \neq a_j $if$ i \ne j$
 
 ## 方法
 
-考虑$p$的差分数组$P_i := p_i - p_{i - 1}$则有：
+考虑 $p$ 的差分数组 $P_i := p_i - p_{i - 1}$ 则有：
 
 $$
 P_m = \sum_{\max(i,j)=m} a_i \bmod a_j
 $$
 
-考虑从前到后枚举$a_i$，保证当前枚举的下标是所有枚举过的中最大的。
+考虑从前到后枚举 $a_i$ ，保证当前枚举的下标是所有枚举过的中最大的。
 
-定义$d_v = \{0,1\}$ 表示是否有值为$v$的数出现过，那么对于当前的下标$i$，
+定义 $d_v = \{0,1\}$ 表示是否有值为 $v$ 的数出现过，那么对于当前的下标 $i$ ，
 
 $$
 \sum_{j=1}^{i-1} a_i \bmod a_j = \sum_{j=1}^{\max(a_k)} (a_i \bmod j) d_j \\ =
@@ -35,7 +35,7 @@ $$
 a_i\sum_{j=1}^{\max(a_k)} d_j - \sum_{j=1}^{\max(a_k)} \left\lfloor \frac{a_i}{j} \right\rfloor(jd_j)
 $$
 
-考虑用树状数组维护 $d_j$ 和 $jd_j$ 的前缀和，对 $\left\lfloor \frac{a_i}{j} \right\rfloor$ 进行整除分块，复杂度 $\mathrm{O}(n \sqrt{\max a_k}\log \max a_k)$。
+考虑用树状数组维护 $d_j$ 和 $jd_j$ 的前缀和，对 $\left\lfloor \frac{a_i}{j} \right\rfloor$ 进行整除分块，复杂度 $\mathrm{O}(n \sqrt{\max a_k}\log \max a_k)$ 。
 
 
 接下来考虑
@@ -45,9 +45,9 @@ $$
 \sum_{j=1}^{\max(a_k)} \left(j - a_i \left\lfloor \frac{j}{a_i} \right\rfloor\right) d_j
 $$
 
-此时 $ \left\lfloor \frac{j}{a_i} \right\rfloor$ 块的长度固定为 $a_i$
+此时 $\left\lfloor \frac{j}{a_i} \right\rfloor$ 块的长度固定为 $a_i$ 
 
-复杂度 $\mathrm{O}(\sum_i \frac{1}{a_i} \max a_k \log \max a_k) = \mathrm{O}(\max a_k \log n \log \max a_k)$
+复杂度 $\mathrm{O}(\sum_i \frac{1}{a_i} \max a_k \log \max a_k) = \mathrm{O}(\max a_k \log n \log \max a_k)$ 
 
 ### 常数优化
 

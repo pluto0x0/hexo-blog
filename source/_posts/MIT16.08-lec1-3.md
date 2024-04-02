@@ -69,7 +69,7 @@ $$
 A=\begin{bmatrix}  1 & 3 \\  2 & 6\end{bmatrix}
 $$
 
-$\begin{bmatrix}  1 & 3 \end{bmatrix}$ 与 $\begin{bmatrix}  2 & 6\end{bmatrix}$ 共线，所以$\begin{bmatrix}  1 & 3 \end{bmatrix}$ 与 $\begin{bmatrix}  2 & 6\end{bmatrix}$ 的线性组合无法得到$\begin{bmatrix}  1 & 0\end{bmatrix}$或$\begin{bmatrix}  0 & 1 \end{bmatrix}$
+$\begin{bmatrix}  1 & 3 \end{bmatrix} $与$ \begin{bmatrix}  2 & 6\end{bmatrix} $共线，所以$ \begin{bmatrix}  1 & 3 \end{bmatrix} $与$ \begin{bmatrix}  2 & 6\end{bmatrix} $的线性组合无法得到$ \begin{bmatrix}  1 & 0\end{bmatrix} $或$ \begin{bmatrix}  0 & 1 \end{bmatrix}$
 
 $$
 ⁍
@@ -102,29 +102,29 @@ $$
 ## 一般Gauss消元
 
 $$
-\begin{align} 
+\begin{align}
   &\begin{bmatrix}
-\begin{array}{ccc|c} 
+\begin{array}{ccc|c}
   1 & 12& 1 & 2 \\
   3 & 8 & 1 & 12 \\
-  0 & 4 & 1 & 2 
+  0 & 4 & 1 & 2
 \end{array}
 \end{bmatrix} \\
 \to &
 \begin{bmatrix}
-\begin{array}{ccc|c} 
+\begin{array}{ccc|c}
   1 & 2 & 1 & 2 \\
   0 & 2 & -2 & 6 \\
-  0 & 4 & -1 & 2 
+  0 & 4 & -1 & 2
 \end{array}
 \end{bmatrix} \\
 \to &
-\begin{array}{c} 
+\begin{array}{c}
   \begin{bmatrix}
-\begin{array}{ccc|c} 
+\begin{array}{ccc|c}
   \color{red}{1} & 2 & 1 & 2 \\
   0 & \color{red}{2} & -2 & 6 \\
-  0 & 0 & \color{red}{5} & -10 
+  0 & 0 & \color{red}{5} & -10
 \end{array}
 \end{bmatrix} \\
 \color{red}{\text{主元(pivot)}} \\
@@ -133,7 +133,7 @@ $$
 \end{align}
 $$
 
-进行的初等变换等价于左乘一个消元矩阵 $E$.
+进行的初等变换等价于左乘一个消元矩阵 $E$ .
 
 e.g.
 
@@ -141,4 +141,4 @@ $$
 E=\begin{bmatrix} 1 & 0 & 0\\ -3 & 1 & 0\\ 0 & 0 & 1\end{bmatrix}
 $$
 
-$EA$ : substract 3 * row 1 of $A$ from row 2 of $A$.
+$EA $: substract 3 * row 1 of$ A $from row 2 of$ A$.

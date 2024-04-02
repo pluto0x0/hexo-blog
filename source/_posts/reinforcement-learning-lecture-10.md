@@ -20,7 +20,7 @@ Planning:
 Learning:
 
 - MDP model is unknown
-- collect data from the MDP: $(s,a,r,s')$.
+- collect data from the MDP: $(s,a,r,s')$ .
 - Data is limited. e.g., adaptive medical treatment, dialog systems
 - Go, chess, ...
 - Learning can be useful **even if the final goal is planning**
@@ -29,10 +29,10 @@ Learning:
 
 ## Monte-Carlo policy evaluation
 
-Given $\pi$, estimate $J(\pi):=\mathbb{E}_{s \sim d_0}\left[V^\pi(s)\right]$ ( $d_0$ is initial state distribution)
+Given $\pi$ , estimate $J(\pi):=\mathbb{E}_{s \sim d_0}\left[V^\pi(s)\right]$ ( $d_0$ is initial state distribution)
 is the *actual* expectation of reward.
 
-Monte-Carlo outputs some scalar $v$; accuracy measured by $| v-J(\pi)|$.
+Monte-Carlo outputs some scalar $v$ ; accuracy measured by $| v-J(\pi)|$ .
 (by sampling different trajectories):
 
 Data: trajectories starting from $s_1 \sim d_0$ using $\pi$ (i.e., $a_t=\pi\left(s_t\right)$ ).
@@ -69,30 +69,30 @@ Monte-Carlo is a Zeroth-order (ZO) optimization method, which is not efficient.
 > Assuming the reward / probability is determined (constant) via sampling.
 {: .prompt-info }
 
-Assume we can sample $r \sim R(s, a)$ and $s^{\prime} \sim P(s, a)$ for any $(s, a)$
+Assume we can sample $r \sim R(s, a)$ and $s^{\prime} \sim P(s, a)$ for any $(s, a)$ 
 
-Collect $n$ samples per $(s, a):\\{\left(r_i, s_i^{\prime}\right)\\}_{i=1}^n$. Total sample size $n| S \times A|$
+Collect $n$ samples per $(s, a):\\{\left(r_i, s_i^{\prime}\right)\\}_{i=1}^n$ . Total sample size $n| S \times A|$ 
 
 Estimate an empirical MDP $\hat{M}$ from data
 
-- $\hat{R}(s, a):=\frac{1}{n} \sum_{i=1}^n r_i, \quad \hat{P}\left(s^{\prime} \mid s, a\right):=\frac{1}{n} \sum_{i=1}^n \mathbb{I}\left[s_i^{\prime}=s^{\prime}\right]$
+- $\hat{R}(s, a):=\frac{1}{n} \sum_{i=1}^n r_i, \quad \hat{P}\left(s^{\prime} \mid s, a\right):=\frac{1}{n} \sum_{i=1}^n \mathbb{I}\left[s_i^{\prime}=s^{\prime}\right]$ 
 - i.e., treat the empirical frequencies of states appearing in $\{s_i^{\prime}\}_{i=1}^n$ as the true distribution.
 
 Plan in the estimated model and return the optimal policy
 
-transition tuples: $(s_i, a_i, r_i, s_{i+1})$. Use $s_i, a_i$ to identify current state and action, use $r_i$ for reward and $s_{i+1}$ for transition.
+transition tuples: $(s_i, a_i, r_i, s_{i+1})$ . Use $s_i, a_i$ to identify current state and action, use $r_i$ for reward and $s_{i+1}$ for transition.
 
 extract transition tuples from trajectories.
 
 ### finding policy on estimated environment
 
-**true** environment: $M = (S, A, P, R, \gamma)$
+**true** environment: $M = (S, A, P, R, \gamma)$ 
 
-**estimated** environment: $\hat{M} = (S, A, \hat{P}, \hat{R}, \gamma)$
+**estimated** environment: $\hat{M} = (S, A, \hat{P}, \hat{R}, \gamma)$ 
 
-- notation: $\pi_{\hat{M}}, \, V_{\hat{M}}, \, \ldots$
+- notation: $\pi_{\hat{M}}, \, V_{\hat{M}}, \, \ldots$ 
 
 performance measurement:
 
-- in the **true** environment, use $\| V^\star - V^{\pi_f} \|$ where $f \approx Q^\star$
-- in **estimated** environment, use $\| V_M^\star - V_M^{\pi_{\hat{M}}^\star} \|$, i.e. measure the optimal policy of estimated environment in the real environment.
+- in the **true** environment, use $\| V^\star - V^{\pi_f} \|$ where $f \approx Q^\star$ 
+- in **estimated** environment, use $\| V_M^\star - V_M^{\pi_{\hat{M}}^\star} \|$ , i.e. measure the optimal policy of estimated environment in the real environment.

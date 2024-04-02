@@ -12,15 +12,15 @@ img_path: /upload/
 
 # 4 Subspaces
 
-- column space $C(A)$
-- null space $N(A)$
-- row space $C(A^\top)$
-- **left** null space $N(A^\top)$
-    - $N(A^\top)^\top A=0$
+- column space $C(A)$ 
+- null space $N(A)$ 
+- row space $C(A^\top)$ 
+- **left** null space $N(A^\top)$ 
+    - $N(A^\top)^\top A=0$ 
 
 $C(A) \neq C(\operatorname{RREF}(A))$
 
-# How to find $N(A^\top)$
+# How to find $N(A^\top)$ 
 
 $$
 \begin{bmatrix}\begin{array}{c|c} A_{m\times n} & I_{m\times m}\end{array}\end{bmatrix}\stackrel{\text{elimination}}{\longrightarrow}\begin{bmatrix}\begin{array}{c|c} R_{m\times n} & E_{m\times m}\end{array}\end{bmatrix}

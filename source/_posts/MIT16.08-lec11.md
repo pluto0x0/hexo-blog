@@ -18,9 +18,9 @@ $U$: space of 3x3 upper triangular matrix : 6 dimension
 
 $S\cup U$ is not a matrix space.
 
-$S\cap U$ is a matrix space, $\dim(S\cap U)=3$
+$S\cap U $is a matrix space,$ \dim(S\cap U)=3$
 
-$S+U$ : any of $S$ **+** any of $U$ = all 3x3’s.
+$S+U $: any of$ S $**+** any of$ U$ = all 3x3’s.
 
 $\dim(S+U)=9$
 
@@ -44,13 +44,13 @@ All **rank 1 matrix** : $A=UVT$ where $U,V$ are column vectors.
 
 All matrix can be a combination of **rank one matrices**.
 
-All rank 4 matrices is **not** a matrix space.  $rank(A + B) \le rank(A) + rank(B)$
+All rank 4 matrices is **not** a matrix space. $rank(A + B) \le rank(A) + rank(B)$ 
 
-$S$ = all $V$ in $\mathbb{R}^4$ with $v_1+v_2 + v_3 + v_4 = 0$
+$S $= all$ V $in$ \mathbb{R}^4 $with$ v_1+v_2 + v_3 + v_4 = 0$
 
-$S$ is a vector space, $\dim(S) = 3$
+$S $is a vector space,$ \dim(S) = 3$
 
-$S$ is null space to $A = \begin{bmatrix}1 & 1 & 1 & 1\end{bmatrix}$ i.e. $AV = 0$ $S$ 是 $A = \begin{bmatrix}1 & 1 & 1 & 1\end{bmatrix}$ 的空空间，即 $AV = 0$ ,kms
+$S $is null space to$ A = \begin{bmatrix}1 & 1 & 1 & 1\end{bmatrix} $i.e. $ AV = 0 $ $ S $是$ A = \begin{bmatrix}1 & 1 & 1 & 1\end{bmatrix} $的空空间，即$ AV = 0$ ,kms
 
 $\dim N(A) = n − r$
 
@@ -58,7 +58,7 @@ e.g. $A = \begin{bmatrix} 1 & 1 & 1 & 1 \end{bmatrix}, r = 1, n = 4, \dim N(A) 
 
 $A = \begin{bmatrix}1 \text{(pivot)} & | & 1 & 1 & 1 \text{(free varibles)}\end{bmatrix}$
 
-Basis for $S$ i.e. Special solution for $N(A)$:
+Basis for $S$ i.e. Special solution for $N(A)$ :
 
 $\begin{bmatrix}  -1\\1\\0\\0 \end{bmatrix}, \begin{bmatrix}  -1\\0\\1\\0 \end{bmatrix}, \begin{bmatrix}  -1\\0\\0\\1 \end{bmatrix}$
 

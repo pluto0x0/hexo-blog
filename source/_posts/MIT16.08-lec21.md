@@ -12,27 +12,27 @@ img_path: /upload/
 
 # eigen vector
 
-find a function, in goes vector $x$, out comes vector $Ax$.
+find a function, in goes vector $x$ , out comes vector $Ax$ .
 
-$Ax$ parallel to $x$ i.e. $Ax=\lambda x$
+$Ax $parallel to$ x $i.e.$ Ax=\lambda x$
 
 If $A$ is **singular**, $\lambda =0$ is an eigenvalue
 
 ## projection matrix
 
-for any $x$ in the plane, $Px=x$ i.e. $\lambda =1$
+for any $x$ in the plane, $Px=x$ i.e. $\lambda =1$ 
 
-for any  $x$ perpendicular to the plane, $Px = 0$, i.e. $\lambda = 0$
+for any $x$ perpendicular to the plane, $Px = 0$ , i.e. $\lambda = 0$ 
 
 ## All eigenvalues
 
-$n\times n$  matrix has $n$ eigenvalues.
+$n\times n $matrix has$ n$ eigenvalues.
 
 Sum of these eigenvalues = $\operatorname{tr}(A)$ (some if diagonal)
 
-Product of eigenvalues = $\det(A)$
+Product of eigenvalues = $\det(A)$ 
 
-# Solve $Ax=\lambda x$
+# Solve $Ax=\lambda x$ 
 
 $$
 (A-\lambda I)x=0
@@ -93,4 +93,4 @@ x_1=\begin{bmatrix}1 \\ 0
 \end{bmatrix}
 $$
 
-no independent $x_2$.
+no independent $x_2$ .

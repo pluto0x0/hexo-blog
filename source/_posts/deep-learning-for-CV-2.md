@@ -16,9 +16,9 @@ $$
 y = f(x)
 $$
 
-- $y$: output
-- $f$: prediction function
-- $x$: input
+- $y$ : output
+- $f$ : prediction function
+- $x$ : input
 
 training:
 
@@ -28,7 +28,7 @@ $$
 
 ## Nearest neighbor classifier
 
-$f(x)$ = label of the training example nearest to $x$
+$f(x) $= label of the training example nearest to$ x$
 
 K-nearest neighbor classifier:
 
@@ -77,11 +77,11 @@ L(f)=\mathbb{E}_{(x, y) \sim D}[l(f, x, y)]
 $$
 
 - $0-1$ loss
-  - $l(f,x,y) = \mathbb{I}[f(x) \neq y]$
-  - $L(f)=\operatorname{Pr}[f(x) \neq y]$
+  - $l(f,x,y) = \mathbb{I}[f(x) \neq y]$ 
+  - $L(f)=\operatorname{Pr}[f(x) \neq y]$ 
 - $l_2$ loss
-  - $l(f, x, y)=[f(x)-y]^2$
-  - $L(f)=\mathbb{E}\left[[f(x)-y]^2\right]$
+  - $l(f, x, y)=[f(x)-y]^2$ 
+  - $L(f)=\mathbb{E}\left[[f(x)-y]^2\right]$ 
   
 Find $f$ that minimizes
 
@@ -94,14 +94,14 @@ $$
   - use surrogate loss functions instead
 - $l_2$ loss
   - $\hat{L}(f_w) = \frac{1}{n} \| Xw-Y \|_2$ is a convex function
-  - $0 = \nabla \| Xw-Y \|_2 = 2X^T (Xw - Y)$
-  - $w = (X^T X)^{-1} X^T Y$
+  - $0 = \nabla \| Xw-Y \|_2 = 2X^T (Xw - Y)$ 
+  - $w = (X^T X)^{-1} X^T Y$ 
 
 ### Interpretation of $l_2$ loss
 
 Assumption:
 
-$y$ is normally distributed with mean $f_w(x) = w^Tx+b$
+$y $is normally distributed with mean$ f_w(x) = w^Tx+b$
 
 Maximum likelihood estimation:
 
@@ -169,7 +169,7 @@ $$
 
 ### Gradient descent
 
-To minimize $l(w,x_i, y_i)$, use gradient descent
+To minimize $l(w,x_i, y_i)$ , use gradient descent
 
 $$
 w \leftarrow w - \eta \nabla\hat{L} (w)

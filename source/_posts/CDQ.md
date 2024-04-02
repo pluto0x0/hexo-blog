@@ -6,30 +6,32 @@ date: 2021-07-26
 luogu随机到了一道题，看了题解才知道是CDQ。。
 
 ## 三维偏序
+
 求满足
 
-$$ i<j,a_{i}<a_{j},b_{i}<b_{j}$$ 
+$ $i<j,a_{i}<a_{j},b_{i}<b_{j}$ $
 
-的 $ (i,j) $ 对数。
+的 $(i,j)$ 对数。
 
-用 $ solve(l,r) $ 表示求解区间 $[l,r]$ 。把区间折半，可以递归求解 $solve(l,mid)$ 和 $ solve(mid+1,r) $ 。现在关心
+用 $solve(l,r)$ 表示求解区间 $[l,r]$ 。把区间折半，可以递归求解 $solve(l,mid)$ 和 $solve(mid+1,r)$ 。现在关心
 
-$$ l\le i \le mid,\;mid+1\le j\le r$$ 
+$ $l\le i \le mid,\;mid+1\le j\le r$ $
 
 的求解。
 
-将 $ [l,mid] $ 和 $ [mid+1,r] $ 分别按照 $a$ 排序，利用双指针，对于每一个 $j \le [mid+1, r]$ 将所有 $a_i < a_j$ 的 $ i $ 加入树状数组。加入树状数组时，在 $b_i$ 位置 $+1$ （可能要离散化）。对于每个 $j$ ，询问树状数组 $\le b_j$ 位置的和求和即可。
+将 $[l,mid]$ 和 $[mid+1,r]$ 分别按照 $a$ 排序，利用双指针，对于每一个 $j \le [mid+1, r]$ 将所有 $a_i < a_j$ 的 $i$ 加入树状数组。加入树状数组时，在 $b_i$ 位置 $+1$ （可能要离散化）。对于每个 $j$ ，询问树状数组 $\le b_j$ 位置的和求和即可。
 
 复杂度 $O(n\,log^2n)$ 。
 
 ## dp转移
+
 考虑dp转移
 
-$$ dp_{i}=1+ \max_{j=1}^{i-1}dp_{j}[a_{j}<a_{i}][b_{j}<b_{i}]$$ 
- 
+$ $dp_{i}=1+ \max_{j=1}^{i-1}dp_{j}[a_{j}<a_{i}][b_{j}<b_{i}]$ $
+
 其实就是二维的最长上升子序列。
 
-用树状数组维护最大值，其他差不多，但是注意 $l\le i \le mid,\;mid+1\le j\le r$ 的求解要在 $solve(l,mid)$ 和 $ solve(mid+1,r) $ 之间进行，因为如果先执行 $solve(mid+1,r)$ ，此时 $mid+1$ wei位置还没有通过 $mid$ 之前位置来转移，不是正确的dp值，不能用来更新 $mid+1$ 位置以后的位置，而使用“中序遍历”则可以解决这个问题。
+用树状数组维护最大值，其他差不多，但是注意 $l\le i \le mid,\;mid+1\le j\le r$ 的求解要在 $solve(l,mid)$ 和 $solve(mid+1,r)$ 之间进行，因为如果先执行 $solve(mid+1,r)$ ，此时 $mid+1$ wei位置还没有通过 $mid$ 之前位置来转移，不是正确的dp值，不能用来更新 $mid+1$ 位置以后的位置，而使用“中序遍历”则可以解决这个问题。
 
 ### luogu 4093
 
@@ -111,10 +113,9 @@ int main() {
     return 0;
 }
 ```
-_upd: [原代码](https://paste.ubuntu.com/p/vN7kPG5CsQ/) 存在一些重大bug：每次solve暴力memset树状数组清空，竟然跑出了860ms。。。_ 
+
+_upd: [原代码](https://paste.ubuntu.com/p/vN7kPG5CsQ/) 存在一些重大bug：每次solve暴力memset树状数组清空，竟然跑出了860ms。。。_
 
 ## 时间序列
 
 将修改、询问等一系列操作根据时间序列折半，将在操作离线。
-
-

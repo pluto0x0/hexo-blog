@@ -90,6 +90,4 @@ $$
 \text { rate } \approx \frac{\text { cwnd }}{\mathrm{RTT}} \text { bytes/sec }
 $$
 
-
-### TCP Slow Start 
-
+### TCP Slow Start

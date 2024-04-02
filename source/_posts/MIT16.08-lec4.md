@@ -42,7 +42,7 @@ $$
 \begin{aligned}A A^{-1} &=I \\\left(A A^{-1}\right)^{\top} &=I^{\top} \\\left(A^{-1}\right)^{\top} A^{\top} &=I^{\top}=I\end{aligned}
 $$
 
-# $A=LU$分解
+# $A=LU$ 分解
 
 $A=LU$ without row exchange.
 

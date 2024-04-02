@@ -65,7 +65,7 @@ flowchart LR
     p -->|heartbeat| q
 ```
 
-q sends heartbeats to p every $T$ seconds.$(T + \Delta_2)$ is the timeout value at p. If $(T + \Delta_2)$ time elapsed since last heartbeat, report q crashed.
+q sends heartbeats to p every $T$ seconds. $(T + \Delta_2)$ is the timeout value at p. If $(T + \Delta_2)$ time elapsed since last heartbeat, report q crashed.
 
 - If synchronous, $\Delta_2$ = max network delay – min network delay
 - If asynchronous, $\Delta_2$ = k(observed delay)
@@ -83,11 +83,11 @@ q sends heartbeats to p every $T$ seconds.$(T + \Delta_2)$ is the timeout value 
 
 Ping-ack:
 
-$T + \Delta_1- \Delta$ where $\Delta$ is time taken for last ping from p to reach q
+$T + \Delta_1- \Delta $where$ \Delta$ is time taken for last ping from p to reach q
 
 Heartbeat:
 
-$\Delta + T + \Delta_2$ where $\Delta$ is time taken for last message from q to reach p)
+$\Delta + T + \Delta_2 $where$ \Delta$ is time taken for last message from q to reach p)
 
 ### Bandwidth usage
 

@@ -81,7 +81,7 @@ $$
 \text { EstimatedRTT }=(1-\alpha) \times \text { EstimatedRTT }+\alpha \times \text { SampleRTT }
 $$
 
-typical value: $\alpha = 0.125$
+typical value: $\alpha = 0.125$ 
 
 ![](/img/post/communication-networks-10-6.png){: w="500" }
 
@@ -97,7 +97,7 @@ $$
 \text { DevRTT }=(1-\beta) \times \text { DevRTT }+\beta \times | \text { SampleRTT }=\text { EstimatedRTT } |
 $$
 
-Typeical $\beta = 0.25$
+Typeical $\beta = 0.25$ 
 
 $$
 \text { TimeoutInterval }=\text { EstimatedRTT }+4 \times \text { DevRTT }

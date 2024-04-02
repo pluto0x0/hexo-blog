@@ -18,7 +18,7 @@ $$
 
 Q-learning is off-policy: how we take actions have nothing to do with our current Q-estimate (or its greedy policy). i.e. Q-learning always taks $\max _{a^{\prime}} Q\left(s_{t+1}, a^{\prime}\right)$ no matter what the real policy is.
 
-e.g. in the cliff setting, the optimal can always be found, no matter the choice of $\epsilon$.
+e.g. in the cliff setting, the optimal can always be found, no matter the choice of $\epsilon$ .
 
 ### Exercise: Multi-step Q-learning?
 
@@ -30,7 +30,7 @@ $$
 Q \leftarrow \mathcal{T}^\pi \mathcal{T} Q
 $$
 
-> This resulting $\mathcal{T}^\pi \mathcal{T}\cdots \mathcal{T}^\pi \mathcal{T}Q$ is also a optimal policy, but for another MDP, i.e. on odd steps, follow $\pi$, on even steps, free to decide.
+> This resulting $\mathcal{T}^\pi \mathcal{T}\cdots \mathcal{T}^\pi \mathcal{T}Q$ is also a optimal policy, but for another MDP, i.e. on odd steps, follow $\pi$ , on even steps, free to decide.
 {: .prompt-info }
 
 ## Q-learning with experience replay

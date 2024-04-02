@@ -10,9 +10,10 @@ date: 2021-08-16
 
 二次函数积分公式（辛普森公式）[^simpson]
 
-$$\int_l^r f(x) {\mathrm d}x = \frac{(r-l)(f(l)+f(r)+4 f(\frac{l+r}{2}))}{6}$$
+$ $\int_l^r f(x) {\mathrm d}x = \frac{(r-l)(f(l)+f(r)+4 f(\frac{l+r}{2}))}{6}$ $
 
 ## 普通辛普森法
+
 根据辛普森公式，将一个区间分为连续的若干段，其中连续的两段作为一个周期，分别对应公式里的 $[l,\frac{l+r}{2}]$ 和 $[l,r]$ 。
 
 ```cpp
@@ -30,6 +31,7 @@ double simpson_integration(double a, double b) {
 ```
 
 ## 自适应辛普森
+
 能够自动满足精度要求的辛普森法。
 
 思想：
@@ -55,7 +57,6 @@ double calc(double l, double r, double eps) {
     return asr(l, r, eps, simpson(l, r), 12);
 }
 ```
-
 
 [^simpson]: <https://oi-wiki.org/math/integral/#_2>
 [^code]: <https://oi-wiki.org/math/integral/#_7>

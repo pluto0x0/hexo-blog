@@ -44,18 +44,18 @@ best (highest) election attribute value is elected.
 _Ring Election Protocol_
 
 - When $P_i$ start election
-  - send _election_ message with $P_i$’s $<attr_i, i>$ to ring successor.
+  - send _election_ message with $P_i$ ’s $<attr_i, i>$ to ring successor.
   - set state to *participating*
-- When $P_j$ receives message (_election_, $<attr_x, x>$) from predecessor
-  - If $(attr_x, x) > (attr_j, j)$:
-    - forward message (_election_, $<attr_x, x>$) to successor
+- When $P_j$ receives message (_election_, $<attr_x, x>$ ) from predecessor
+  - If $(attr_x, x) > (attr_j, j)$ :
+    - forward message (_election_, $<attr_x, x>$ ) to successor
     - set state to *participating*
-  - If $(attr_x, x)$ < $(attr_j, j)$
+  - If $(attr_x, x)$ < $(attr_j, j)$ 
     - If (_not participating_):
-      - send (_election_, $<attr_j, j>$) to successor
+      - send (_election_, $<attr_j, j>$ ) to successor
       - set state to *participating*
   - If $(attr_x, x)$ = $(attr_j, j)$ : $P_j$ is the elected leader (why?)
-    - send elected message containing $P_j$’s id.
+    - send elected message containing $P_j$ ’s id.
 - elected message forwarded along the ring until it reaches the leader.
   - Set state to _not participating_ when an elected message is received.
 
@@ -64,7 +64,7 @@ _Ring Election Protocol_
 - assume no failures occur during the election protocol itself, and there are $N$ processes.
   - assume that only one process initiates the algorithm
     - Bandwidth usage (total number of messages)
-      - $O(N)$: Worst case $= 3N -1$; Best case = $2N$.
+      - $O(N)$ : Worst case $= 3N -1$ ; Best case = $2N$ .
     - $O(N)$ turnaround time.
   - When each process initiates the algorithm:
     - $O(N)$ messages in best-case.

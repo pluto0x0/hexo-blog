@@ -17,7 +17,7 @@ $$
 
 steps:
 
-- policy evaluation: Compute $Q^{\pi_{k-1}}\in \mathbb{R}^{SA}$
+- policy evaluation: Compute $Q^{\pi_{k-1}}\in \mathbb{R}^{SA}$ 
 - policy improvement: $\pi_k \leftarrow \pi_{Q^{\pi_{k-1}}}$ where
 
 $$
@@ -30,7 +30,7 @@ $$
 \pi^\star \to Q^{\pi^\star }=Q^\star \to \pi_{Q^\star } =\pi^\star 
 $$
 
-> this means, once reached goal $\pi^\star $, never leave.
+> this means, once reached goal $\pi^\star$ , never leave.
 {: .prompt-tip }
 
 ## example
@@ -49,7 +49,7 @@ $$
 Optimal policy is heading `Pasta`.
 
 > This example is a finite horizon case.
-> To make it infinite horizon discount, add a state $T$:
+> To make it infinite horizon discount, add a state $T$ :
 >
 > ```mermaid
 > graph TD;
@@ -70,13 +70,13 @@ Optimal policy is heading `Pasta`.
 >
 {: .prompt-tip }
 
-To find $V^\star (s)$, update $V$ value from leaf upwards to root state.
+To find $V^\star (s)$ , update $V$ value from leaf upwards to root state.
 
 ### policy iteration (example)
 
 #### interation #0
 
-define initial $\pi_0$:
+define initial $\pi_0$ :
 
 ```mermaid
 graph TD;
@@ -89,7 +89,7 @@ graph TD;
     C -.-|+3| G([Pasta])
 ```
 
-then the corresponding $Q^{\pi_0} (s, a)$:
+then the corresponding $Q^{\pi_0} (s, a)$ :
 
 ```mermaid
 graph TD;
@@ -172,7 +172,7 @@ $$
 >  Monotone Policy improvement produces exact solutions, while value iteration produces approxmitate solutions,
 {: .prompt-tip }
 
-Proof of: $Q^{\pi_{k+1}} \ge Q^{\pi_k}$
+Proof of: $Q^{\pi_{k+1}} \ge Q^{\pi_k}$ 
 
 lemma 1:
 
@@ -212,4 +212,4 @@ Q^{\pi_k} & \leq \boxed{\mathcal{T}^{\pi_{k+1}} Q^{\pi_k}} \\
 \end{aligned}
 $$
 
-because $Q^{\pi_{k+1}}$ is the fixed point of $\mathcal{T}^{\pi_{k+1}}$.
+because $Q^{\pi_{k+1}}$ is the fixed point of $\mathcal{T}^{\pi_{k+1}}$ .

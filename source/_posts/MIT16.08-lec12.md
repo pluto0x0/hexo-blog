@@ -34,9 +34,9 @@ $Ax = \begin{bmatrix}  x_2 - x_1 \\  x_3 - x_2 \\  x_3 - x_1 \\  x_4 - x_1 \\  x
 
 $Ax = 0 \Rightarrow x = c\begin{bmatrix}  1 \\ 1 \\ 1 \\ 1 \end{bmatrix}$
 
-$rank(A)=n-1$ (ground one node to settle all other nodes, $rank(A)+rank(N(A))=n$).
+$rank(A)=n-1 $(ground one node to settle all other nodes,$ rank(A)+rank(N(A))=n$).
 
-### $A^T$ and $N(A^T)$
+### $A^T$ and $N(A^T)$ 
 
 $A^Ty=0\\dim (N(A^T))=m − r = 5 − 3 = 2$
 
@@ -52,9 +52,9 @@ $\begin{bmatrix}  -1 & 0 & -1 & -1 & 0 \end{bmatrix} \begin{bmatrix}  y_1 \\  y_
 
 $\iff − y1 − y3 − y4 = 0$
 
-Basis for $N(A^T)$ : $\begin{bmatrix}  1\\1\\-1\\0\\0 \end{bmatrix},\begin{bmatrix}  0\\0\\1\\-1\\1 \end{bmatrix}$
+Basis for $N(A^T)$ : $\begin{bmatrix}  1\\1\\-1\\0\\0 \end{bmatrix},\begin{bmatrix}  0\\0\\1\\-1\\1 \end{bmatrix}$ 
 
-pivot columns of $A^T$ ($r$ independent edges) is a **tree** (a graph with no loops).
+pivot columns of $A^T$ ( $r$ independent edges) is a **tree** (a graph with no loops).
 
 $$
 \begin{aligned}

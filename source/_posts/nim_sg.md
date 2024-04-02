@@ -21,19 +21,19 @@ date: 2021-08-17
 
 容易发现， $a$ 是必胜状态，当且仅当：
 
-$$\exists\,b\left(a \rightarrow b\right)\text{为必败状态}$$ 
+$ $\exists\,b\left(a \rightarrow b\right)\text{为必败状态}$ $ 
 
 同样地， $a$ 是必败状态，当且仅当 $a$ 没有后继状态或者：
 
-$$\forall\,b\left(a \rightarrow b\right)\text{为必胜状态}$$ 
+$ $\forall\,b\left(a \rightarrow b\right)\text{为必胜状态}$ $ 
 
 ## Nim游戏
 
-$$n $ 堆物品，每堆有 $ a_i$$ 个，两个玩家轮流取走任意一堆的任意个物品，不能不取。没有物品可取则失败。
+$ $n$ 堆物品，每堆有 $a_i$ $ 个，两个玩家轮流取走任意一堆的任意个物品，不能不取。没有物品可取则失败。
 
 ### 判断必胜
 
-$$Nim和=\mathop\oplus\limits_{i=1}^{n}a_i$$ 
+$ $Nim和=\mathop\oplus\limits_{i=1}^{n}a_i$ $ 
 
 即所有物品数的异或和。
 

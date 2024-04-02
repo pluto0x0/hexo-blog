@@ -523,13 +523,13 @@ sudo systemctl enable --now cronie.service # 启用Crond服务，启用该服务
 
 ```shell
 # @@Screenshots
-bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
-bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
-bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+bindsym Print exec --no-startup-id maim "/home/ $USER/Pictures/$ (date)"
+bindsym $mod+Print exec --no-startup-id maim --window$ (xdotool getactivewindow) "/home/ $USER/Pictures/$ (date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/ $USER/Pictures/$ (date)"
 
 # @@Clipboard Screenshots
 bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
-bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+ $mod+Print exec --no-startup-id maim --window$ (xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 ```
 
@@ -626,7 +626,7 @@ exec_always --no-startup-id blueman-applet
 
 ```shell
 set $time_lock 300
-exec --no-startup-id xidlehook --detect-sleep --not-when-audio --not-when-fullscreen --timer $time_lock $lock ''
+exec --no-startup-id xidlehook --detect-sleep --not-when-audio --not-when-fullscreen --timer $time_lock$ lock ''
 ```
 
 ### 桌面通知
@@ -699,7 +699,7 @@ ${user_names} @ ${nodename}
 ${distribution} ${kernel}
 
 ${color grey}Net
-${color}${wireless_essid wlan0} @ ${wireless_freq wlan0}
+${color} ${wireless_essid wlan0} @$ {wireless_freq wlan0}
 ${addrs wlan0} ${wireless_ap wlan0}
 
 ${color grey}Time
@@ -709,34 +709,34 @@ ${color grey}Up time
 ${color}$uptime
 
 ${color grey}CPU Usage
-${color}$cpu% @${freq}Mhz
+${color} $cpu% @$ {freq}Mhz
 ${cpugraph 50,320 000000 ffffff}
 
 ${color grey}RAM Usage
 ${color}${memperc}%
 ${memgraph 50,320 000000 ffffff}
 ${membar 4}
-${color}${mem}${alignr}${memavail}
+${color} ${mem}$ {alignr}${memavail}
 
 ${color grey}File Systems
-${color}/ ${fs_type /} ${fs_free_perc /}% ${fs_size /} 
+${color}/ ${fs_type /}$ {fs_free_perc /}% ${fs_size /} 
 
 $color ${fs_bar /}
-${fs_used /}${alignr}${fs_free /}
+${fs_used /} ${alignr}$ {fs_free /}
 
 ${color grey}Disk IO
-${color grey}read ${color}${diskio_read}   ${color grey}write ${color}${diskio_write}
+${color grey}read ${color}$ {diskio_read} ${color grey}write$ {color}${diskio_write}
 ${diskiograph 50,320 000000 ffffff}
 
 ${color grey}Top
 
 ${color}Process           CPU%  Mem%
 ${color grey}${hr}
-${color}${top name 1}${top cpu 1}${top mem 1}
-${top name 2}${top cpu 2}${top mem 2}
-${top name 3}${top cpu 3}${top mem 3}
-${top name 4}${top cpu 4}${top mem 4}
-${top name 5}${top cpu 5}${top mem 5}
+${color} ${top name 1}$ {top cpu 1}${top mem 1}
+${top name 2} ${top cpu 2}$ {top mem 2}
+${top name 3} ${top cpu 3}$ {top mem 3}
+${top name 4} ${top cpu 4}$ {top mem 4}
+${top name 5} ${top cpu 5}$ {top mem 5}
 ]];
 
 ```

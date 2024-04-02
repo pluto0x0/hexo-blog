@@ -26,9 +26,9 @@ categories:
 
 Assume
 
-- proposals are sent at time $s$.
-- $\epsilon$: Worst-case skew
-- $T$: Maximum message transfer time (including local processing)
+- proposals are sent at time $s$ .
+- $\epsilon$ : Worst-case skew
+- $T$ : Maximum message transfer time (including local processing)
 
 Round-based algorithm
 
@@ -38,13 +38,13 @@ Round-based algorithm
 - At each process, the i-th round
   - starts at local time $s + (i -1)*(\epsilon + T)$
   - ends at local time $s + i*(\epsilon + T)$
-- The start or end time of a round in two different processes differs by at most $\epsilon$.
+- The start or end time of a round in two different processes differs by at most $\epsilon$ .
 - The algorithm proceeds in $f+1$ rounds.
 - Assume communication channels are reliable.
 
-$\text{Values}_{i}^{r}$: the set of proposed values known to $P_i$ at the beginning of round $r$
+$\text{Values}_{i}^{r} $: the set of proposed values known to$ P_i $at the beginning of round$ r$
 
-- Initially $\text{Values}_{i}^{1} = \{v_i\}$:
+- Initially $\text{Values}_{i}^{1} = \{v_i\}$ :
   - for r = 1 to f+1 do
     - B-multicast $(\text{Values}_{i}^{r-1} - \text{Values}_{i}^{r})$
     - $\text{Values}_{i}^{r+1} = \text{Values}_{i}^{r}$
@@ -63,7 +63,7 @@ Three types of roles:
 - **Acceptors**: accept proposed values (under certain conditions).
   - All or subset of processes.
 - **Learners**: learns the value that has been accepted by majority of acceptors.
-  - All processes. 
+  - All processes.
 
 <!-- #### Try 1: Single Phase
 
@@ -85,10 +85,10 @@ replies back saying:
   - *OK*! I will make that promise for any request I receive in the future.
   - (If applicable) I have already accepted a value v from a proposal with lower number m < n. The proposal has the highest number among the ones I accepted so far
 
-#### Phase 2:
+#### Phase 2
 
 - If a proposer receives an *OK* response for its *prepare* request
-#n from a majority of acceptors, then it sends an *accept* request
+# n from a majority of acceptors, then it sends an *accept* request
 with a proposed value. What is the proposed value?
   - The value $v$ of the highest numbered proposal among the received
 responses.

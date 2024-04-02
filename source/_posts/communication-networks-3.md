@@ -65,21 +65,21 @@ categories:
   - determine output link
 - $d_{\text{queue}}$ queueing delay
   - time waiting at output link for transmission
-  - $R$: link bandwidth (bps)
-  - $L$: packet length (bits)
-  - $a$: average packet arrival rate
-  - $La/R\to 0$: avg delay small
-  - $La/R\to 1$: avg delay large
-  - $La/R> 1$: avg delay infinite
-- $d_{\text{trans}}$  transmission delay
+  - $R$ : link bandwidth (bps)
+  - $L$ : packet length (bits)
+  - $a$ : average packet arrival rate
+  - $La/R\to 0$ : avg delay small
+  - $La/R\to 1$ : avg delay large
+  - $La/R> 1$ : avg delay infinite
+- $d_{\text{trans}}$ transmission delay
   - **time to upload bits**
-  - $L$: packet length (bits)
-  - $R$: link bandwidth (bps)
+  - $L$ : packet length (bits)
+  - $R$ : link bandwidth (bps)
   - $d_{\text{trans}} = L/R$
 - $d_{\text{prop}}$ propagation delay:
   - **time to propagate bits from A to B**
-  - $d$: length of physical link
-  - $v$: propagation speed
+  - $d$ : length of physical link
+  - $v$ : propagation speed
   - $d_{\text{prop}} = d/v$
 
 ### Loss

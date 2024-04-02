@@ -34,7 +34,7 @@ $$
 ## Support vector machine (SVM)
 
 maximize the distance between the hyperplane
-and the closest training example, where the distance is given by $\frac{\left|w^T x_0\right|}{\|w\|}$.
+and the closest training example, where the distance is given by $\frac{\left|w^T x_0\right|}{\|w\|}$ .
 
 ![](/img/post/deep-learning-for-CV-3-2.png){: w="400" }
 
@@ -42,7 +42,7 @@ and the closest training example, where the distance is given by $\frac{\left|w^
 
 Assuming the data is linearly separable, we can fix the scale of $w$ so that $y_i w^T x_i=1$ for support vectors and $y_i w^T x_i \geq 1$ for all other points.
 
-i.e. We want to maximize margin $\frac{1}{\|w\|}$ while correctly classifying all training data: $y_i w^T x_i \geq 1$, or
+i.e. We want to maximize margin $\frac{1}{\|w\|}$ while correctly classifying all training data: $y_i w^T x_i \geq 1$ , or
 
 $$
 \min _w \frac{1}{2}\|w\|^2 \quad \text { s.t. } \quad y_i w^T x_i \geq 1 \quad \forall i.
@@ -85,7 +85,7 @@ $$
 
 ### regularization
 
-- L2 regularization: $R(w)=\frac{1}{2}\|w\|_2^2$
+- L2 regularization: $R(w)=\frac{1}{2}\|w\|_2^2$ 
 - **L1 regularization**: $R(w)=\frac{1}{2}\|w\|_1 :=
 \sum_d\left|w^{(d)}\right|$
 
@@ -101,8 +101,8 @@ L1 regularization encourages sparsity weight.
 
 ### Multi-class perceptron
 
-Learn $C$ scoring functions: $f_1, f_2, \ldots, f_C$
-and $\hat{y}=\operatorname{argmax}_c f_c(x)$
+Learn $C$ scoring functions: $f_1, f_2, \ldots, f_C$ 
+and $\hat{y}=\operatorname{argmax}_c f_c(x)$ 
 
 Multi-class perceptrons:
 
@@ -155,7 +155,7 @@ $$
 l\left(W, x_i, y_i\right)=-\log P_W\left(y_i \mid x_i\right)=-\log \left(\frac{\exp \left(w_{y_i}^T x_i\right)}{\sum_j \exp \left(w_j^T x_i\right)}\right)
 $$
 
-This is also the cross-entropy between the empirical distribution $\hat{P}$ and estimated distribution $P_W$:
+This is also the cross-entropy between the empirical distribution $\hat{P}$ and estimated distribution $P_W$ :
 
 $$
 -\sum_C \hat{P}\left(c \mid x_i\right) \log P_W\left(c \mid x_i\right)
