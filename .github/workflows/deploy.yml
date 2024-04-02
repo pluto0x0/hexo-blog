@@ -18,6 +18,7 @@ jobs:
      - name: Setup hexo
        env:
          ACTION_DEPLOY_KEY: ${{ secrets.private_key }}
+       # removed:"hexo-renderer-marked": "^6.0.0",
        run: |
         mkdir -p ~/.ssh/
         echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
@@ -25,12 +26,7 @@ jobs:
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global user.email "ying.zf@foxmail.com"
         git config --global user.name "pluto0x0"
-        npm install hexo-cli -g
-        npm install hexo-deployer-git --save
         npm install
-        npm uninstall hexo-renderer-marked --save
-        npm install hexo-renderer-markdown-it --save
-        npm install @traptitech/markdown-it-katex --save
      - name: Node and Hexo version
        run: |
         node -v
