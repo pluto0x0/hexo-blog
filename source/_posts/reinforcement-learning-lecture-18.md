@@ -1,5 +1,5 @@
 ---
-title: Reinforcemant Learning (17)
+title: Reinforcemant Learning (18)
 date: 2024-03-24 03:07:00
 img_path: /_posts/
 mermaid: true
