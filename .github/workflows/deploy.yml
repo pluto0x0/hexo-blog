@@ -36,10 +36,10 @@ jobs:
        run: |
         echo $SHELL
         pwd
-        exp='s/!\[\(.*\)\](\.\.\(\/img.\+\))/![\1](\2)/gp'
+        exp='s/!\[\(.*\)\](\.\.\(\/img.\+\))/![\1](\2)/g'
         for file in source/_posts/*.md; do
             echo in "$file":
-            sed -n $exp "$file"
+            sed -n ${exp}p "$file"
             sed -i $exp "$file"
         done
      - name: Hexo deploy

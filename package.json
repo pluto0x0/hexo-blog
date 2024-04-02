@@ -24,6 +24,7 @@
     "hexo-theme-fluid": "latest",
     "hexo-renderer-markdown-it": "latest",
     "@traptitech/markdown-it-katex": "latest",
+    "markdown-it-imsize": "latest",
     "hexo-deployer-git": "latest"
   }
 }
