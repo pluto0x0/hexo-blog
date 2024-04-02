@@ -55,7 +55,7 @@ ssh-keygen -f <keyname>
 
 在仓库的`Settings > Deploy keys > Add deploy key` 粘贴公钥内容，Name随意。
 
-![alt text](../img/post/hexo-with-githubaction-1.png =100x100)
+![alt text](../img/post/hexo-with-githubaction-1.png =100x200)
 
 ## github action脚本
 
