@@ -1,6 +1,7 @@
 ---
 title: Hexo + Github Action搭建
 categories: 网站
+mermaid: true
 date: 2024-04-02 02:07:32
 ---
 
