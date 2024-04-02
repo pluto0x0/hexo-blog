@@ -740,8 +740,8 @@ post:
 # Based on GitHub Issues
 # See: https://utteranc.es
 utterances:
-  repo:
-  issue_term: pluto0x0/pluto0x0.github.io
+  repo: pluto0x0/pluto0x0.github.io
+  issue_term: title
   label: comment
   theme: github-light
   theme_dark: github-dark
