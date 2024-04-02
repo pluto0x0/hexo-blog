@@ -101,4 +101,4 @@ deploy:
 markdown:
   plugins:
     - "@traptitech/markdown-it-katex"
-    - markdown-it-imsize
+    # - markdown-it-imsize
