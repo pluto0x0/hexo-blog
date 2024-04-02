@@ -10,7 +10,7 @@ categories:
 greedy policy:
 
 $$
-\pi^\star (s) = \arg\max_{a\in A} Q^\star (s, a)
+\pi^\star (s) = \argmax_{a\in A} Q^\star (s, a)
 $$
 
 sequence of function:
@@ -22,7 +22,7 @@ $$
 define
 
 $$
-\pi_{f_k}^\star (s) = \arg\max_{a\in A} f_k(s, a)
+\pi_{f_k}^\star (s) = \argmax_{a\in A} f_k(s, a)
 $$
 
 Claim:

@@ -107,10 +107,10 @@ Maximum likelihood estimation:
 
 $$
 \begin{aligned}
-w_{ML} &= \arg\min_w - \sum_i \log P_w(y_i | x_i) \\
-       &= \arg\min_w \sum_i - \log \left( \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left( - \frac{[ y_i-f_w(x_i)]^2}{2\sigma^2} \right) \right) \\
-       &= \arg\min_w \sum_i \log \sqrt{2\pi\sigma^2} + \frac{[y_i-f_w(x_i)]^2}{2\sigma^2} \\
-       &= \arg\min_w \sum_i [y_i-f_w(x_i)]^2 \\
+w_{ML} &= \argmin_w - \sum_i \log P_w(y_i | x_i) \\
+       &= \argmin_w \sum_i - \log \left( \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left( - \frac{[ y_i-f_w(x_i)]^2}{2\sigma^2} \right) \right) \\
+       &= \argmin_w \sum_i \log \sqrt{2\pi\sigma^2} + \frac{[y_i-f_w(x_i)]^2}{2\sigma^2} \\
+       &= \argmin_w \sum_i [y_i-f_w(x_i)]^2 \\
 \end{aligned}
 $$
 
@@ -156,8 +156,8 @@ $$
 Maximum likelihood estimate:
 
 $$\begin{aligned}
-w_{ML} &= \arg\min_w \sum_i -\log P(y_i|x_i) \\
-&= \arg\min_w \sum_i -\log \sigma(y_iw^Txi)
+w_{ML} &= \argmin_w \sum_i -\log P(y_i|x_i) \\
+&= \argmin_w \sum_i -\log \sigma(y_iw^Txi)
 \end{aligned}
 $$
 

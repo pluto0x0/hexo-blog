@@ -220,7 +220,7 @@ V^{*}(s)=\max_{a\in A}Q^{*}(s,a)=Q^{*}(s,\pi^{*}(s))
 $$
 
 $$
-\pi^\star (s) = \arg \max_{a \in A} Q^\star (s, a)
+\pi^\star (s) = \argmax_{a \in A} Q^\star (s, a)
 $$
 
 ## Fixed-horizon MDPs

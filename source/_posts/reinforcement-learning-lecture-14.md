@@ -32,7 +32,7 @@ Featurize: # of blocks on each column. In the example, the feature is $
 ### Monte-Carlo Vaule Prediction
 
 $$
-V^\pi(s)=\mathbb{E}[G \mid s]=\arg\min_{f:S\to \mathbb R} \mathbb{E}\left[(f(s)-G)^2\right]
+V^\pi(s)=\mathbb{E}[G \mid s]=\argmin_{f:S\to \mathbb R} \mathbb{E}\left[(f(s)-G)^2\right]
 $$
 
 Is a regression problem.
@@ -103,9 +103,9 @@ $$
 \begin{gathered}    
 V_{k+1}(s)=
 
-\arg\min_{f:s\to \mathbb{R}} \mathbb{E}_\pi\left[ \big(f(s)-(r+\gamma V_{s})\big)^2\right] \\
+\argmin_{f:s\to \mathbb{R}} \mathbb{E}_\pi\left[ \big(f(s)-(r+\gamma V_{s})\big)^2\right] \\
 
-\approx \arg\min_{V_\theta\in \mathscr{F}} \frac{1}{n} \sum_{i=1}^n\big(V_\theta(s_i)-r_i-\gamma V_k(s^{\prime})\big)^2 . \\
+\approx \argmin_{V_\theta\in \mathscr{F}} \frac{1}{n} \sum_{i=1}^n\big(V_\theta(s_i)-r_i-\gamma V_k(s^{\prime})\big)^2 . \\
 
 \end{gathered}
 $$

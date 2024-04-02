@@ -21,7 +21,7 @@ steps:
 - policy improvement: $\pi_k \leftarrow \pi_{Q^{\pi_{k-1}}}$ where
 
 $$
-\pi_{f{s}} = \arg\max_{a \in A} f(s,a)
+\pi_{f{s}} = \argmax_{a \in A} f(s,a)
 $$
 
 property:
@@ -105,7 +105,7 @@ graph TD;
 #### interation #1
 
 $$
-\pi_1(s) := \arg\max_{a\in A} Q^{\pi_0} (s, a)
+\pi_1(s) := \argmax_{a\in A} Q^{\pi_0} (s, a)
 $$
 
 ```mermaid
@@ -135,7 +135,7 @@ graph TD;
 #### interation #2
 
 $$
-\pi_2(s) := \arg\max_{a\in A} Q^{\pi_1} (s, a)
+\pi_2(s) := \argmax_{a\in A} Q^{\pi_1} (s, a)
 $$
 
 ```mermaid
