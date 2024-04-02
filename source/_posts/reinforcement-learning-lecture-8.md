@@ -27,7 +27,7 @@ $$
 property:
 
 $$
-\pi^\star \to Q^{\pi^\star }=Q^\star \to \pi_{Q^\star } =\pi^\star
+\pi^\star \to Q^{\pi^\star }=Q^\star \to \pi_{Q^\star } =\pi^\star 
 $$
 
 > this means, once reached goal $\pi^\star $, never leave.
@@ -169,7 +169,7 @@ $$
 \Rightarrow \text{\#iteration} \le |A|^{|S|}
 $$
 
-> Monotone Policy improvement produces exact solutions, while value iteration produces approxmitate solutions,
+>  Monotone Policy improvement produces exact solutions, while value iteration produces approxmitate solutions,
 {: .prompt-tip }
 
 Proof of: $Q^{\pi_{k+1}} \ge Q^{\pi_k}$

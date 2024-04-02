@@ -24,7 +24,7 @@ $$
 Ax=b
 $$
 
-Minimize :
+Minimize : 
 
 $$
 \| Ax-b\| ^2=\| e\| ^2
@@ -51,7 +51,7 @@ $$
 which means the line is
 
 $$
-y=\frac{1}{2}x+\frac{2}{3}
+y=\frac{1}{2}x+\frac{2}{3} 
 $$
 
 # When $A^\top A$ is invertible
@@ -60,7 +60,7 @@ If  $A$ has independent columns, then $A^\top A$ is invertible.
 
 to prove: if $A$ has dependent cols, if $A^\top A x=0$ then $x=0$
 
-$N(A^\top A) =N(A)$ see [proof of $N(A^\top A)=N(A)$](lec14%20e323f8c6256b4c4f8fd632761950a29f.md)
+$N(A^\top A) =N(A)$ see [proof of $N(A^\top A)=N(A)$ ](lec14%20e323f8c6256b4c4f8fd632761950a29f.md) 
 
 trick
 
@@ -70,7 +70,7 @@ A^\top Ax & = 0 \\
 x^\top A^\top A x & = 0\\
 (Ax)^\top Ax & = 0 \\
 Ax & = 0 \text{(square)} \\
-x & = 0 \text{(A has independent columns)}
+x & = 0 \text{(A has independent columns)} 
 \end{aligned}
 $$
 
