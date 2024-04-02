@@ -744,7 +744,7 @@ utterances:
   issue_term: title
   label: comment
   theme: github-light
-  theme_dark: github-dark
+  theme_dark: photon-dark
 
 # Disqus
 # 基于第三方的服务，国内用户直接使用容易被墙，建议配合 Disqusjs
