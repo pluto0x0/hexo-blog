@@ -26,7 +26,7 @@ We call  $Q$ **orthonormal** matrix when it’s **square**.
 
 ## **Hadamard matrix**
 
-Let  $H$ be the n order Hadamard matrix, then 
+Let  $H$ be the n order Hadamard matrix, then
 
 $$
 ⁍

@@ -100,7 +100,7 @@ $$
 Similar to Linear Approximation, **rewriting expectation with a regression problem**,
 
 $$
-\begin{gathered}    
+\begin{gathered}
 V_{k+1}(s)=
 
 \argmin_{f:s\to \mathbb{R}} \mathbb{E}_\pi\left[ \big(f(s)-(r+\gamma V_{s})\big)^2\right] \\

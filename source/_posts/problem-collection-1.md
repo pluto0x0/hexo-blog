@@ -92,32 +92,32 @@ $$ \texttt{a[] = +1, -2, +3, -4, +5, -6, +7, -8}$$
 
 ```cpp
 int main(){
-	scanf("%d",&n);
-	for (int i=0;i<n;i++) scanf("%d",&a[i]);
-	sort(a,a+n);
-	scanf("%s",ch);
-	mi=ma=1;
-	ans.push_back(1);
-	for (int i=1;i<n;i++){
-		if (ch[i]!=ch[i-1]){
-			ma++;
-			ans.push_back(ma);
-		}
-		else{
-			mi--;
-			ans.push_back(mi);
-		}
-	}
-	for (int i=0;i<n;i++){
-		printf("%d ",a[ans[i]-mi]);
-		if ((ans[i]&1)==(ma&1)){
-			printf("%c\n",ch[n-1]);
-		}
-		else{
-			if (ch[n-1]=='L') printf("R\n");
-			else printf("L\n");
-		}
-	}
+    scanf("%d",&n);
+    for (int i=0;i<n;i++) scanf("%d",&a[i]);
+    sort(a,a+n);
+    scanf("%s",ch);
+    mi=ma=1;
+    ans.push_back(1);
+    for (int i=1;i<n;i++){
+        if (ch[i]!=ch[i-1]){
+            ma++;
+            ans.push_back(ma);
+        }
+        else{
+            mi--;
+            ans.push_back(mi);
+        }
+    }
+    for (int i=0;i<n;i++){
+        printf("%d ",a[ans[i]-mi]);
+        if ((ans[i]&1)==(ma&1)){
+            printf("%c\n",ch[n-1]);
+        }
+        else{
+            if (ch[n-1]=='L') printf("R\n");
+            else printf("L\n");
+        }
+    }
 }
 ```
 
@@ -132,7 +132,7 @@ int main(){
 就是 $$1\leftrightarrow \texttt{root}$$ 的路径调个头
 
 ```cpp
-int solve(int x,int y){	//get LCA of x, y
+int solve(int x,int y){    //get LCA of x, y
     int fx = lca(x,root), fy = lca(y,root);
     if(fx == fy) return lca(x,y);
     return dep[fx] > dep[fy] ? fx : fy;

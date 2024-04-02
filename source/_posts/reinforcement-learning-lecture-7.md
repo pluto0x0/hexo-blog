@@ -16,7 +16,7 @@ $$
 sequence of function:
 
 $$
-f_0, f_1, f_2, \cdots \to Q^\star 
+f_0, f_1, f_2, \cdots \to Q^\star
 $$
 
 define
@@ -67,7 +67,7 @@ $$
 
 step 1: $f_k \le V^\star $
 
-step 2: 
+step 2:
 
 $$
 \begin{aligned}

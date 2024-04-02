@@ -37,7 +37,7 @@ i.e. $Q^\star $ and $V^\star $ are fixpoints of $\mathcal{T}$.
 ## Value Interation Algorithm (VI)
 
 $$
-\text{funtion } f_0 = \vec{0} \in \mathbb{R}^{SA} 
+\text{funtion } f_0 = \vec{0} \in \mathbb{R}^{SA}
 $$
 
 Interation to calculate fix points:
@@ -61,7 +61,7 @@ $$
 
 lemma: $\mathcal{T}$ is a $\gamma$**-contraction** under $\| \cdot\| _{\infty}$ where $\| \cdot\| _{\infty} := \max_{x\in (\cdot)}x$.
 
-which means 
+which means
 
 $$
 \| \mathcal{T}f-\mathcal{T}f'\| _{\infty}\leq\gamma\| f-f'\| _{\infty}
@@ -84,7 +84,7 @@ $$
 
 Proof of lemma:
 
-It suffies to prove 
+It suffies to prove
 
 $$
 \begin{aligned}

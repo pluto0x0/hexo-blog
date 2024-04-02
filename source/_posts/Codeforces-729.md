@@ -46,7 +46,6 @@ $$a^x \equiv n \mod b$$
 
 因此就可以暴力枚举。
 
-
 ```cpp
 #include <cstdio>
 typedef long long ll;
