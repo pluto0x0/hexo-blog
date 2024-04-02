@@ -9,11 +9,13 @@ categories:
 ---
 
 ```mermaid
-a ---> b
+graph LR
+    a ---> b
 ```
 
 {% mermaid %}
-a ---> b
+graph LR
+    a ---> b
 {% endmermaid %}
 
 ## Application in contextual bandit (CB)
