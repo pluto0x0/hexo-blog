@@ -37,8 +37,13 @@ jobs:
         hexo -v
      - name: Replace image path
        run: |
+        echo $SHELL
+        pwd
+        exp='s/!\[\(.*\)\](\.\.\(\/img.\+\))/![\1](\2)/gp'
         for file in source/_posts/*.md; do
-            sed -i 's/!\[\(.*?\)\]\(\.\.\(\/img.+?\)\)/![$1]($2)/g' "$file"
+            echo in "$file":
+            sed -n $exp "$file"
+            sed -i $exp "$file"
         done
      - name: Hexo deploy
        run: |
