@@ -6,32 +6,32 @@ mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-index_img: /img/post/distributed-system-8-6.png
+index_img: ../img/post/distributed-system-8-6.png
 ---
 
 ## More efficient B-multicasts
 
 ### B-multicast
 
-![](/img/post/distributed-system-8.png){: w="500" }
+![](../img/post/distributed-system-8.png){: w="500" }
 
 in physical network view: Redundant packets
 
-![](/img/post/distributed-system-8-1.png){: w="500" }
+![](../img/post/distributed-system-8-1.png){: w="500" }
 
 ### Tree-based multicast
 
 construct a minimum spanning tree and unicast along that.
 
-![](/img/post/distributed-system-8-2.png){: w="500" }
+![](../img/post/distributed-system-8-2.png){: w="500" }
 
 then,
 
-![](/img/post/distributed-system-8-3.png){: w="500" }
+![](../img/post/distributed-system-8-3.png){: w="500" }
 
 construct a tree that includes network routers.
 
-![IP multicast](/img/post/distributed-system-8-4.png){: w="500" }
+![IP multicast](../img/post/distributed-system-8-4.png){: w="500" }
 _IP multicast_
 
 ### Third approach: Gossip
@@ -45,7 +45,7 @@ Properties
 - More efficient than unicasting to all receivers
 - no hard guarantees.
 
-![](/img/post/distributed-system-8-5.png){: w="500" }
+![](../img/post/distributed-system-8-5.png){: w="500" }
 
 
 ## Mutual Exclusion
@@ -96,7 +96,7 @@ Leader:
 
 the token travel around the ring.
 
-![](/img/post/distributed-system-8-6.png){: w="500" }
+![](../img/post/distributed-system-8-6.png){: w="500" }
 
 - enter()
   - Wait until you get token

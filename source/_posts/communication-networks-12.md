@@ -11,11 +11,11 @@ categories:
 
 ### TCP ACK generation
 
-![](/img/post/communication-networks-11.png){: w="400" }
+![](../img/post/communication-networks-11.png){: w="400" }
 
-![](/img/post/communication-networks-11-1.png){: w="400" }
+![](../img/post/communication-networks-11-1.png){: w="400" }
 
-![](/img/post/communication-networks-11-2.png){: w="400" }
+![](../img/post/communication-networks-11-2.png){: w="400" }
 
 Arrival of in-order segment with expected seq #. One other segment has ACK pending | Immediately send single **cumulative** ACK, ACKing both in-order segments
 Arrival of out-of-order segment higher-than-expect seq. #. Gap detected. | Immediately send **duplicate** ACK, indicating seq. # of next expected byte
@@ -27,7 +27,7 @@ TCP fast retransmit
 : if sender receives 3 ACKs for same data (“triple duplicate ACKs”), resend unacked segment with smallest seq #
 : likely that unacked segment lost, so don’t wait for timeout
 
-![](/img/post/communication-networks-11-3.png){: w="300" }
+![](../img/post/communication-networks-11-3.png){: w="300" }
 
 ## TCP flow control
 
@@ -38,7 +38,7 @@ flow control
 - sender limits amount of unacked (“in-flight”) data to receiver’s rwnd value
 - guarantees receive buffer will not overflow
 
-![](/img/post/communication-networks-11-4.png){: w="300" }
+![](../img/post/communication-networks-11-4.png){: w="300" }
 
 ## Connection Management
 
@@ -49,11 +49,11 @@ before exchanging data, sender/receiver “handshake”:
 
 ### TCP 3-way handshake
 
-![](/img/post/communication-networks-11-5.png){: w="700" }
+![](../img/post/communication-networks-11-5.png){: w="700" }
 
 ### TCP closing a connection
 
-![](/img/post/communication-networks-11-6.png){: w="700" }
+![](../img/post/communication-networks-11-6.png){: w="700" }
 
 ## Congestion Control
 
@@ -68,7 +68,7 @@ congestion
 
 #### one router, **infinite** buffers
 
-![](/img/post/communication-networks-12.png){: w="600" }
+![](../img/post/communication-networks-12.png){: w="600" }
 
 $$
 T=\frac{1}{\mu-\lambda}

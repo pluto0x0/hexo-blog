@@ -3,13 +3,13 @@ title: Communication Networks (4)
 date: 2024-01-30
 img_path: /_posts/
 mermaid: true
-index_img: /img/post/communication-networks-4-1.png
+index_img: ../img/post/communication-networks-4-1.png
 categories:
 - Course Notes
 - Communication Networks
 ---
 
-![](/img/post/communication-networks-4-3.png){: w="8"}
+![](../img/post/communication-networks-4-3.png){: w="8"}
 
 ## Application architectures
 
@@ -21,7 +21,7 @@ Possible structure of applications:
 
 ### Client-server architecture
 
-![](/img/post/communication-networks-4-1.png)
+![](../img/post/communication-networks-4-1.png)
 
 server
 
@@ -54,7 +54,7 @@ client
 - process sends/receives messages to/from its socket
 - socket analogous to **mailbox**
 
-![](/img/post/communication-networks-4-5.png)
+![](../img/post/communication-networks-4-5.png)
 
 ## Transport service requirements
 

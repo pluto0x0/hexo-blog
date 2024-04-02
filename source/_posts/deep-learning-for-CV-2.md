@@ -4,7 +4,7 @@ date: 2024-02-01 01:25:06
 img_path: /_posts/
 mermaid: true
 tags: CS444
-index_img: /img/post/deep-learning-for-CV-2-4.png
+index_img: ../img/post/deep-learning-for-CV-2-4.png
 categories:
 - Course Notes
 - Deep Learning for CV
@@ -32,15 +32,15 @@ $f(x) $= label of the training example nearest to$ x$
 
 K-nearest neighbor classifier:
 
-![](/img/post/deep-learning-for-CV-2-1.png){: w="300"}
+![](../img/post/deep-learning-for-CV-2-1.png){: w="300"}
 
-![](/img/post/deep-learning-for-CV-2-2.png){: h="200"}
+![](../img/post/deep-learning-for-CV-2-2.png){: h="200"}
 
 ## Linear classifier
 
-![](/img/post/deep-learning-for-CV-2-3.png){: w="300"}
+![](../img/post/deep-learning-for-CV-2-3.png){: w="300"}
 
-![](/img/post/deep-learning-for-CV-2-4.png){: w="300"}
+![](../img/post/deep-learning-for-CV-2-4.png){: w="300"}
 
 $$
 f(x) = \operatorname{sgn} (w\cdot x + b)
@@ -116,7 +116,7 @@ $$
 
 ### Problem of linear regression
 
-![](/img/post/deep-learning-for-CV-2-5.png){: w="500"}
+![](../img/post/deep-learning-for-CV-2-5.png){: w="500"}
 _Linear regression is very sensitive to outliers_
 
 ## Logistic regression
@@ -133,7 +133,7 @@ flowchart LR
     linear_output-->|logistic function|Probability
 ```
 
-![](/img/post/deep-learning-for-CV-2-6.png){: w="300"}
+![](../img/post/deep-learning-for-CV-2-6.png){: w="300"}
 _sigmoid function_
 
 $$
@@ -150,7 +150,7 @@ $$
 
 ### Logistic loss
 
-![](/img/post/deep-learning-for-CV-2-9.png){: w="400" }
+![](../img/post/deep-learning-for-CV-2-9.png){: w="400" }
 
 
 Maximum likelihood estimate:
@@ -205,5 +205,5 @@ $$
 
 Logistic regression does not converge for linearly separable data:
 
-![](/img/post/deep-learning-for-CV-2-8.png)
+![](../img/post/deep-learning-for-CV-2-8.png)
 _Scaling $w$ by ever larger constants makes the classifier more confident and keeps increasing the likelihood of the data_

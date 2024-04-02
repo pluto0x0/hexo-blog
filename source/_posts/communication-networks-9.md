@@ -15,7 +15,7 @@ rdt
 udt
 : unreliable data transfer protocol
 
-![](/img/post/communication-networks-9-1.png){: w="500" }
+![](../img/post/communication-networks-9-1.png){: w="500" }
 
 ## Reliable Channel
 
@@ -46,12 +46,12 @@ NAKs
 
 FSM
 
-![](/img/post/communication-networks-9-2.png){: w="600" }
+![](../img/post/communication-networks-9-2.png){: w="600" }
 
 > Notice that the 2 sequence numbers (0 and 1) suffies
 {: .prompt-tip }
 
-![](/img/post/communication-networks-9-3.png){: w="600" }
+![](../img/post/communication-networks-9-3.png){: w="600" }
 
 ## NAK-free protocol
 
@@ -65,7 +65,7 @@ FSM
 - sender waits “reasonable” amount of time for ACK
 - retransmits if no ACK received in this time
 
-![](/img/post/communication-networks-9-4.png){: w="700" }
+![](../img/post/communication-networks-9-4.png){: w="700" }
 
 ### Performance
 
@@ -75,13 +75,13 @@ $$
 U_{\text {sender }}=\frac{L / R}{R T+L / R}=\frac{.008}{30.008}=0.00027
 $$
 
-![](/img/post/communication-networks-9-5.png){: w="300" }
+![](../img/post/communication-networks-9-5.png){: w="300" }
 
 ## Pipelining
 
 e.g. $3\times U_{\text {sender }}$ 
 
-![](/img/post/communication-networks-9-6.png){: w="300" }
+![](../img/post/communication-networks-9-6.png){: w="300" }
 
 ### Go-back-N
 
@@ -90,11 +90,11 @@ e.g. $3\times U_{\text {sender }}$
 - sender has timer for oldest unacked packet
 - when timer expires, retransmit all unacked packets
 
-![](/img/post/communication-networks-9-8.png){: w="600" }
+![](../img/post/communication-networks-9-8.png){: w="600" }
 
-<!-- ![](/img/post/communication-networks-9-7.png){: w="700" } -->
+<!-- ![](../img/post/communication-networks-9-7.png){: w="700" } -->
 
-![](/img/post/communication-networks-9-9.png){: w="800" }
+![](../img/post/communication-networks-9-9.png){: w="800" }
 
 ### Selective Repeat
 

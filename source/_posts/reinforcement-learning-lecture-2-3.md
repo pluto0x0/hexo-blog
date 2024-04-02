@@ -38,7 +38,7 @@ Objective: (discounted) expected total reward
 
 ## Example: Gridworld
 
-![](/img/post/reinforcement-learning-lecture-2.png){: w="300" }
+![](../img/post/reinforcement-learning-lecture-2.png){: w="300" }
 
 - State: grid x, y
 - Action: N, S, E, W

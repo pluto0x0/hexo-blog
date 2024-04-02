@@ -6,7 +6,7 @@ mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-index_img: /img/post/distributed-system-4-2.png
+index_img: ../img/post/distributed-system-4-2.png
 ---
 
 ## Event Ordering
@@ -35,7 +35,7 @@ if $a \nrightarrow e$ and $e \nrightarrow a$ then $a \| e$ , i.e. **a and e are 
 
 ### Lamport’s Logical Clock
 
-![](/img/post/distributed-system-4.png){: w="400" }
+![](../img/post/distributed-system-4.png){: w="400" }
 
 Algorithm: for each process $P_i$ :
 
@@ -50,7 +50,7 @@ if events $e \to e'$ , then $L(e) < L(e’)$
 
 ### Vector Clocks
 
-![](/img/post/distributed-system-4-1.png){: w="400" }
+![](../img/post/distributed-system-4-1.png){: w="400" }
 
 $V_i[j] $is the clock for process$ P_j $as maintained by$ P_i$
 
@@ -99,4 +99,4 @@ A cut C is consistent iff
 
 $ $\forall e \in  C,  \text{if } f\to e \text{ then } f \in C$ $
 
-![](/img/post/distributed-system-4-2.png){: w="600" }
+![](../img/post/distributed-system-4-2.png){: w="600" }

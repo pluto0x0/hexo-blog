@@ -6,7 +6,7 @@ mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-index_img: /img/post/distributed-system-3-2.png
+index_img: ../img/post/distributed-system-3-2.png
 ---
 
 ## Omission
@@ -95,7 +95,7 @@ where $\min$ is minimum one way network.
 
 ### Berkeley Algorithm
 
-![](/img/post/distributed-system-3.png){: w="300" }
+![](../img/post/distributed-system-3.png){: w="300" }
 _Berkeley Algorithm for internal synchronization_
 
 1. Server periodically polls clients: “what time do you think it is?”
@@ -106,7 +106,7 @@ _Berkeley Algorithm for internal synchronization_
 
 ### NTP Symmetric Mode
 
-![](/img/post/distributed-system-3-2.png){: w="700" }
+![](../img/post/distributed-system-3-2.png){: w="700" }
 
 - $T_{B r}$ and $T_{B s}$ are local timestamps at $B$ .
 - $T_{A r}$ and $T_{A s}$ are local timestamps at $A$ .
@@ -115,7 +115,7 @@ _Berkeley Algorithm for internal synchronization_
 - $o_i$ : **estimate** of actual offset between the two clocks
 - $d_i$ : **estimate** of accuracy of $o_i$ / total transmission times for $m$ and $m’$ . $d_i=t+t’$ 
 
-![](/img/post/distributed-system-3-1.png){: w="500" }
+![](../img/post/distributed-system-3-1.png){: w="500" }
 
 relations:
 

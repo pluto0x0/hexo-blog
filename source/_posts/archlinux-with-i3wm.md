@@ -4,7 +4,7 @@ date: 2023-11-12 01:03:06
 img_path: /_posts/
 categories: Linux
 tags: Linux
-index_img: /img/post/archlinux-with-i3wm-2.png
+index_img: ../img/post/archlinux-with-i3wm-2.png
 ---
 
 ## Intro

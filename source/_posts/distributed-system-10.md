@@ -6,7 +6,7 @@ mermaid: true
 categories:
 - Course Notes
 - Distributed Systems
-index_img: /img/post/distributed-system-10-1.png
+index_img: ../img/post/distributed-system-10-1.png
 ---
 
 ## Leader Election
@@ -40,7 +40,7 @@ best (highest) election attribute value is elected.
 - N processes are organized in a logical ring
 - All messages are sent clockwise around the ring.
 
-![](/img/post/distributed-system-10.png){: w="400" }
+![](../img/post/distributed-system-10.png){: w="400" }
 _Ring Election Protocol_
 
 - When $P_i$ start election
@@ -81,7 +81,7 @@ _Ring Election Protocol_
   - Incomplete FD: violation of liveness
   - Inaccurate FD: violation of safety.
 
-![](/img/post/distributed-system-10-1.png){: w="500" }
+![](../img/post/distributed-system-10-1.png){: w="500" }
 
 ### Bully algorithm
 
@@ -101,7 +101,7 @@ When a process wants to initiate an election:
 A process that receives an _Election_ message replies with _disagree_ message,
 and starts its own leader election protocol (unless it has already done so).
 
-![](/img/post/distributed-system-10-2.png){: w="600" }
+![](../img/post/distributed-system-10-2.png){: w="600" }
 
 #### Timeout values
 

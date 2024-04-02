@@ -13,7 +13,7 @@ Recall the sigmiod loss.
 
 Define the perceptron hinge loss:
 
-![asd](/img/post/deep-learning-for-CV-3-1.png){: w="400" }
+![asd](../img/post/deep-learning-for-CV-3-1.png){: w="400" }
 
 $$
 l\left(w, x_i, y_i\right)=\max \left(0,-y_i w^T x_i\right)
@@ -36,7 +36,7 @@ $$
 maximize the distance between the hyperplane
 and the closest training example, where the distance is given by $\frac{\left|w^T x_0\right|}{\|w\|}$ .
 
-![](/img/post/deep-learning-for-CV-3-2.png){: w="400" }
+![](../img/post/deep-learning-for-CV-3-2.png){: w="400" }
 
 ### finding hyperplane
 
@@ -50,9 +50,9 @@ $$
 
 ### Soft margin
 
-![](/img/post/deep-learning-for-CV-3-4.png){: w="300" }
+![](../img/post/deep-learning-for-CV-3-4.png){: w="300" }
 
-![](/img/post/deep-learning-for-CV-3-5.png){: w="300" }
+![](../img/post/deep-learning-for-CV-3-5.png){: w="300" }
 
 For non-separable and some separable data, we may prefer a **larger margin** with a few constraints violated.
 
@@ -62,7 +62,7 @@ $$
 
 The loss is similar to the **perceptron loss**.
 
-![](/img/post/deep-learning-for-CV-3-6.png){: w="800" }
+![](../img/post/deep-learning-for-CV-3-6.png){: w="800" }
 _SVM and Hinge loss_
 
 This loss function tolerates wrongly classified points to get a larger margin.
@@ -106,7 +106,7 @@ and $\hat{y}=\operatorname{argmax}_c f_c(x)$
 
 Multi-class perceptrons:
 
-![](/img/post/deep-learning-for-CV-3-7.png){: w="300" }
+![](../img/post/deep-learning-for-CV-3-7.png){: w="300" }
 
 $$
 f_c(x) = w_c^T x

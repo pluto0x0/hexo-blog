@@ -21,7 +21,7 @@ linear function approximation
 
 ### Example: Tetris Game
 
-![](/img/post/reinforcement-learning-lecture-14-1.png)
+![](../img/post/reinforcement-learning-lecture-14-1.png)
 _Tetris Game_
 
 The state space is exponentially large: each block be occupied / not occupied.

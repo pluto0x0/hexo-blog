@@ -54,7 +54,7 @@ The cliff example (pg 132 of Sutton & Barto)
 - Optimal policy: walk near the cliff
 - Unless epsilon is super small, SARSA will avoid the cliff
 
-![cliff problem](/img/post/reinforcement-learning-lecture-15.png){: w="600" }
+![cliff problem](../img/post/reinforcement-learning-lecture-15.png){: w="600" }
 _cliff example_
 
 The optimal path is along the side of the cliff, but on this path, the $\epsilon$ -greedy SARSA will often see large penalty (falling off the cliff) and therefore, choose the safe path instead.
