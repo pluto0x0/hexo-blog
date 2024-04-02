@@ -39,8 +39,8 @@ jobs:
         exp='s/!\[\(.*\)\](\.\.\(\/img.\+\)) *\(= *[0-9]*x[0-9]*\)/![\1](\2 \3\)/g'
         for file in source/_posts/*.md; do
             echo in "$file":
-            sed -n ${exp}p "$file"
-            sed -i $exp "$file"
+            sed -n "${exp}p" "$file"
+            sed -i "$exp" "$file"
         done
      - name: Hexo deploy
        run: |
