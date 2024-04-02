@@ -115,4 +115,4 @@ jobs:
 
 启动托管仓库的github page即可。
 
-[^1] 脚本修改自[这里](https://makefile.so/2021/11/28/use-github-actions-to-deploy-hexo-blog/)
+[^1]: 脚本修改自[这里](https://makefile.so/2021/11/28/use-github-actions-to-deploy-hexo-blog/)
