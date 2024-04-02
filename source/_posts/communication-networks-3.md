@@ -37,9 +37,9 @@ categories:
 ![](../img/post/communication-networks-3-3.png)
 
 - FDM: Frequency Division Multiplexing
-  - ![](../img/post/communication-networks-3-4.png){: w="30"}
+  - ![](../img/post/communication-networks-3-4.png)=30x
 - TDM: Time Division Multiplexing
-  - ![](../img/post/communication-networks-3-5.png){: w="30"}
+  - ![](../img/post/communication-networks-3-5.png)=30x
 
 ### Internet Structure: Network of Networks
 

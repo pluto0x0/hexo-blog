@@ -85,12 +85,12 @@ Connect end systems to edge routers
 
 Wireless LANs (WiFi):
 
-- ![](../img/post/communication-networks-1-2-5.png){: w="40"}
+- ![](../img/post/communication-networks-1-2-5.png)=40x
 - 11, 54, 450 Mbps rate
 
 Wide-area wireless accesss
 
-- ![](../img/post/communication-networks-1-2-6.png){: w="40"}
+- ![](../img/post/communication-networks-1-2-6.png)=40x
 - cellular operator, 10's km
 - 1 to 10 Mbps
 - 3G, 4G, [LTE](https://en.wikipedia.org/wiki/LTE_(telecommunication))

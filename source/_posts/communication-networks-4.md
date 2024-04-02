@@ -9,7 +9,7 @@ categories:
 - Communication Networks
 ---
 
-![](../img/post/communication-networks-4-3.png){: w="8"}
+![](../img/post/communication-networks-4-3.png)=8x
 
 ## Application architectures
 

@@ -30,7 +30,7 @@ index_img: ../img/post/distributed-system-9.png
 
 put $N$ processes in a $\sqrt{N}$ by $\sqrt{N}$ matrix and for each $P_i$ , its voting set $V_i =$ row containing $P_i$ + column containing $P_i$ (each set size = $2\sqrt{N}-1$ )
 
-![](../img/post/distributed-system-9.png){: w="300" }
+![](../img/post/distributed-system-9.png)=300x
 _voting set_
 
 - state = *Released*, voted = *false*

@@ -33,7 +33,7 @@ TCP and UDP:
 
 host uses **IP addresses & port** numbers to direct segment to appropriate socket
 
-![](../img/post/communication-networks-7-7.png){: w="400" }
+![](../img/post/communication-networks-7-7.png)=400x
 _TCP/UDP segment format_
 
 ### In Connectionless Demultiplexing (UDP)
@@ -65,7 +65,7 @@ demux: receiver uses **all four values** to direct segment to appropriate socket
   - DNS
   - SNMP
   
-![](../img/post/communication-networks-7-8.png){: w="400" }
+![](../img/post/communication-networks-7-8.png)=400x
 _UDP segment format_
 
 checksum is used to detect errors.

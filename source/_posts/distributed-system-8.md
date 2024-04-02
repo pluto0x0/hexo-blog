@@ -13,25 +13,25 @@ index_img: ../img/post/distributed-system-8-6.png
 
 ### B-multicast
 
-![](../img/post/distributed-system-8.png){: w="500" }
+![](../img/post/distributed-system-8.png)=500x
 
 in physical network view: Redundant packets
 
-![](../img/post/distributed-system-8-1.png){: w="500" }
+![](../img/post/distributed-system-8-1.png)=500x
 
 ### Tree-based multicast
 
 construct a minimum spanning tree and unicast along that.
 
-![](../img/post/distributed-system-8-2.png){: w="500" }
+![](../img/post/distributed-system-8-2.png)=500x
 
 then,
 
-![](../img/post/distributed-system-8-3.png){: w="500" }
+![](../img/post/distributed-system-8-3.png)=500x
 
 construct a tree that includes network routers.
 
-![IP multicast](../img/post/distributed-system-8-4.png){: w="500" }
+![IP multicast](../img/post/distributed-system-8-4.png)=500x
 _IP multicast_
 
 ### Third approach: Gossip
@@ -45,7 +45,7 @@ Properties
 - More efficient than unicasting to all receivers
 - no hard guarantees.
 
-![](../img/post/distributed-system-8-5.png){: w="500" }
+![](../img/post/distributed-system-8-5.png)=500x
 
 
 ## Mutual Exclusion
@@ -96,7 +96,7 @@ Leader:
 
 the token travel around the ring.
 
-![](../img/post/distributed-system-8-6.png){: w="500" }
+![](../img/post/distributed-system-8-6.png)=500x
 
 - enter()
   - Wait until you get token
