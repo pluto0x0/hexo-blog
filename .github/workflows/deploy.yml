@@ -1,4 +1,4 @@
-name: HEXO_DEPLOY
+name: Hexo Deploy
 on:
   push:
    branches:
