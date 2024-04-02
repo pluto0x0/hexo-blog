@@ -35,6 +35,11 @@ jobs:
        run: |
         node -v
         hexo -v
+     - name: Replace image path
+       run: |
+        for file in source/_posts/*.md; do
+            sed -i 's/!\[\(.*?\)\]\(\.\.\(\/img.+?\)\)/![$1]($2)/g' "$file"
+        done
      - name: Hexo deploy
        run: |
         hexo clean
