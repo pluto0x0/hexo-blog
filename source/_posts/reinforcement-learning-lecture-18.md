@@ -8,6 +8,14 @@ categories:
 - Reinforcement Learning
 ---
 
+```mermaid
+a ---> b
+```
+
+{% mermaid %}
+a ---> b
+{% endmermaid %}
+
 ## Application in contextual bandit (CB)
 
 - The data point is a tuple $(x, a, r)$
