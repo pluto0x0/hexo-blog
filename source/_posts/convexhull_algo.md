@@ -14,11 +14,11 @@ date: 2021-08-24
 如图，
 ![n=8](https://i.loli.net/2021/08/23/uVdPtR12HTpyUMg.png)
 
-可以通过向量叉积得到任意 $$\overrightarrow{V_0V_i}$$ 和 $$\overrightarrow{V_0P}$$ 的左右关系。
+可以通过向量叉积得到任意 $$\overrightarrow{V_0V_i}$$ 和 $\overrightarrow{V_0P}$ 的左右关系。
 
-先通过 $$\overrightarrow{V_0V_1}$$ 和 $$\overrightarrow{V_0V_{n-1}}$$ 排除 $$P$$ 在灰色区域的情况。
+先通过 $$\overrightarrow{V_0V_1}$$ 和 $\overrightarrow{V_0V_{n-1}}$ 排除 $$P$$ 在灰色区域的情况。
 
-显然通过二分，就能找到 $$\overrightarrow{V_0V_i}$$ 使得 $$\overrightarrow{V_0P}$$ 在 $$\overrightarrow{V_0V_i}$$ 和 $$\overrightarrow{V_0V_{i+1}}$$ 之间
+显然通过二分，就能找到 $$\overrightarrow{V_0V_i}$$ 使得 $$\overrightarrow{V_0P}$$ 在 $\overrightarrow{V_0V_i}$ 和 $\overrightarrow{V_0V_{i+1}}$ 之间
 
 接下来只需要判断 $$\overrightarrow{V_iP}$$ 是否在 $$\overrightarrow{V_iV_{i+1}}$$ 左侧即可（假定凸包以逆时针方向给出）。
 
@@ -82,7 +82,7 @@ int main() {
 
 ![image.png](https://i.loli.net/2021/08/23/4ZsQFa9pOLhABRM.png)
 
-对于任意向量 $$\vec{v}$$ ，可以通过 $$\vec{v} \cdot \vec{u}$$ 的正负性判断 $$\vec{v}$$ 在 $$\vec{u}$$ 投影的方向。
+对于任意向量 $$\vec{v}$$ ，可以通过 $$\vec{v} \cdot \vec{u}$$ 的正负性判断 $$\vec{v}$$ 在 $\vec{u}$ 投影的方向。
 
 
 ### 二分法
@@ -162,7 +162,7 @@ int main() {
 
 ## 点到凸包的切线
 
-容易发现，点到凸包的切线实际上就是凸包上各个点到某个点极角的极值，只要能得到两个点 $$V_i$$ 和 $$V_j$$ 关于点 $$P$$ 的“上下关系”，那么就可以套用**凸包极值点**的二分策略。
+容易发现，点到凸包的切线实际上就是凸包上各个点到某个点极角的极值，只要能得到两个点 $$V_i$$ 和 $V_j$ 关于点 $$P$$ 的“上下关系”，那么就可以套用**凸包极值点**的二分策略。
 
 显然只要用 $$\overrightarrow{PV_i}\times \overrightarrow{PV_j}$$ 的正负性判断就行了。
 

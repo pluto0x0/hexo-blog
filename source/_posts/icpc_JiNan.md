@@ -28,7 +28,7 @@ $$ \prod_{i=1}^{n}c_i!\binom{\sum_{j=1}^{i-1}c_j+\lfloor c_i/2\rfloor}{\lfloor c
 > 数据范围：$1 \le n \le 100000,\; P = 998244353$
 
 > 我们设 $a_n$ 表示 $f(x) = x^n$ 的答案，考虑计算这个数列的指数生成函数：
-> $$g\left( x\right) =\sum _{n\geq 0}\dfrac {x^{n}}{n!}\sum _{i\geq 0}\dfrac {i^{n}}{i!}=\sum _{i\geq 0}\dfrac {1}{i!}\sum _{n\geq 0}\dfrac {\left( ix\right) ^{n}}{n!}=\sum _{i\geq 0}\dfrac {e^{ix}}{i!}=e^{e^{x}}=e^{e^{x}-1}e$$
+> $g\left( x\right) =\sum _{n\geq 0}\dfrac {x^{n}}{n!}\sum _{i\geq 0}\dfrac {i^{n}}{i!}=\sum _{i\geq 0}\dfrac {1}{i!}\sum _{n\geq 0}\dfrac {\left( ix\right) ^{n}}{n!}=\sum _{i\geq 0}\dfrac {e^{ix}}{i!}=e^{e^{x}}=e^{e^{x}-1}e$ 
 >于是使用一次多项式 $\exp$ 即可算出答案，时间复杂度 $O(n \log n)$。值得一提，$a_n$ 恰好是 Bell 数，这也就证明了答案是 $e$ 的整数倍。
 
 因为多项式 $\exp$ 要求常数项为0，因此必须将一个 $e$ 提出来。

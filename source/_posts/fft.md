@@ -46,7 +46,7 @@ $$
 
 欧拉公式： $$e^{i\theta} = \cos \theta + i \sin \theta$$ ，这对应着复平面上的一个单位向量。
 
-那么 $$z = | z | e^{i\theta} = r(\cos \theta + i \sin \theta)$$ ，其中 $$\theta$$ 为 $$z$$ 的幅角。
+那么 $$z = | z | e^{i\theta} = r(\cos \theta + i \sin \theta)$$ ，其中 $$\theta$$ 为 $z$ 的幅角。
 
 进而得到，复数相乘就是**模长相乘，幅角相加**。
 
@@ -153,7 +153,7 @@ $$
 
 是完全相同的，而且两个子问题的答案能在 $$O(n)$$ 时间内合并得到原问题的答案。 于是总时间复杂度为 $$O(n \log n)$$ （参考归并排序）这就是DFT操作。
 
-另外需要注意将 $$f$$ 的高次补 $$0$$ 以满足长度 $$n$$ 是 $$2$$ 的整数次幂。
+另外需要注意将 $$f$$ 的高次补 $$0$$ 以满足长度 $$n$$ 是 $2$ 的整数次幂。
 
 [参考代码](https://pastebin.com/a62Tk9km)
 
@@ -188,12 +188,12 @@ g(\omega_n^{-k}) &= \sum_{i=0}^{n-1}y_i \omega_n^{-ik} \\
 $$
 
 
-记 $$S\left(\omega_n^a\right)=\sum_{i=0}^{n-1}\left(\omega_n^a\right)^i$$ 。
+记 $S\left(\omega_n^a\right)=\sum_{i=0}^{n-1}\left(\omega_n^a\right)^i$ 。
 
-当 $$a=0 \pmod{n}$$ 时， $$S\left(\omega_n^a\right)=n$$ 。
+当 $a=0 \pmod{n}$ 时， $$S\left(\omega_n^a\right)=n$$ 。
 
 
-当 $$a\neq 0 \pmod{n}$$ 时，我们错位相减
+当 $a\neq 0 \pmod{n}$ 时，我们错位相减
 
 $$
 \begin{aligned}
@@ -220,7 +220,7 @@ g(\omega_n^{-k}) = \sum_{j=0}^{n-1}a_jS\left(\omega_n^{j-k}\right)=a_k\cdot n
 $$
 
 
-所以只需要写一个函数，传入参数 $$\texttt{op}$$ ， $$\texttt{op == 1}$$ 时为DFT， $$\texttt{op == -1}$$ 为IDFT，进行IDFT时再将各个结果 $$\texttt{/n}$$ 即可。
+所以只需要写一个函数，传入参数 $$\texttt{op}$$ ， $\texttt{op == 1}$ 时为DFT， $$\texttt{op == -1}$$ 为IDFT，进行IDFT时再将各个结果 $$\texttt{/n}$$ 即可。
 
 另有[方法二](https://oi-wiki.org/math/poly/fft/#_14)，原理基本相同
 
@@ -240,11 +240,11 @@ $$
 
 通过手动模拟可以发现，这样的操作实际上就是对所有数以最后一个二进制位为第一关键字、倒数第二个二进制位为第二关键字……进行的排序，即按照二进制对称翻转后的数进行排序。我们称这个变换为位逆序置换（蝴蝶变换）。
 
-记 $$R(x)$$ 为 $$x$$ 位逆序置换后的结果。
+记 $R(x)$ 为 $x$ 位逆序置换后的结果。
 
 显然朴素算法能再 $$O(n \log n)$$ 的时间内求解 $$R(x)$$ ，现在考虑递推优化。
 
-可以发现 $$R(x)$$ 与 $$R(x/2)$$ 只有一个二进制位的差别，于是简单地模拟一下就可以写出 $$k$$ 个二进制位时的递推式：
+可以发现 $$R(x)$$ 与 $R(x/2)$ 只有一个二进制位的差别，于是简单地模拟一下就可以写出 $$k$$ 个二进制位时的递推式：
 
 $$
 R(x)=\left\lfloor \frac{R\left(\left\lfloor \frac{x}{2} \right\rfloor\right)}{2} \right\rfloor + (x\bmod 2)\times \frac{len}{2}

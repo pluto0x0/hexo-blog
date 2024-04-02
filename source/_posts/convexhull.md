@@ -10,7 +10,7 @@ date: 2021-08-14
 
 <https://www.luogu.com.cn/record/55936318>
 
-使用单调栈，$$O(n \, \log n)$$
+使用单调栈， $O(n \, \log n)$ 
 
 ```cpp
 #include <bits/stdc++.h>

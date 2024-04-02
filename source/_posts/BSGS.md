@@ -65,15 +65,15 @@ $$g^{ac} \equiv b \pmod p$$
 
 > 在知道 $x_0\equiv g^{c}\pmod p$ 的情况下，我们想得到原问题的所有解。首先我们知道 $g^{\varphi(p)}\equiv 1\pmod p$，于是可以得到
 >
->$$ \forall\ t \in \mathbb{Z},\ x^a \equiv g^{ c \cdot a + t\cdot\varphi(p)}\equiv b \pmod p $$
+> $ \forall\ t \in \mathbb{Z},\ x^a \equiv g^{ c \cdot a + t\cdot\varphi(p)}\equiv b \pmod p $ 
 >
 >于是得到所有解为
 >
->$$ \forall\ t\in \mathbb{Z},a\mid t\cdot\varphi(p),\ x\equiv g^{c+\frac{t\cdot\varphi(p)}{a}}\pmod p $$
+> $ \forall\ t\in \mathbb{Z},a\mid t\cdot\varphi(p),\ x\equiv g^{c+\frac{t\cdot\varphi(p)}{a}}\pmod p $ 
 >
 >对于上面这个式子，显然有 $\frac{a}{\gcd(a,\varphi(p))} \mid t$。因此我们设 $t=\frac{a}{\gcd(a,\varphi(p))}\cdot i$，得到
 >
->$$ \forall \ i\in \mathbb{Z},x\equiv g^{c+\frac{\varphi(p)}{\gcd(a,\varphi(p))}\cdot i}\pmod p $$
+> $ \forall \ i\in \mathbb{Z},x\equiv g^{c+\frac{\varphi(p)}{\gcd(a,\varphi(p))}\cdot i}\pmod p $ 
 >
 >这就是原问题的所有解。
 

@@ -19,7 +19,7 @@ $$\begin{aligned}
 =& \sum_{p\in P}\sum_{d=1}\sum _{i=1}^{ \lfloor \frac{N}{pd} \rfloor } \sum _{j=1}^{ \lfloor \frac{M}{pd} \rfloor} \mu(d)
 \end{aligned}$$
 
-令$$t=pd$$
+令 $t=pd$ 
 
 $$
 \sum_t\lfloor \frac{N}{t}\rfloor \lfloor \frac{M}{t}\rfloor \sum_{p|t,\, p\in P}\mu\left(\frac{t}{p}\right)
@@ -29,18 +29,18 @@ $$
 
 $$f(t)=\sum_{p|t,\, p\in P}\mu\left(\frac{t}{p}\right)$$
 
-一般的做法是直接枚举$$p$$，然后暴力更新。例如：
+一般的做法是直接枚举 $p$ ，然后暴力更新。例如：
 ```cpp
 for (int i = 1; i <= cnt; i++)
     for (int j = 1; prime[i] * j <= 10000000; j++)
         f[j * prime[i]] += mu[j];
 ```
 
-然而是有$$O(n)$$预处理方法的。
+然而是有 $O(n)$ 预处理方法的。
 
-$$f(t) \neq 0$$当且仅当$$t$$有不超过一个平方因子。当$$t$$有平方因子$$p_0^2$$时，
-只有上式中的$$p$$取$$p_0$$
-时有贡献，否则任意$$p$$贡献相同，都为$$-\mu(t)$$。
+$$f(t) \neq 0 $当且仅当$ t $有不超过一个平方因子。当$ t $有平方因子$ p_0^2$$时，
+只有上式中的 $p$ 取 $p_0$ 
+时有贡献，否则任意 $p$ 贡献相同，都为 $-\mu(t)$ 。
 
 预处理时分类即可，注意每个合数指挥被其最小质因子筛出。
 
