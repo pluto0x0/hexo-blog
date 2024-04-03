@@ -97,5 +97,6 @@ responses.
 has not responded a *prepare* request with a higher number, it
 accepts the proposal
 - What if the proposer does not hear from majority of acceptors?
-  - Wait for some time, and then issue a new request with higher
-number..
+  - wait for some time
+  - issue a new request with higher
+number
