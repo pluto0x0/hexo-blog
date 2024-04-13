@@ -79,4 +79,5 @@ $$
 \end{aligned}
 $$
 
-> Note that this form is similar to 
+> Note that this form is similar to that discussed in [Importance Sampling](/2024/03/24/reinforcement-learning-lecture-18/#Multi-step-IS-in-MDPs)
+
