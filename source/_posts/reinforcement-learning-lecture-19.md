@@ -10,7 +10,7 @@ categories:
 
 ## Policy Gradient
 
-Given policy $\pi_\theta$, optimize ${J}\left(\pi_\theta\right):=\mathbb{E}_{{s} \sim {d}_0}\left[{~V}^{\pi_\theta}({s})\right]$
+Given policy $\pi_\theta$, optimize ${J}\left(\pi_\theta\right):=\mathbb{E}_{s\sim d_0}\left[{~V}^{\pi_\theta}(s)\right]$
  where $d_0$ is the initial state distribution.
 
 - Use SGD ($\nabla_\theta {J}\left(\pi_\theta\right)$)
@@ -66,13 +66,13 @@ $$
 \begin{aligned}
 & \nabla_\theta \log P^{\pi_\theta}(\tau)
 =\nabla_\theta \log \left(d_0\left(s_1\right) \pi\left(a_1 | s_1\right) P\left(s_2 | s_1, a_1\right) \pi\left(a_2 | s_2\right) \cdots \right) \\
-&= 
+&=
 \cancel{\nabla \log d_0(s_1)} +
 \nabla \log \pi\left(a_1 | s_1\right) +
-\cancel{\nabla \log P\left(s_2 | s_1, a_1\right)} + 
+\cancel{\nabla \log P\left(s_2 | s_1, a_1\right)} +
 \nabla \log \pi\left(a_2 | s_2\right) +
 \cdots \\
-&= 
+&=
 \nabla \log \pi\left(a_1 | s_1\right) +
 \nabla \log \pi\left(a_2 | s_2\right) +
 \cdots
@@ -81,3 +81,4 @@ $$
 
 > Note that this form is similar to that discussed in [Importance Sampling](/2024/03/24/reinforcement-learning-lecture-18/#Multi-step-IS-in-MDPs)
 
+Continued: 
