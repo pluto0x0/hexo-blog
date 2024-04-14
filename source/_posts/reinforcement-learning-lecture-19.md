@@ -13,7 +13,7 @@ categories:
 Given policy $\pi_\theta$, optimize ${J}\left(\pi_\theta\right):=\mathbb{E}_{s\sim d_0}\left[{~V}^{\pi_\theta}(s)\right]$
  where $d_0$ is the initial state distribution.
 
-- Use SGD ($\nabla_\theta {J}\left(\pi_\theta\right)$)
+- Use Gradient Ascent ($\nabla_\theta {J}\left(\pi_\theta\right)$)
 - an unbiased estimate can be obtained from a
 **single on-policy trajectory**
 - no need of the knowledge of $P$ and $R$ of the MDP
@@ -30,8 +30,8 @@ About PG:
 
 Linear + softmax:
 
-- Featurize state-action: $\phi: {S} \times {A} \rightarrow \mathbb{R}^{{d}}$
-- Policy (softmax): $\pi({a} \mid {s}) \propto {e}^{\theta^{\top} \phi({s}, {a})}$
+- Featurize state-action: $\phi: S\times A \rightarrow \mathbb{R}^d$
+- Policy (softmax): $\pi(a|s) \propto e^{\theta^{\top} \phi(s, a)}$
 
 Recall in SARSA, we also used [softmax](/2024/03/22/reinforcement-learning-lecture-15/#softmax) with temperature $T$. But in PG, we don't need it. Why?
 
@@ -79,6 +79,23 @@ $$
 \end{aligned}
 $$
 
-> Note that this form is similar to that discussed in [Importance Sampling](/2024/03/24/reinforcement-learning-lecture-18/#Multi-step-IS-in-MDPs)
+Note that this form is similar to that discussed in [Importance Sampling](/2024/03/24/reinforcement-learning-lecture-18/#Multi-step-IS-in-MDPs). 
 
-Continued: 
+Continued:
+
+Given that $\pi_\theta(a|s) = \frac{e^{\theta^\top \phi(s,a)}}{\sum_{a'} e^{\theta^\top \phi(s,a')}}$,
+
+$$
+\begin{aligned}
+& \nabla_\theta \log \pi_\theta(a|s) \\
+= & \nabla_\theta\left(\log \left(e^{\theta^\theta \phi\left(s, a^{\prime}\right)}\right)-\log \left(\sum_{a^{\prime}} e^{\theta^{\top} \phi\left(s, a^{\prime}\right)}\right)\right) \\
+= & \phi(s, a)-\frac{\sum_{a'} e^{\theta^\top \phi(s,a')}\phi(s,a')}{\sum_{a^{\prime}} e^{\theta^{\top} \phi\left(s, a^{\prime}\right)}} \\
+= & \phi(s,a) - \mathbb{E}_{a'\sim \pi} [\phi(s,a')]
+\end{aligned}
+$$
+
+Note that the expectation of the quantity above is $0$. i.e. 
+
+$$
+\mathbb{E}_{a\sim\pi}\big[ \phi(s,a) - \mathbb{E}_{a'\sim \pi} [\phi(s,a')] \big] = 0
+$$
