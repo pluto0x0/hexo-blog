@@ -19,6 +19,10 @@ Given policy $\pi_\theta$, optimize ${J}\left(\pi_\theta\right):=\mathbb{E}_{s\s
 - no need of the knowledge of $P$ and $R$ of the MDP
 - Similar to [IS](/2024/03/23/reinforcement-learning-lecture-17/#Importance-Sampling)
 
+{% note info %}
+Note that when we use $\pi$, we mean $\pi_{\theta}$ here, and $\nabla$ means $\nabla_\theta$.
+{% endnote %}
+
 About PG:
 
 - Goal: we want to find good policy.
@@ -51,12 +55,12 @@ $$
 
 $$
 \begin{aligned}
-& \nabla_\theta J\left(\pi_\theta\right) \\
-= & \nabla_\theta \sum_{\tau \in(S \times A)^H} P^{\pi_\theta}(\tau) R(\tau) \\
-= & \sum_\tau\left(\nabla_\theta P^{\pi_\theta}(\tau)\right) R(\tau) \\
-= & \sum_\tau \frac{P^\pi(\tau)}{p^{\pi_\theta}(\tau)} \nabla_\theta P^{\pi_\theta}(\tau) R(\tau) \\
-= & \sum_\tau p^{\pi}(\tau) \nabla_\theta \log P^{\pi_\theta}(\tau) R(\tau) \\
-= & \mathbb{E}_{\tau \sim \pi}\left[\nabla_\theta \log P^{\pi_\theta}(\tau) R(\tau)\right]
+& \nabla J\left(\pi\right) \\
+= & \nabla \sum_{\tau \in(S \times A)^H} P^{\pi}(\tau) R(\tau) \\
+= & \sum_\tau\left(\nabla P^{\pi}(\tau)\right) R(\tau) \\
+= & \sum_\tau \frac{P^\pi(\tau)}{P^{\pi}(\tau)} \nabla P^{\pi}(\tau) R(\tau) \\
+= & \sum_\tau P^{\pi}(\tau) \nabla \log P^{\pi}(\tau) R(\tau) \\
+= & \mathbb{E}_{\tau \sim \pi}\left[\nabla \log P^{\pi}(\tau) R(\tau)\right]
 \end{aligned}
 $$
 
@@ -79,7 +83,7 @@ $$
 \end{aligned}
 $$
 
-Note that this form is similar to that discussed in [Importance Sampling](/2024/03/24/reinforcement-learning-lecture-18/#Multi-step-IS-in-MDPs). 
+Note that this form is similar to that discussed in [Importance Sampling](/2024/03/24/reinforcement-learning-lecture-18/#Multi-step-IS-in-MDPs).
 
 Continued:
 
@@ -94,7 +98,7 @@ $$
 \end{aligned}
 $$
 
-Note that the expectation of the quantity above is $0$. i.e. 
+Note that the expectation of the quantity above is $0$. i.e.
 
 $$
 \mathbb{E}_{a\sim\pi}\big[ \phi(s,a) - \mathbb{E}_{a'\sim \pi} [\phi(s,a')] \big] = 0
