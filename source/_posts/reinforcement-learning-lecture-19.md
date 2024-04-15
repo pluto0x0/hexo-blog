@@ -85,14 +85,12 @@ $$
 
 Note that this form is similar to that discussed in [Importance Sampling](/2024/03/24/reinforcement-learning-lecture-18/#Multi-step-IS-in-MDPs).
 
-Continued:
-
-Given that $\pi_\theta(a|s) = \frac{e^{\theta^\top \phi(s,a)}}{\sum_{a'} e^{\theta^\top \phi(s,a')}}$,
+Given that $\pi(a|s) = \frac{e^{\theta^\top \phi(s,a)}}{\sum_{a'} e^{\theta^\top \phi(s,a')}}$ (denoted by $\pi(a|s)$).
 
 $$
 \begin{aligned}
-& \nabla_\theta \log \pi_\theta(a|s) \\
-= & \nabla_\theta\left(\log \left(e^{\theta^\theta \phi\left(s, a^{\prime}\right)}\right)-\log \left(\sum_{a^{\prime}} e^{\theta^{\top} \phi\left(s, a^{\prime}\right)}\right)\right) \\
+& \nabla \log \pi(a|s) \\
+= & \nabla\left(\log \left(e^{\theta^\top \phi\left(s, a^{\prime}\right)}\right)-\log \left(\sum_{a^{\prime}} e^{\theta^{\top} \phi\left(s, a^{\prime}\right)}\right)\right) \\
 = & \phi(s, a)-\frac{\sum_{a'} e^{\theta^\top \phi(s,a')}\phi(s,a')}{\sum_{a^{\prime}} e^{\theta^{\top} \phi\left(s, a^{\prime}\right)}} \\
 = & \phi(s,a) - \mathbb{E}_{a'\sim \pi} [\phi(s,a')]
 \end{aligned}
@@ -103,3 +101,38 @@ Note that the expectation of the quantity above is $0$. i.e.
 $$
 \mathbb{E}_{a\sim\pi}\big[ \phi(s,a) - \mathbb{E}_{a'\sim \pi} [\phi(s,a')] \big] = 0
 $$
+
+**Couclusion**:
+
+So far we have
+
+$$
+\nabla J(\pi) = 
+\mathbb{E}_{\pi} \left[
+  \left(\sum_{t=1}^H \gamma^{t-1} r_t \right)
+  \left(\sum_{t=1}^H \nabla\log\pi (a_t|s_t) \right)
+\right]
+$$
+
+With the relation discussed above, we say $\mathbb{E}_{\pi}[\nabla\log\pi (a_t|s_t)] = \sum_{a_t}\nabla \pi (a_t|s_t) = \nabla 1 = 0$
+
+So, for $t' < t$, $r_{t'}$ is independent to $\nabla\log\pi (a_t|s_t)$, we have
+
+$$
+\mathbb{E}_{\pi}[\nabla\log\pi (a_t|s_t)r_{t'}]
+= \mathbb{E}_{\pi}[\nabla\log\pi(a_t|s_t)] \mathbb{E}_{\pi}[r_{t'}]
+= 0
+$$
+
+We can therefore rewrite the $\nabla J(\pi)$ as
+
+$$
+\nabla J(\pi) = 
+\mathbb{E}_{\pi} \left[
+  \sum_{t=1}^H \left(
+    \nabla\log\pi (a_t|s_t)
+    \sum_{t'=t}^H \gamma^{t'-1} r_{t'}
+  \right)
+\right]
+$$
+
