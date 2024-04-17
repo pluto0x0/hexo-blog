@@ -198,8 +198,10 @@ $.
 
 #### Actor-critic
 
-The parametrized policy is called the *actor*, and
-the value-function estimate is called the *critic*.
+The parametrized **policy** is called the *actor*, and
+the **value-function** estimate is called the *critic*.
+
+![Actor-Critic](https://www.researchgate.net/profile/Nikolas-Wilhelm/publication/344770842/figure/fig1/AS:948651484516356@1603187547778/Taxonomy-of-model-free-RL-algorithms-by-Schulman-43.png)
 
 #### Baseline in PG
 
