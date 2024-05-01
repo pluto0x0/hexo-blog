@@ -61,8 +61,8 @@ report q crashed.
 - If asynchronous, $\Delta_1$ = (max observed round trip time)
 
 ```mermaid
-flowchart LR
-    p <-|heartbeat|-- q
+flowchart RL
+    q --->|heartbeat| p
 ```
 
 q sends heartbeats to p every $T$ seconds. $(T + \Delta_2)$ is the timeout value at p. If $(T + \Delta_2)$ time elapsed since last heartbeat, report q crashed.
