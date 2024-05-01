@@ -368,6 +368,17 @@ shadow-exclude = [
 ];
 ```
 
+消除菜单的透明边框阴影：
+
+```
+wintypes:
+{
+  ...
+  menu = { shadow = false; opacity = 0.9; }
+  ...
+};
+```
+
 #### 音量托盘图标
 
 ```shell

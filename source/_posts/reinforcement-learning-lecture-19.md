@@ -47,8 +47,6 @@ Recall in SARSA, we also used [softmax](/2024/03/22/reinforcement-learning-lectu
 - The trajectory inducded by $\pi$: $\tau:=\left(s_1, a_1, r_1, \ldots, s_{H}, a_{H}, r_{H}\right)$ and $\tau \sim \pi$.
 - Let $R(\tau):=\sum_{t=1}^H \gamma^{t-1} r_t$
 
-#### Version 1
-
 $$
 J(\pi) := \mathbb{E}_\pi \left[\sum_{t=1}^H \gamma^{t-1}r_t\right] = \mathbb{E}_{\tau\sim\pi} [R(\tau)]
 $$
@@ -107,7 +105,7 @@ $$
 So far we have
 
 $$
-\nabla J(\pi) = 
+\nabla J(\pi) =
 \mathbb{E}_{\pi} \left[
   \left(\sum_{t=1}^H \gamma^{t-1} r_t \right)
   \left(\sum_{t=1}^H \nabla\log\pi (a_t|s_t) \right)
@@ -127,7 +125,7 @@ $$
 We can therefore rewrite the $\nabla J(\pi)$ as
 
 $$
-\nabla J(\pi) = 
+\nabla J(\pi) =
 \mathbb{E}_{\pi} \left[
   \sum_{t=1}^H \left(
     \nabla\log\pi (a_t|s_t)
@@ -136,3 +134,90 @@ $$
 \right]
 $$
 
+### PG and Value-Based Method
+
+So far we have
+
+$$
+\nabla J(\pi) =
+\mathbb{E}_{\pi} \left[
+  \sum_{t=1}^H \left(
+    \nabla\log\pi (a_t|s_t)
+    \sum_{t'=t}^H \gamma^{t'-1} r_{t'}
+  \right)
+\right].
+$$
+
+add a condition on expectation:
+
+$$
+\begin{aligned}
+\nabla J(\pi) &=
+\mathbb{E}_{s_t,a_t\sim \pi} \left[
+  \mathbb{E}_{\pi} \left[
+    \sum_{t=1}^H \left(
+      \nabla\log\pi (a_t|s_t)
+    \sum_{t'=t}^H \gamma^{t'-1} r_{t'}
+  \right)
+  \Bigg | s_t, a_t
+  \right]
+\right] \\
+
+&=
+\sum_{t=1}^H
+\mathbb{E}_{s_t,a_t\sim d_t^\pi} \left[
+  \nabla\log\pi (a_t|s_t)
+  \underbrace{\mathbb{E}_{\pi} \left[
+    \sum_{t'=t}^H \gamma^{t'-1} r_{t'}
+  \bigg | s_t, a_t
+  \right]}_{\gamma^{t-1}  Q_\pi(s_t, a_t)}
+\right] \\
+
+&=
+\sum_{t=1}^H
+\gamma^{t-1} \mathbb{E}_{\underbrace{s,a\sim d_t^\pi}_{d^t}} \left[
+  \nabla\log\pi (a_t|s_t)
+  Q^\pi (s,a)
+\right] \\
+
+&=
+\frac{1}{1-\gamma} \mathbb{E}_{s\sim d^\pi, a\sim \pi(s)}
+\left[
+  Q^\pi (s,a) \nabla\log\pi(a|s)
+\right]
+\end{aligned}
+$$
+
+### Blend PG and Value-Based Methods
+
+Instead of using MC estimate $\sum_{t^{\prime}=t}^H \gamma^{t^{\prime}-1} r_t$ for $Q^\pi\left(s_t, a_t\right)$, use an
+approximate value-function $\hat{Q}_{s_t, a_t}$, often trained by TD, e.g. expected SARSA:
+$
+Q\left(S_t, A_t\right) \leftarrow Q\left(S_t, A_t\right)+\alpha\left[R_{t+1}+\gamma \mathbb{E}_\pi\left[Q\left(S_{t+1}, A_{t+1}\right) \mid S_{t+1}\right]-Q\left(S_t, A_t\right)\right]
+$.
+
+#### Actor-critic
+
+The parametrized **policy** is called the *actor*, and
+the **value-function** estimate is called the *critic*.
+
+![Actor-Critic](https://www.researchgate.net/profile/Nikolas-Wilhelm/publication/344770842/figure/fig1/AS:948651484516356@1603187547778/Taxonomy-of-model-free-RL-algorithms-by-Schulman-43.png)
+
+#### Baseline in PG
+
+for any $f: S\to \mathbb{R}$,
+
+$$
+\nabla J(\pi)=\frac{1}{1-\gamma} \mathbb{E}_{s \sim d^\pi, a \sim \pi(s)}\left[\left(Q^\pi(s, a)-f(s)\right) \nabla \log \pi(a | s)\right]
+$$
+
+because $f(s)$ and $\nabla\log\pi(s|a)$ are **independent**.
+
+Choose $f = V^\pi(s)$ and
+
+$$
+\nabla J(\pi)=\frac{1}{1-\gamma} \mathbb{E}_{s \sim d^\pi, a \sim \pi(s)}\left[A^\pi(s, a) \nabla \log \pi(a \mid s)\right]
+$$
+
+where $A$ is the advantage function.
+Bseline don't change the **expectation** of Gradient but lower the **variance**.
