@@ -82,7 +82,7 @@ a real time interval I:
 ### Cristian Algorithm
 
 $$
-T_{{client}}=T_{{server}}+\left(T_{\text {round }} / 2\right)
+T_{client}=T_{server}+\left(T_{round} / 2\right)
 $$
 
 then
