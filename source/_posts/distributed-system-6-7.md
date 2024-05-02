@@ -179,13 +179,13 @@ Assume $p$ delivers $m_1$ first.
 When $p$ delivers $m_1$ , $m_2$ is either
 
 - in queue and deliverable.
-  - agreed_priority $(m_1)$ $< $agreed_priority$ (m_2)$
+  - agreed_priority $(m_1)$ $<$ agreed_priority $(m_2)$
 - in queue. not deliverable.
-  - agreed_priority $(m_1)$ $< $propose_priority$ (m_2) $ $ \le $agreed_priority$ (m_2)$
+  - agreed_priority $(m_1)$ $<$ propose_priority $(m_2)$ $\le$ agreed_priority$(m_2)$
 - not in queue.
-  - agreed_priority $(m_2)$ $\ge $propose_priority$ (m_2) $ $ > $agreed_priority$ (m_1)$
+  - agreed_priority $(m_2)$ $\ge$ propose_priority $(m_2)$ $>$ agreed_priority $(m_1)$
 
 Therefore
-agreed_priority $(m_1)$ $< $agreed_priority$ (m_2)$
+agreed_priority $(m_1)$ $<$ agreed_priority $(m_2)$
 
 And if $q$ delivers $m_2$ first, Contradiction.
