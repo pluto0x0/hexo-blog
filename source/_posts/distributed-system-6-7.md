@@ -166,7 +166,7 @@ Upon process $P_j$ recieving from $P_i$
   - if the message $m'$ at the top of the queue is deliverable:
     - deliver $(m')$ 
 
-<video controls src../img/post/distributed-system-6-ISIS.mp4" title="ISIS algorithm for total ordering"></video>
+<video controls src="../img/post/distributed-system-6-ISIS.mp4" title="ISIS algorithm for total ordering"></video>
 
 > ISIS algorithm takes longer time than sequencer algorithm.
 {: .prompt-info }
