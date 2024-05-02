@@ -91,7 +91,7 @@ $$
 \text{skew} \le T_{\text {round }} / 2 - \min \le T_{\text {round }} / 2
 $$
 
-where $\min$ is minimum one way network.
+where $\min$ is minimum one way network delay.
 
 ### Berkeley Algorithm
 

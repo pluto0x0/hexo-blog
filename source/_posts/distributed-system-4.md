@@ -52,7 +52,7 @@ if events $e \to e'$ , then $L(e) < L(e’)$
 
 ![](../img/post/distributed-system-4-1.png)=400x
 
-$V_i[j] $is the clock for process$ P_j $as maintained by$ P_i$
+$V_i[j]$ is the clock for process $P_j$ as maintained by $P_i$
 
 Algorithm: for each process $P_i$ :
 
