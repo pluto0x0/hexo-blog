@@ -42,7 +42,7 @@ Round-based algorithm
 - The algorithm proceeds in $f+1$ rounds.
 - Assume communication channels are reliable.
 
-$\text{Values}_{i}^{r} $: the set of proposed values known to$ P_i $at the beginning of round$ r$
+$\text{Values}_{i}^{r}$: the set of proposed values known to $P_i$ at the beginning of round $r$
 
 - Initially $\text{Values}_{i}^{1} = \{v_i\}$ :
   - for r = 1 to f+1 do
