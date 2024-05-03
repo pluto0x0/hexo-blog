@@ -87,8 +87,7 @@ replies back saying:
 
 #### Phase 2
 
-- If a proposer receives an *OK* response for its *prepare* request
-# n from a majority of acceptors, then it sends an *accept* request
+- If a proposer receives an *OK* response for its *prepare* request #n from a majority of acceptors, then it sends an *accept* request
 with a proposed value. What is the proposed value?
   - The value $v$ of the highest numbered proposal among the received
 responses.
