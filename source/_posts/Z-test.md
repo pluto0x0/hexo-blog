@@ -8,7 +8,7 @@ categories:
 - Statistics
 ---
 
-## $Z$ Test:
+## $Z$ Test
 
 1. **For Population Proportion**:
    You can use the Z test to test hypotheses about population proportions. For example, you can test if the proportion of a certain category in one population differs from that in another.
@@ -19,7 +19,7 @@ categories:
 <!-- 3. **For One-Sample Mean Test**:
    You can test whether the mean of a sample differs significantly from a known population mean. -->
 
-### Key Assumptions:
+### Key Assumptions
 
 - The data should be approximately **normally distributed**, especially for large samples (central limit theorem).
 - You should have a sufficiently large **sample size** (typically $n > 30$ for each group).
@@ -40,7 +40,8 @@ Where:
 - $\sigma_1$ and $\sigma_2$ are the population standard deviations (or sample standard deviations for large samples).
 
 {% note primary %}
-#### Example
+
+### Example
 
 You want to compare the average heights of male and female students at a school. You take a random sample of 50 male students and 50 female students. The average height of the males in your sample is 175 cm with a standard deviation of 10 cm, and the average height of the females is 165 cm with a standard deviation of 8 cm. You want to test whether the average heights of males and females are the same.
 
@@ -53,7 +54,9 @@ The mean height of males and females is equal, i.e., $\mu_1 = \mu_2$.
 $$
 Z = \frac{(\bar{X_1} - \bar{X_2})}{\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}}
 $$
+
 Where:
+
 - $\bar{X_1}$ = mean height of males = 175 cm,
 - $\bar{X_2}$ = mean height of females = 165 cm,
 - $\sigma_1$ = standard deviation of male heights = 10 cm,
@@ -88,6 +91,7 @@ $$
 where $x_1$ and $x_2$ are the number of successes in each sample.
 
 {% note primary %}
+
 ### Example
 
 A factory produces light bulbs, and it claims that 95% of its products meet quality standards. You take a random sample of 100 light bulbs and find that 90 of them meet the standards. You want to test whether the actual proportion of quality light bulbs is 95% as the factory claims.
