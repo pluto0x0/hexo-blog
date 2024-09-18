@@ -1,5 +1,5 @@
 ---
-title: Z test
+title: Z-Test
 date: 2024-09-18 18:58:07
 img_path: /_posts/
 mermaid: true
@@ -8,7 +8,7 @@ categories:
 - Statistics
 ---
 
-## $Z$ Test
+## Z-Test
 
 1. **For Population Proportion**:
    You can use the Z test to test hypotheses about population proportions. For example, you can test if the proportion of a certain category in one population differs from that in another.
@@ -25,7 +25,7 @@ categories:
 - You should have a sufficiently large **sample size** (typically $n > 30$ for each group).
 - You should know the **population variance** or approximate it when the sample size is large.
 
-## $Z$-Test Formula for Comparing Means
+## Z-Test Formula for Comparing Means
 
 For a Z test comparing two sample means, the formula is:
 
@@ -72,7 +72,7 @@ $$
 Since the Z-value is quite large, you would reject the null hypothesis and conclude that there is a significant difference between the average heights of male and female students.
 {% endnote %}
 
-## $Z$-Test Formula for Population Proportion
+## Z-Test Formula for Population Proportion
 
 For a Z test involving proportions, the formula is:
 $$
